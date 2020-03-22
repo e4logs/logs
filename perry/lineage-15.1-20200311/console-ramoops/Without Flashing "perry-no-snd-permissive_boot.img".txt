@@ -1,3 +1,6 @@
+NO BOOT
+STUCK AT BOOT ANIMATION
+
 [    0.000000,0] Initializing cgroup subsys cpuset
 [    0.000000,0] Initializing cgroup subsys cpu
 [    0.000000,0] Initializing cgroup subsys cpuacct

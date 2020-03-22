@@ -1,0 +1,667 @@
+NO BOOT
+STUCK AT BOOT ANIMATION
+
+--------- beginning of main
+12-21 22:35:13.756   362   362 I auditd  : type=1403 audit(0.0:2): policy loaded auid=4294967295 ses=4294967295
+12-21 22:35:14.066     1     1 I init    : type=1400 audit(0.0:3): avc: denied { create } for uid=0 name="sdcard" scontext=u:r:init:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+12-21 22:35:14.143   340   340 I fsck.f2fs: type=1400 audit(0.0:4): avc: denied { read } for uid=0 name="mmcblk0p54" dev="tmpfs" ino=4656 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+12-21 22:35:14.143   340   340 I fsck.f2fs: type=1400 audit(0.0:5): avc: denied { open } for uid=0 path="/dev/block/mmcblk0p54" dev="tmpfs" ino=4656 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+12-21 22:35:14.143   340   340 I fsck.f2fs: type=1400 audit(0.0:6): avc: denied { write } for uid=0 name="mmcblk0p54" dev="tmpfs" ino=4656 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+12-21 22:35:14.143   340   340 I fsck.f2fs: type=1400 audit(0.0:7): avc: denied { ioctl } for uid=0 path="/dev/block/mmcblk0p54" dev="tmpfs" ino=4656 ioctlcmd=1268 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+12-21 22:35:14.378   365   365 I SELinux : SELinux: Loaded service_contexts from:
+12-21 22:35:14.379   363   363 I SELinux : SELinux: Loaded service_contexts from:
+12-21 22:35:14.380   365   365 I SELinux :     /vndservice_contexts
+12-21 22:35:14.381   363   363 I SELinux :     /plat_service_contexts
+12-21 22:35:14.381   363   363 I SELinux :     /nonplat_service_contexts
+12-21 22:35:14.435   364   364 E hwservicemanager: BINDER_SET_INHERIT_FIFO_PRIO failed with error -1
+12-21 22:35:14.444   366   366 D vndksupport: Loading /vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.455   366   366 I android.hardware.keymaster@3.0-impl: Fetching keymaster device name default
+12-21 22:35:14.456   366   366 D vndksupport: Loading /vendor/lib64/hw/keystore.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:14.458   366   366 I android.hardware.keymaster@3.0-impl: Found keymaster1 module Keymaster QTI HAL, version 100
+--------- beginning of system
+12-21 22:35:14.460   367   367 I vold    : Vold 3.0 (the awakening) firing up
+12-21 22:35:14.462   367   367 V vold    : Detected support for: exfat ext4 f2fs ntfs vfat
+12-21 22:35:14.478   367   378 D vold    : e4crypt_init_user0
+12-21 22:35:14.479   367   378 D vold    : e4crypt_prepare_user_storage for volume null, user 0, serial 0, flags 1
+12-21 22:35:14.479   367   378 D vold    : Preparing: /data/system/users/0
+12-21 22:35:14.480   367   378 D vold    : Preparing: /data/misc/profiles/cur/0
+12-21 22:35:14.480   367   378 D vold    : Preparing: /data/system_de/0
+12-21 22:35:14.481   367   378 D vold    : Preparing: /data/misc_de/0
+12-21 22:35:14.481   367   378 D vold    : Preparing: /data/user_de/0
+12-21 22:35:14.482   367   378 D vold    : e4crypt_unlock_user_key 0 serial=0 token_present=0
+12-21 22:35:14.482   367   378 E vold    : Failed to chmod /data/system_ce/0: No such file or directory
+12-21 22:35:14.482   367   378 E vold    : Failed to chmod /data/misc_ce/0: No such file or directory
+12-21 22:35:14.497   379   379 I /system/bin/tzdatacheck: timezone distro dir /data/misc/zoneinfo/current does not exist. No action required.
+12-21 22:35:14.576   386   386 I init    : type=1400 audit(0.0:8): avc: denied { execute_no_trans } for uid=1002 path="/system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti" dev="mmcblk0p53" ino=2952 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+12-21 22:35:14.604   382   382 I sysinit : Running /system/etc/init.d/00banner
+12-21 22:35:14.624   384   384 I ServiceManagement: Removing namespace from process name android.hidl.allocator@1.0-service to allocator@1.0-s.
+12-21 22:35:14.653   386   386 I android.hardwar: type=1400 audit(0.0:9): avc: denied { call } for uid=1002 scontext=u:r:init:s0 tcontext=u:r:hwservicemanager:s0 tclass=binder permissive=1
+12-21 22:35:14.653   364   364 I hwservicemanage: type=1400 audit(0.0:10): avc: denied { search } for uid=1000 name="386" dev="proc" ino=4860 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+12-21 22:35:14.653   364   364 I hwservicemanage: type=1400 audit(0.0:11): avc: denied { read } for uid=1000 name="current" dev="proc" ino=6003 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+12-21 22:35:14.653   364   364 I hwservicemanage: type=1400 audit(0.0:12): avc: denied { open } for uid=1000 path="/proc/386/attr/current" dev="proc" ino=6003 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+12-21 22:35:14.653   364   364 I hwservicemanage: type=1400 audit(0.0:13): avc: denied { getattr } for uid=1000 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+12-21 22:35:14.656   386   386 I android.hardware.bluetooth@1.0-service: registering BT & FM services
+12-21 22:35:14.657   364   364 E SELinux : avc:  denied  { find } for interface=android.hardware.bluetooth::IBluetoothHci sid=u:r:init:s0 pid=386 scontext=u:r:init:s0 tcontext=u:object_r:hal_bluetooth_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:14.658   386   386 D vndksupport: Loading /vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so from current namespace instead of sphal namespace.
+12-21 22:35:14.672   391   391 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.allocator@2.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.673   364   364 I hwservicemanage: type=1400 audit(0.0:14): avc: denied { getattr } for uid=1000 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+12-21 22:35:14.673   386   386 I bluetooth@1.0-s: type=1400 audit(0.0:15): avc: denied { transfer } for uid=1002 scontext=u:r:init:s0 tcontext=u:r:hwservicemanager:s0 tclass=binder permissive=1
+12-21 22:35:14.673   364   364 I hwservicemanage: type=1400 audit(0.0:16): avc: denied { call } for uid=1000 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+12-21 22:35:14.676   386   386 I ServiceManagement: Removing namespace from process name android.hardware.bluetooth@1.0-service-qti to bluetooth@1.0-s.
+12-21 22:35:14.677   364   364 E SELinux : avc:  denied  { add } for interface=android.hardware.bluetooth::IBluetoothHci sid=u:r:init:s0 pid=386 scontext=u:r:init:s0 tcontext=u:object_r:hal_bluetooth_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:14.677   364   364 E SELinux : avc:  denied  { add } for interface=android.hidl.base::IBase sid=u:r:init:s0 pid=386 scontext=u:r:init:s0 tcontext=u:object_r:hidl_base_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:14.677   386   386 I android.hardware.bluetooth@1.0-service: Registration complete for android.hardware.bluetooth@1.0::IBluetoothHci/default.
+12-21 22:35:14.678   364   364 E SELinux : avc:  denied  { find } for interface=vendor.qti.hardware.fm::IFmHci sid=u:r:init:s0 pid=386 scontext=u:r:init:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:14.678   364   364 W /system/bin/hwservicemanager: getTransport: Cannot find entry vendor.qti.hardware.fm@1.0::IFmHci/default in either framework or device manifest.
+12-21 22:35:14.678   386   386 D vndksupport: Loading /vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.680   393   393 D vndksupport: Loading /vendor/lib64/hw/android.hardware.health@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.682   364   364 E SELinux : avc:  denied  { add } for interface=vendor.qti.hardware.fm::IFmHci sid=u:r:init:s0 pid=386 scontext=u:r:init:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:14.683   386   386 I android.hardware.bluetooth@1.0-service: Registration complete for vendor.qti.hardware.fm@1.0::IFmHci/default.
+12-21 22:35:14.684   391   391 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:14.686   402   402 I lineage : _ _                                       
+12-21 22:35:14.687   393   393 I ServiceManagement: Removing namespace from process name android.hardware.health@1.0-service to health@1.0-serv.
+12-21 22:35:14.689   393   393 I android.hardware.health@1.0-service: Registration complete for android.hardware.health@1.0::IHealth/default.
+12-21 22:35:14.692   391   391 I ServiceManagement: Removing namespace from process name android.hardware.graphics.allocator@2.0-service to allocator@2.0-s.
+12-21 22:35:14.693   391   391 I android.hardware.graphics.allocator@2.0-service: Registration complete for android.hardware.graphics.allocator@2.0::IAllocator/default.
+12-21 22:35:14.746   388   388 W /vendor/bin/hw/android.hardware.configstore@1.0-service: libminijail[388]: allowing syscall: connect
+12-21 22:35:14.746   388   388 W /vendor/bin/hw/android.hardware.configstore@1.0-service: libminijail[388]: allowing syscall: fcntl
+12-21 22:35:14.746   388   388 W /vendor/bin/hw/android.hardware.configstore@1.0-service: libminijail[388]: allowing syscall: sendto
+12-21 22:35:14.747   388   388 W /vendor/bin/hw/android.hardware.configstore@1.0-service: libminijail[388]: allowing syscall: socket
+12-21 22:35:14.747   388   388 W /vendor/bin/hw/android.hardware.configstore@1.0-service: libminijail[388]: allowing syscall: writev
+12-21 22:35:14.754   390   390 D vndksupport: Loading /vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.759   400   400 D vndksupport: Loading /vendor/lib64/hw/android.hardware.vibrator@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.759   364   364 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.sensors@1.0::ISensors/default in either framework or device manifest.
+12-21 22:35:14.761   388   388 W /vendor/bin/hw/android.hardware.configstore@1.0-service: libminijail[388]: logging seccomp filter failures
+12-21 22:35:14.761   400   400 D vndksupport: Loading /vendor/lib64/hw/vibrator.default.so from current namespace instead of sphal namespace.
+12-21 22:35:14.762   388   388 I ServiceManagement: Removing namespace from process name android.hardware.configstore@1.0-service to configstore@1.0.
+12-21 22:35:14.762   394   394 D vndksupport: Loading /vendor/lib64/hw/android.hardware.light@2.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.763   400   400 D         : Vibrator using timed_output
+12-21 22:35:14.769   398   398 D vndksupport: Loading /vendor/lib64/hw/android.hardware.sensors@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.771   390   390 D vndksupport: Loading /vendor/lib64/hw/gatekeeper.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:14.773   392   392 I android.hardwar: type=1400 audit(0.0:17): avc: denied { read write } for uid=1000 name="vndbinder" dev="tmpfs" ino=5747 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.773   392   392 I android.hardwar: type=1400 audit(0.0:18): avc: denied { open } for uid=1000 path="/dev/vndbinder" dev="tmpfs" ino=5747 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.773   392   392 I android.hardwar: type=1400 audit(0.0:19): avc: denied { ioctl } for uid=1000 path="/dev/vndbinder" dev="tmpfs" ino=5747 ioctlcmd=6209 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.776   394   394 E light   : light_open lights keyboard failed: -22
+12-21 22:35:14.776   394   394 E light   : Light passthrough failed to load legacy HAL.
+12-21 22:35:14.776   394   394 E light   : light_open lights buttons failed: -22
+12-21 22:35:14.776   394   394 E light   : Light passthrough failed to load legacy HAL.
+12-21 22:35:14.777   394   394 E light   : light_open lights attention failed: -22
+12-21 22:35:14.777   394   394 E light   : Light passthrough failed to load legacy HAL.
+12-21 22:35:14.778   394   394 E light   : light_open lights bluetooth failed: -22
+12-21 22:35:14.778   394   394 E light   : Light passthrough failed to load legacy HAL.
+12-21 22:35:14.778   394   394 E light   : light_open lights wifi failed: -22
+12-21 22:35:14.778   394   394 E light   : Light passthrough failed to load legacy HAL.
+12-21 22:35:14.781   400   400 I ServiceManagement: Removing namespace from process name android.hardware.vibrator@1.0-service to vibrator@1.0-se.
+12-21 22:35:14.783   392   392 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.787   400   400 I android.hardware.vibrator@1.0-service: Registration complete for android.hardware.vibrator@1.0::IVibrator/default.
+12-21 22:35:14.788   394   394 I ServiceManagement: Removing namespace from process name android.hardware.light@2.0-service to light@2.0-servi.
+12-21 22:35:14.788   409   409 I lineage : | (_)_ __   ___  __ _  __ _  ___  ___  ___ 
+12-21 22:35:14.792   392   392 D vndksupport: Loading /vendor/lib64/hw/hwcomposer.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:14.797   394   394 I android.hardware.light@2.0-service: Registration complete for android.hardware.light@2.0::ILight/default.
+12-21 22:35:14.799   390   390 D gatekeeper_device: HwGkOpen called
+12-21 22:35:14.809   395   395 D vndksupport: Loading /vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.816   422   422 I init    : type=1400 audit(0.0:20): avc: denied { execute_no_trans } for uid=0 path="/system/vendor/bin/sh" dev="mmcblk0p53" ino=3065 scontext=u:r:init:s0 tcontext=u:object_r:vendor_shell_exec:s0 tclass=file permissive=1
+12-21 22:35:14.823   407   407 I vendor.qti.hard: type=1400 audit(0.0:21): avc: denied { call } for uid=0 scontext=u:r:init:s0 tcontext=u:r:hwservicemanager:s0 tclass=binder permissive=1
+12-21 22:35:14.834   415   415 I irsc_util: Starting irsc tool
+12-21 22:35:14.836   389   389 I android.hardwar: type=1400 audit(0.0:22): avc: denied { read write } for uid=1013 name="vndbinder" dev="tmpfs" ino=5747 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.836   389   389 I android.hardwar: type=1400 audit(0.0:23): avc: denied { open } for uid=1013 path="/dev/vndbinder" dev="tmpfs" ino=5747 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.836   389   389 I android.hardwar: type=1400 audit(0.0:24): avc: denied { ioctl } for uid=1013 path="/dev/vndbinder" dev="tmpfs" ino=5747 ioctlcmd=6209 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.839   389   389 D android.hardware.drm@1.0-service: android.hardware.drm@1.0-service starting...
+12-21 22:35:14.843   395   395 D vndksupport: Loading /vendor/lib64/hw/memtrack.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:14.859   397   397 I android.hardware.power@1.0-service-qti: Power HAL Service 1.0 for QCOM is starting.
+12-21 22:35:14.859   397   397 I QCOM PowerHAL: QCOM power HAL initing.
+12-21 22:35:14.860   415   415 I irsc_util: type=1400 audit(0.0:25): avc: denied { create } for uid=0 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+12-21 22:35:14.860   415   415 I irsc_util: type=1400 audit(0.0:26): avc: denied { ioctl } for uid=0 path="socket:[12598]" dev="sockfs" ino=12598 ioctlcmd=c305 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+12-21 22:35:14.860   397   397 I ServiceManagement: Removing namespace from process name android.hardware.power@1.0-service-qti to power@1.0-servi.
+12-21 22:35:14.862   415   415 I irsc_util: Num of entries:293
+12-21 22:35:14.863   392   392 I HWC_UeventThrea: type=1400 audit(0.0:27): avc: denied { create } for uid=1000 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=netlink_kobject_uevent_socket permissive=1
+12-21 22:35:14.863   392   392 I HWC_UeventThrea: type=1400 audit(0.0:28): avc: denied { setopt } for uid=1000 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=netlink_kobject_uevent_socket permissive=1
+12-21 22:35:14.863   392   392 I HWC_UeventThrea: type=1400 audit(0.0:29): avc: denied { bind } for uid=1000 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=netlink_kobject_uevent_socket permissive=1
+12-21 22:35:14.863   392   392 I android.hardwar: type=1400 audit(0.0:30): avc: denied { ioctl } for uid=1000 path="/dev/vndbinder" dev="tmpfs" ino=5747 ioctlcmd=6201 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.863   392   392 I android.hardwar: type=1400 audit(0.0:31): avc: denied { call } for uid=1000 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:r:vndservicemanager:s0 tclass=binder permissive=1
+12-21 22:35:14.863   392   392 I android.hardwar: type=1400 audit(0.0:32): avc: denied { transfer } for uid=1000 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:r:vndservicemanager:s0 tclass=binder permissive=1
+12-21 22:35:14.863   365   365 I vndservicemanag: type=1400 audit(0.0:33): avc: denied { search } for uid=1000 name="392" dev="proc" ino=12293 scontext=u:r:vndservicemanager:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=dir permissive=1
+12-21 22:35:14.863   365   365 I vndservicemanag: type=1400 audit(0.0:34): avc: denied { read } for uid=1000 name="current" dev="proc" ino=2872 scontext=u:r:vndservicemanager:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=file permissive=1
+12-21 22:35:14.863   365   365 I vndservicemanag: type=1400 audit(0.0:35): avc: denied { open } for uid=1000 path="/proc/392/attr/current" dev="proc" ino=2872 scontext=u:r:vndservicemanager:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=file permissive=1
+12-21 22:35:14.863   365   365 I vndservicemanag: type=1400 audit(0.0:36): avc: denied { getattr } for uid=1000 scontext=u:r:vndservicemanager:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=process permissive=1
+12-21 22:35:14.863   415   415 I irsc_util: Ending irsc tool
+12-21 22:35:14.864   405   405 I /vendor/bin/hw/vendor.lineage.livedisplay@1.0-service-sdm: LiveDisplay HAL service is starting.
+12-21 22:35:14.865   405   405 I ServiceManagement: Removing namespace from process name vendor.lineage.livedisplay@1.0-service-sdm to livedisplay@1.0.
+12-21 22:35:14.873   364   364 I hwservicemanage: type=1400 audit(0.0:37): avc: denied { search } for uid=1000 name="407" dev="proc" ino=4948 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+12-21 22:35:14.873   364   364 I hwservicemanage: type=1400 audit(0.0:38): avc: denied { read } for uid=1000 name="current" dev="proc" ino=2939 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+12-21 22:35:14.873   364   364 I hwservicemanage: type=1400 audit(0.0:39): avc: denied { open } for uid=1000 path="/proc/407/attr/current" dev="proc" ino=2939 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+12-21 22:35:14.875   399   399 D vndksupport: Loading /vendor/lib64/hw/android.hardware.thermal@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.876   398   398 I android.hardwar: type=1400 audit(0.0:40): avc: denied { read } for uid=1000 name="devices" dev="sysfs" ino=10212 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+12-21 22:35:14.876   398   398 I android.hardwar: type=1400 audit(0.0:41): avc: denied { open } for uid=1000 path="/sys/bus/msm_subsys/devices" dev="sysfs" ino=10212 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+12-21 22:35:14.876   398   398 I android.hardwar: type=1400 audit(0.0:42): avc: denied { read } for uid=1000 name="name" dev="sysfs" ino=21288 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+12-21 22:35:14.876   398   398 I android.hardwar: type=1400 audit(0.0:43): avc: denied { open } for uid=1000 path="/sys/devices/soc/1de0000.qcom,venus/subsys0/name" dev="sysfs" ino=21288 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+12-21 22:35:14.876   397   397 I power@1.0-servi: type=1400 audit(0.0:44): avc: denied { transfer } for uid=1000 scontext=u:r:init:s0 tcontext=u:r:hwservicemanager:s0 tclass=binder permissive=1
+12-21 22:35:14.876   398   398 I android.hardwar: type=1400 audit(0.0:45): avc: denied { read write } for uid=1000 name="diag" dev="tmpfs" ino=12140 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.876   398   398 I android.hardwar: type=1400 audit(0.0:46): avc: denied { open } for uid=1000 path="/dev/diag" dev="tmpfs" ino=12140 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:14.876   407   407 D vndksupport: Loading /vendor/lib64/hw/vendor.qti.hardware.iop@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.878   395   395 I ServiceManagement: Removing namespace from process name android.hardware.memtrack@1.0-service to memtrack@1.0-se.
+12-21 22:35:14.878   389   389 D vndksupport: Loading /vendor/lib/hw/android.hardware.drm@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.879   399   399 D vndksupport: Loading /vendor/lib64/hw/thermal.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:14.880   398   398 E libsensor1: check_sensors_enabled: open error: settings file "/persist/sensors/sensors_settings", errno 2
+12-21 22:35:14.880   398   398 E libsensor1: check_sensors_enabled: inotify error: settings path "/persist/sensors", errno 2
+12-21 22:35:14.880   398   398 E libsensor1: check_sensors_enabled: Sensors enabled = false
+12-21 22:35:14.882   395   395 I android.hardware.memtrack@1.0-service: Registration complete for android.hardware.memtrack@1.0::IMemtrack/default.
+12-21 22:35:14.882   364   364 E SELinux : avc:  denied  { add } for interface=android.hardware.power::IPower sid=u:r:init:s0 pid=397 scontext=u:r:init:s0 tcontext=u:object_r:hal_power_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:14.883   397   397 I android.hardware.power@1.0-service-qti: Successfully registered IPower
+12-21 22:35:14.883   387   387 D android.hardware.cas@1.0-service: android.hardware.cas@1.0-service starting...
+12-21 22:35:14.883   387   387 I ServiceManagement: Removing namespace from process name android.hardware.cas@1.0-service to cas@1.0-service.
+12-21 22:35:14.884   364   364 E SELinux : avc:  denied  { add } for interface=vendor.lineage.power::ILineagePower sid=u:r:init:s0 pid=397 scontext=u:r:init:s0 tcontext=u:object_r:hal_lineage_power_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:14.886   413   413 D QSEECOMD: : qseecom listener services process entry PPID = 1
+12-21 22:35:14.886   413   413 E QSEECOMD: : Listener: index = 0, hierarchy = 0
+12-21 22:35:14.887   397   397 I android.hardware.power@1.0-service-qti: Successfully registered ILineagePower
+12-21 22:35:14.887   397   397 I android.hardware.power@1.0-service-qti: Power Service is ready
+12-21 22:35:14.887   416   416 I rmt_storage: Shared memory initialised successfully.
+12-21 22:35:14.887   416   416 I rmt_storage: Registering modemst1: 0x4a /boot/modem_fs1
+12-21 22:35:14.887   416   416 I rmt_storage: Registering modemst2: 0x4b /boot/modem_fs2
+12-21 22:35:14.887   416   416 I rmt_storage: Registering fsc: 0xff /boot/modem_fsc
+12-21 22:35:14.887   416   416 I rmt_storage: Registering fsg: 0x58 /boot/modem_fsg
+12-21 22:35:14.887   416   416 I rmt_storage: 4 GPT partitions found
+12-21 22:35:14.888   398   398 E libsensor1: check_sensors_enable: sensors settings file not available
+12-21 22:35:14.888   398   398 E libsensor1: wait_for_service: sensors setting disabled sensors
+12-21 22:35:14.888   365   365 E SELinux : avc:  denied  { add } for service=display.qservice pid=392 uid=1000 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_android_vndservice:s0 tclass=service_manager permissive=1
+12-21 22:35:14.888   365   365 E SELinux : avc:  denied  { find } for service=display.qservice pid=392 uid=1000 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_android_vndservice:s0 tclass=service_manager permissive=1
+12-21 22:35:14.893   424   424 I lineage : | | | '_ \ / _ \/ _` |/ _` |/ _ \/ _ \/ __|
+12-21 22:35:14.895   404   404 I ServiceManagement: Removing namespace from process name vendor.display.color@1.0-service to color@1.0-servi.
+12-21 22:35:14.896   398   398 E qti_sensors_hal: sensor1 open failed!
+12-21 22:35:14.896   398   398 I         : Loaded library from sensors.ssc.so
+12-21 22:35:14.896   416   416 I rmt_storage: Capset success!
+12-21 22:35:14.896   398   398 E /vendor/bin/hw/android.hardware.sensors@1.0-service: HAL specifies version 1.4, but does not implement set_operation_mode()
+12-21 22:35:14.898   399   399 I ServiceManagement: Removing namespace from process name android.hardware.thermal@1.0-service to thermal@1.0-ser.
+12-21 22:35:14.899   364   364 E SELinux : avc:  denied  { add } for interface=vendor.display.config::IDisplayConfig sid=u:r:hal_graphics_composer_default:s0 pid=392 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:default_android_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:14.899   421   421 E MSM-irqbalance: WARNING: Too many priorities specified.
+12-21 22:35:14.899   392   392 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:14.901   413   413 D QSEECOMD: : Init dlopen(librpmb.so, RTLD_NOW) succeeds
+12-21 22:35:14.901   413   413 D QSEECOMD: : Init::Init dlsym(g_FSHandle rpmb_init_service) succeeds
+12-21 22:35:14.902   413   413 I rpmb_emmc: RPMB Mult (512-bytes sector) = 8192, Rel_sec_cnt = 32
+12-21 22:35:14.902   413   413 E DrmLibRpmb: rpmb_init succeeded! with ret = 0
+12-21 22:35:14.902   413   413 D QSEECOMD: : Init rpmb_init_service ret = 0
+12-21 22:35:14.902   413   413 D QSEECOMD: : RPMB system services: init (Listener ID = 8192)
+12-21 22:35:14.902   413   413 E QSEECOMD: : Listener: index = 1, hierarchy = 0
+12-21 22:35:14.902   407   407 E         : IOP-HAL: inside HIDL_FETCH_IIop
+12-21 22:35:14.902   407   407 E         : IOP-HAL: boot Address of iop object
+12-21 22:35:14.903   421   421 I MSM-irqbalance: msm-irq_balance (1.3) initialized
+12-21 22:35:14.903   421   421 I MSM-irqbalance: Configuration
+12-21 22:35:14.903   421   421 I MSM-irqbalance: Rate: 0.2 Hz
+12-21 22:35:14.903   421   421 I MSM-irqbalance: Decay Factor: 75.0
+12-21 22:35:14.903   421   421 I MSM-irqbalance: Balancing Factor: 0.1
+12-21 22:35:14.903   421   421 I MSM-irqbalance: Debug Log: OFF
+12-21 22:35:14.903   421   421 I MSM-irqbalance: Cfg file: /vendor/etc/msm_irqbalance.conf
+12-21 22:35:14.903   421   421 I MSM-irqbalance: CPU PRIO: CPU0: 0 CPU1: 0 CPU2: 0 CPU3: 0 
+12-21 22:35:14.903   421   421 I MSM-irqbalance: Ignored IRQs: 3 5 
+12-21 22:35:14.904   398   398 I ServiceManagement: Removing namespace from process name android.hardware.sensors@1.0-service to sensors@1.0-ser.
+12-21 22:35:14.904   413   413 D QSEECOMD: : Init dlopen(libssd.so, RTLD_NOW) succeeds
+12-21 22:35:14.904   413   413 D QSEECOMD: : Init::Init dlsym(g_FSHandle ssd_init_service) succeeds
+12-21 22:35:14.904   413   413 E SSD     : ssd_init_service succeeded!
+12-21 22:35:14.904   413   413 D QSEECOMD: : Init ssd_init_service ret = 0
+12-21 22:35:14.905   413   413 D QSEECOMD: : SSD system services: init (Listener ID = 12288)
+12-21 22:35:14.905   413   413 E QSEECOMD: : Listener: index = 2, hierarchy = 0
+12-21 22:35:14.905   405   405 I /vendor/bin/hw/vendor.lineage.livedisplay@1.0-service-sdm: LiveDisplay HAL service is ready.
+12-21 22:35:14.907   399   399 I android.hardware.thermal@1.0-service: Registration complete for android.hardware.thermal@1.0::IThermal/default.
+12-21 22:35:14.907   398   431 E libsensor1: check_sensors_enable: sensors settings file not available
+12-21 22:35:14.907   398   431 E libsensor1: wait_for_service: sensors setting disabled sensors
+12-21 22:35:14.909   398   398 I android.hardware.sensors@1.0-service: Registration complete for android.hardware.sensors@1.0::ISensors/default.
+12-21 22:35:14.911   392   392 I SDM     : ExtensionInterface::CreateExtensionInterface: 
+12-21 22:35:14.911   392   392 I SDM     : SDM-EXTENSION Version: Date: 02/24/18, Commit: 5d1f150, Change: I7dcca2690b
+12-21 22:35:14.912   392   392 I SDM     : HWInfo::GetHWResourceInfo: SDE Version = 5, SDE Revision = 100f0000, RGB = 2, VIG = 1, DMA = 1, Cursor = 1
+12-21 22:35:14.912   392   392 I SDM     : HWInfo::GetHWResourceInfo: Upscale Ratio = 20, Downscale Ratio = 4, Blending Stages = 4
+12-21 22:35:14.912   392   392 I SDM     : HWInfo::GetHWResourceInfo: SourceSplit = 0 QSEED3 = 0
+12-21 22:35:14.912   392   392 I SDM     : HWInfo::GetHWResourceInfo: BWC = 0, UBWC = 0, Decimation = 1, Tile Format = 0 Concurrent Writeback = 0
+12-21 22:35:14.912   392   392 I SDM     : HWInfo::GetHWResourceInfo: MaxLowBw = 1800000 , MaxHighBw = 1800000
+12-21 22:35:14.912   392   392 I SDM     : HWInfo::GetHWResourceInfo: MaxPipeBw = 1000000 KBps, MaxSDEClock = 320000000 Hz, ClockFudgeFactor = 1.050000
+12-21 22:35:14.912   392   392 I SDM     : HWInfo::GetHWResourceInfo: Prefill factors: Tiled_NV12 = 8, Tiled = 4, Linear = 1, Scale = 1, Fudge_factor = 2
+12-21 22:35:14.912   392   392 I SDM     : HWInfo::GetMDSSRotatorInfo: MDSS Rotator: Count = 1, Downscale = 1, Min_downscale = 2.000000
+12-21 22:35:14.913   392   392 I SDM     : HWInfo::GetHWResourceInfo: Has Support for multiple bw limits shown below
+12-21 22:35:14.913   392   392 I SDM     : HWInfo::GetHWResourceInfo: Mode-index=0  total_bw_limit=3100000 and pipe_bw_limit=1000000
+12-21 22:35:14.913   392   392 I SDM     : HWInfo::GetHWResourceInfo: Mode-index=1  total_bw_limit=1700000 and pipe_bw_limit=1000000
+12-21 22:35:14.913   392   392 I SDM     : HWInfo::GetHWResourceInfo: Mode-index=2  total_bw_limit=1800000 and pipe_bw_limit=1000000
+12-21 22:35:14.913   392   392 I SDM     : HWInfo::GetHWResourceInfo: Mode-index=3  total_bw_limit=1800000 and pipe_bw_limit=1000000
+12-21 22:35:14.913   392   392 I SDM     : SessionManager::SessionManager: Allocate buffers synchronously = 0
+12-21 22:35:14.918   413   413 E QSEECOMD: : Init dlopen(libsecureui.so, RLTD_NOW) is failed.... dlopen failed: library "vendor.qti.hardware.tui_comm@1.0_vendor.so" not found
+12-21 22:35:14.918   413   413 D QSEECOMD: : SEC_UI_INIT failed, shall not start secure ui listener
+12-21 22:35:14.920   403   403 I android.hardware.wifi@1.0-service: Wifi Hal is booting up...
+12-21 22:35:14.921   413   413 D QSEECOMD: : Parent qseecom daemon process paused!! 
+12-21 22:35:14.926   392   392 I SDM     : CoreInterface::CreateCore: Open interface handle = 0x7e8d85b000
+12-21 22:35:14.926   392   392 I SDM     : HWCSession::Register: Set uevent listener = 0x7e8d872000
+12-21 22:35:14.926   392   392 I SDM     : HWInfo::GetFirstDisplayInterfaceType: First display is internal display
+12-21 22:35:14.926   392   392 I SDM     : CPUHint::Init: Invalid CPU Hint Pre-enable Window -1
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::Init: access(/dev/graphics/fb0) successful
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::PopulateHWPanelInfo: Device type = 0, Display Port = 1, Display Mode = 1, Device Node = 0, Is Primary = 1
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::PopulateHWPanelInfo: Partial Update = 0, supported roi_count =1, Dynamic FPS = 0
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::PopulateHWPanelInfo: Align: left = 0, width = 0, top = 0, height = 0
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::PopulateHWPanelInfo: ROI: min_width = 0, min_height = 0, need_merge = 0
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::PopulateHWPanelInfo: FPS: min = 0, max =0
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::PopulateHWPanelInfo: Ping Pong Split = 0
+12-21 22:35:14.927   392   392 I SDM     : HWDevice::PopulateHWPanelInfo: Left Split = 0, Right Split = 0
+12-21 22:35:14.934   434   434 D QSEECOMD: : qseecom listener service threads starting!!! 
+12-21 22:35:14.934   434   434 D QSEECOMD: : Total listener services to start = 9
+12-21 22:35:14.934   434   434 E QSEECOMD: : Listener: index = 0, hierarchy = 1
+12-21 22:35:14.934   434   434 D QSEECOMD: : Init dlopen(librpmb.so, RTLD_NOW) succeeds
+12-21 22:35:14.934   434   434 D QSEECOMD: : Init::Init dlsym(g_FSHandle rpmb_start) succeeds
+12-21 22:35:14.934   434   434 D QSEECOMAPI: QSEECom_register_listener 8192 sb_length = 0x6400
+12-21 22:35:14.936   434   434 D QSEECOMD: : Init rpmb_start ret = 0
+12-21 22:35:14.936   434   434 D QSEECOMD: : RPMB system services: Started (Listener ID = 8192)
+12-21 22:35:14.936   434   434 E QSEECOMD: : Listener: index = 1, hierarchy = 1
+12-21 22:35:14.936   434   434 D QSEECOMD: : Init dlopen(libssd.so, RTLD_NOW) succeeds
+12-21 22:35:14.936   434   434 D QSEECOMD: : Init::Init dlsym(g_FSHandle ssd_start) succeeds
+12-21 22:35:14.936   434   434 D QSEECOMAPI: QSEECom_register_listener 12288 sb_length = 0x5000
+12-21 22:35:14.937   434   434 D QSEECOMD: : Init ssd_start ret = 0
+12-21 22:35:14.937   434   434 D QSEECOMD: : SSD system services: Started (Listener ID = 12288)
+12-21 22:35:14.937   434   434 E QSEECOMD: : Listener: index = 2, hierarchy = 1
+12-21 22:35:14.938   392   392 I SDM     : HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+12-21 22:35:14.939   392   392 I SDM     : HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+12-21 22:35:14.939   392   392 W SDM     : HWDevice::GetHWPanelInfoByNode: Failed to open msm_fb_panel_info node device node 2
+12-21 22:35:14.939   392   392 W SDM     : HWDevice::GetHWPanelInfoByNode: Failed to open msm_fb_panel_info node device node 3
+12-21 22:35:14.939   425   425 I lowmemorykiller: Using in-kernel low memory killer interface
+12-21 22:35:14.939   434   434 E QSEECOMD: : Init dlopen(libsecureui.so, RLTD_NOW) is failed.... dlopen failed: library "vendor.qti.hardware.tui_comm@1.0_vendor.so" not found
+12-21 22:35:14.939   392   392 I SDM     : HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+12-21 22:35:14.939   434   434 E QSEECOMD: : Listener: index = 3, hierarchy = 1
+12-21 22:35:14.940   392   392 I SDM     : HWDevice::GetHWPanelMaxBrightnessFromNode: Max brightness level = 255
+12-21 22:35:14.940   392   392 W SDM     : HWDevice::GetHWPanelInfoByNode: Failed to open msm_fb_panel_info node device node 2
+12-21 22:35:14.940   392   392 W SDM     : HWDevice::GetHWPanelInfoByNode: Failed to open msm_fb_panel_info node device node 3
+12-21 22:35:14.940   392   392 I SDM     : StrategyImpl::SetIdleTimeoutMs: Idle timeout: active = 70, inactive = 520
+12-21 22:35:14.940   392   392 W SDM     : ColorManager::CreateColorManagerProxy: PAV2 version is versions = 11, version = 11 
+12-21 22:35:14.943   423   440 E Sensors : sns_fsa_la.c(84):realpath failed for directory name2
+12-21 22:35:14.943   423   440 E Sensors : sns_reg_la.c(289):Error creating registry file
+12-21 22:35:14.943   423   440 W Sensors : sns_reg_mr.c(367):File init failed 5
+12-21 22:35:14.947   392   392 W SDM     : DisplayBase::Init: InitColorModes failed for display = 0
+12-21 22:35:14.947   392   392 W SDM     : HWEvents::InitializePollFd: open failed for display=0 event=idle_power_collapse, error=No such file or directory
+12-21 22:35:14.947   392   392 I SDM     : HWCDisplay::Init: Display created with id: 0
+12-21 22:35:14.948   392   392 W SDM     : HWCDisplay::PopulateColorModes: GetColorModeCount failed, use native color mode
+12-21 22:35:14.948   392   392 I SDM     : DisplayBase::SetFrameBufferConfig: New framebuffer resolution (720x1280)
+12-21 22:35:14.955   385   385 D vndksupport: Loading /vendor/lib/hw/android.hardware.audio@2.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.958   414   414 D eSEPowerManagerServer: loading eseservice
+12-21 22:35:14.958   414   414 D QSEECOMAPI: QSEECom_get_handle sb_length = 0x400
+12-21 22:35:14.958   414   414 D QSEECOMAPI: App is not loaded in QSEE
+12-21 22:35:14.958   414   414 E QSEECOMAPI: Error::Cannot open the file /system/etc/firmware/eseservice.mdt errno = 2
+12-21 22:35:14.958   414   414 E QSEECOMAPI: Error::Loading image failed with ret = -1
+12-21 22:35:14.958   414   414 E eSEPowerManagerServer: loading eseservice failed
+12-21 22:35:14.958   414   414 D eSEPowerManagerServer: IeSEPowerManager is starting
+12-21 22:35:14.959   417   417 I tftp_server: Starting...
+12-21 22:35:14.959   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_os_la.c, 267] lchown failed for path /persist/rfs with error -2 (No such file or directory)
+12-21 22:35:14.959   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_os_la.c, 267] lchown failed for path /persist/hlos_rfs with error -2 (No such file or directory)
+12-21 22:35:14.960   363   363 E SELinux : avc:  denied  { add } for service=eSEPowerManagerService pid=414 uid=1000 scontext=u:r:init:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager permissive=1
+12-21 22:35:14.968   434   434 D QSEECOMD: : Init dlopen(libdrmtime.so, RTLD_NOW) succeeds
+12-21 22:35:14.968   434   434 D QSEECOMD: : Init::Init dlsym(g_FSHandle atime_start) succeeds
+12-21 22:35:14.968   434   434 D DrmLibTime: QSEE Time Listener: atime_start
+12-21 22:35:14.968   434   434 D QSEECOMAPI: QSEECom_register_listener 11 sb_length = 0x5000
+12-21 22:35:14.969   434   434 D DrmLibTime: registering fs service to QSEECom is done!
+12-21 22:35:14.969   434   434 D DrmLibTime: begin to create a thread!
+12-21 22:35:14.969   432   432 I lineage : | | | | | |  __/ (_| | (_| |  __/ (_) \__ \
+12-21 22:35:14.969   434   434 D DrmLibTime: Creating a pthread in atime_start is done! return 0
+12-21 22:35:14.969   434   434 D QSEECOMD: : Init atime_start ret = 0
+12-21 22:35:14.969   434   434 D QSEECOMD: : time services: Started (Listener ID = 11)
+12-21 22:35:14.969   434   434 E QSEECOMD: : Listener: index = 4, hierarchy = 1
+12-21 22:35:14.969   434   434 D QSEECOMD: : Init dlopen(libdrmfs.so, RTLD_NOW) succeeds
+12-21 22:35:14.969   434   434 D QSEECOMD: : Init::Init dlsym(g_FSHandle fs_start) succeeds
+12-21 22:35:14.969   434   434 D QSEECOMAPI: QSEECom_register_listener 10 sb_length = 0x5000
+12-21 22:35:14.974   434   434 D QSEECOMD: : Init fs_start ret = 0
+12-21 22:35:14.974   434   434 D QSEECOMD: : file system services: Started (Listener ID = 10)
+12-21 22:35:14.974   434   434 E QSEECOMD: : Listener: index = 5, hierarchy = 1
+12-21 22:35:14.974   434   434 D QSEECOMD: : Init dlopen(libdrmfs.so, RTLD_NOW) succeeds
+12-21 22:35:14.974   434   434 D QSEECOMD: : Init::Init dlsym(g_FSHandle gpfs_start) succeeds
+12-21 22:35:14.974   434   434 D QSEECOMAPI: QSEECom_register_listener 28672 sb_length = 0x7e000
+12-21 22:35:14.975   434   446 D DrmLibTime: QSEE Time Listener: dispatch
+12-21 22:35:14.975   434   446 D DrmLibTime: before calling ioctl to read the next time_cmd
+12-21 22:35:14.976   364   364 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.thermal@1.1::IThermal/default in either framework or device manifest.
+12-21 22:35:14.977   385   385 I ServiceManagement: Removing namespace from process name android.hardware.audio@2.0-service to audio@2.0-servi.
+12-21 22:35:14.978   434   434 D QSEECOMD: : Init gpfs_start ret = 0
+12-21 22:35:14.978   434   434 D QSEECOMD: : gpfile system services: Started (Listener ID = 28672)
+12-21 22:35:14.978   434   434 E QSEECOMD: : Listener: index = 6, hierarchy = 1
+12-21 22:35:14.978   385   385 I audiohalservice: Registration complete for android.hardware.audio@2.0::IDevicesFactory/default.
+12-21 22:35:14.979   385   385 D vndksupport: Loading /vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:14.987   427   427 W thermalserviced: Unable to get Thermal HAL V1.1, vendor thermal event notification not available
+12-21 22:35:14.997   407   407 E         : IOP-HAL: loading library is done
+12-21 22:35:14.998   407   407 I ServiceManagement: Removing namespace from process name vendor.qti.hardware.iop@1.0-service to iop@1.0-service.
+12-21 22:35:14.999   448   448 I lineage : |_|_|_| |_|\___|\__,_|\__, |\___|\___/|___/
+12-21 22:35:15.001   407   407 I vendor.qti.hardware.iop@1.0-service: Registration complete for vendor.qti.hardware.iop@1.0::IIop/default.
+12-21 22:35:15.002   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/modem] [File exists]
+12-21 22:35:15.002   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/modem] [Operation not permitted]
+12-21 22:35:15.002   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/modem] [Operation not permitted]
+12-21 22:35:15.002   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/modem/] [File exists]
+12-21 22:35:15.002   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/modem/] [Operation not permitted]
+12-21 22:35:15.006   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/lpass] [File exists]
+12-21 22:35:15.006   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/lpass] [Operation not permitted]
+12-21 22:35:15.006   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/lpass] [Operation not permitted]
+12-21 22:35:15.006   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/lpass/] [File exists]
+12-21 22:35:15.006   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/lpass/] [Operation not permitted]
+12-21 22:35:15.008   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/tn] [File exists]
+12-21 22:35:15.008   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/tn] [Operation not permitted]
+12-21 22:35:15.008   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/tn] [Operation not permitted]
+12-21 22:35:15.008   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/tn/] [File exists]
+12-21 22:35:15.008   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/tn/] [Operation not permitted]
+12-21 22:35:15.008   418   418 I PerMgrSrv: Adding entry for modem : offTimeout : 500 ackTimeout : 200
+12-21 22:35:15.008   434   434 D QSEECOMD: : Init dlopen(libqisl.so, RTLD_NOW) succeeds
+12-21 22:35:15.008   434   434 D QSEECOMD: : Init::Init dlsym(g_FSHandle qisl_start) succeeds
+12-21 22:35:15.009   385   385 I audiohalservice: Registration complete for android.hardware.audio.effect@2.0::IEffectsFactory/default.
+12-21 22:35:15.009   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/slpi] [File exists]
+12-21 22:35:15.009   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/slpi] [Operation not permitted]
+12-21 22:35:15.009   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/slpi] [Operation not permitted]
+12-21 22:35:15.009   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [17] [/data/vendor/tombstones/rfs/slpi/] [File exists]
+12-21 22:35:15.009   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [1] [/data/vendor/tombstones/rfs/slpi/] [Operation not permitted]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/shared] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.010   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/shared/) errno = -30 (Read-only file system)
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/shared/] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm/mpss] [No such file or directory]
+12-21 22:35:15.010   364   364 W /system/bin/hwservicemanager: getTransport: Cannot find entry android.hardware.soundtrigger@2.0::ISoundTriggerHw/default in either framework or device manifest.
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.010   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/msm/mpss/) errno = -30 (Read-only file system)
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm/mpss/] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm/adsp] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.010   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/msm/adsp/) errno = -30 (Read-only file system)
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm/adsp/] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm/slpi] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.010   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/msm/slpi/) errno = -30 (Read-only file system)
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/msm/slpi/] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm/mpss] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.010   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/mdm/mpss/) errno = -30 (Read-only file system)
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm/mpss/] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm/adsp] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.010   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/mdm/adsp/) errno = -30 (Read-only file system)
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm/adsp/] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm/slpi] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm] [No such file or directory]
+12-21 22:35:15.010   406   406 I LocSvc_HIDL_vendor.qti.gnss@1.0-service: main
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.010   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/mdm/slpi/) errno = -30 (Read-only file system)
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm/slpi/] [No such file or directory]
+12-21 22:35:15.010   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm/tn] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.011   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/mdm/tn/) errno = -30 (Read-only file system)
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/mdm/tn/] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/apq/gnss] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/apq] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/rfs] [Read-only file system]
+12-21 22:35:15.011   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 237] Failed to auto_dir for(/persist/rfs/apq/gnss/) errno = -30 (Read-only file system)
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/rfs/apq/gnss/] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/hlos_rfs/shared] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [2] [/persist/hlos_rfs/shared] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 149] chown gid failed: [2] [/persist/hlos_rfs/shared] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [30] [/persist/hlos_rfs] [Read-only file system]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [2] [/persist/hlos_rfs] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 149] chown gid failed: [2] [/persist/hlos_rfs] [No such file or directory]
+12-21 22:35:15.011   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server_folders_la.c, 198] Failed to auto_dir for(/persist/hlos_rfs/shared/) errno = -30 (Read-only file system)
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 121] mkdir failed: [2] [/persist/hlos_rfs/shared/] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 141] chown failed: [2] [/persist/hlos_rfs/shared/] [No such file or directory]
+12-21 22:35:15.011   417   417 I tftp_server: pid=417 tid=417 tftp-server : INF :[tftp_os_la.c, 149] chown gid failed: [2] [/persist/hlos_rfs/shared/] [No such file or directory]
+12-21 22:35:15.011   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server.c, 578] Server folder init failed! error = 1.
+12-21 22:35:15.011   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server.c, 579] Attempting to continue.... some paths maybe inaccessible.
+12-21 22:35:15.012   418   418 I PerMgrSrv: Peripheral Mananager service start
+12-21 22:35:15.012   418   418 I PerMgrSrv: power-off timeout 500,ms; event-ack timeout 200,ms; debug-mode false
+12-21 22:35:15.012   418   418 I PerMgrSrv: Statistics for : modem
+12-21 22:35:15.012   418   418 I PerMgrSrv: modem: Current State : is off-line
+12-21 22:35:15.012   418   418 I PerMgrSrv: modem: Voter/Listener count : 0/0
+12-21 22:35:15.012   418   418 I PerMgrSrv: modem: Power on count : 0
+12-21 22:35:15.012   418   418 I PerMgrSrv: modem: Power off count: 0
+12-21 22:35:15.012   418   418 I PerMgrSrv: modem: Client list:
+12-21 22:35:15.013   434   452 I QISL    : QSEE Interrupt Service Listener Thread is started
+12-21 22:35:15.013   434   452 D QSEECOMAPI: QSEECom_register_listener 36864 sb_length = 0x1f4
+12-21 22:35:15.013   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server.c, 206] Open of  /vendor/rfs/msm/mpss/shared/server_info.txt failed with -2
+12-21 22:35:15.014   417   417 E tftp_server: pid=417 tid=417 tftp-server : ERR :[tftp_server.c, 231] Info file creation failed..!
+12-21 22:35:15.014   434   452 I QISL    : QSEE Interrupt Service Listener was activated successfully
+12-21 22:35:15.014   434   434 D QSEECOMD: : Init qisl_start ret = 0
+12-21 22:35:15.014   434   434 D QSEECOMD: : interrupt services: Started (Listener ID = 36864)
+12-21 22:35:15.014   434   434 E QSEECOMD: : Listener: index = 7, hierarchy = 1
+12-21 22:35:15.014   364   364 E SELinux : avc:  denied  { find } for interface=android.hardware.gnss::IGnss sid=u:r:init:s0 pid=406 scontext=u:r:init:s0 tcontext=u:object_r:hal_gnss_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:15.015   406   406 D vndksupport: Loading /vendor/lib64/hw/android.hardware.gnss@1.0-impl-qti.so from current namespace instead of sphal namespace.
+12-21 22:35:15.016   434   434 D QSEECOMD: : Init dlopen(libspl.so, RTLD_NOW) succeeds
+12-21 22:35:15.017   434   434 D QSEECOMD: : Init::Init dlsym(g_FSHandle spl_start) succeeds
+12-21 22:35:15.017   434   434 D SPL     : Call QSEECom_register_listener()
+12-21 22:35:15.017   434   434 D QSEECOMAPI: QSEECom_register_listener 45056 sb_length = 0x400
+12-21 22:35:15.017   385   385 E audiohalservice: Could not get passthrough implementation for android.hardware.soundtrigger@2.0::ISoundTriggerHw/default.
+12-21 22:35:15.017   385   385 E audiohalservice: Error while registering soundtrigger service: 1
+12-21 22:35:15.019   389   389 I ServiceManagement: Removing namespace from process name android.hardware.drm@1.0-service to drm@1.0-service.
+12-21 22:35:15.020   434   434 D SPL     : Registered listener sucessfully!
+12-21 22:35:15.020   434   434 D SPL     : pipe read-fd [27] write-fd [28]
+12-21 22:35:15.020   434   434 D SPL     : Create thread
+12-21 22:35:15.020   434   434 D SPL     : Thread created sucessfully.
+12-21 22:35:15.020   434   434 D QSEECOMD: : Init spl_start ret = 0
+12-21 22:35:15.020   434   434 D QSEECOMD: : secure processor services: Started (Listener ID = 45056)
+12-21 22:35:15.020   434   434 E QSEECOMD: : Listener: index = 8, hierarchy = 1
+12-21 22:35:15.021   389   389 I android.hardware.drm@1.0-service: Registration complete for android.hardware.drm@1.0::IDrmFactory/default.
+12-21 22:35:15.023   389   389 D vndksupport: Loading /vendor/lib/hw/android.hardware.drm@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:15.023   410   410 E ANDR-PERF-TARGET-INIT: Inside InitializeTarget
+12-21 22:35:15.024   410   410 E ANDR-PERF-TARGET-INIT: Init msm8917
+12-21 22:35:15.025   434   434 D QSEECOMD: : Init dlopen(libGPreqcancel.so, RTLD_NOW) succeeds
+12-21 22:35:15.025   434   434 D QSEECOMD: : Init::Init dlsym(g_FSHandle gp_reqcancel_start) succeeds
+12-21 22:35:15.025   434   434 D QSEECOMAPI: QSEECom_register_listener 4352 sb_length = 0x5000
+12-21 22:35:15.026   389   389 I ServiceManagement: Removing namespace from process name android.hardware.drm@1.0-service to drm@1.0-service.
+12-21 22:35:15.026   418   454 I PerMgrSrv: QMI service start
+12-21 22:35:15.027   434   434 D QSEECOMD: : Init gp_reqcancel_start ret = 0
+12-21 22:35:15.027   434   434 D QSEECOMD: : gp request cancellation services: Started (Listener ID = 4352)
+12-21 22:35:15.029   434   457 D SPL     : spl_dispatch() started
+12-21 22:35:15.030   434   457 D SPL     : ==== Wait For Request ======
+12-21 22:35:15.030   389   389 I android.hardware.drm@1.0-service: Registration complete for android.hardware.drm@1.0::ICryptoFactory/default.
+12-21 22:35:15.038   410   410 E ANDR-PERF-OPTSDATA: Error: core_ctl_cpu is not initialized for this target
+12-21 22:35:15.038   410   410 E ANDR-PERF-OPTSDATA: Error: Core ctl not present
+12-21 22:35:15.038   410   410 E ANDR-PERF-OPTSDATA: Error: core_ctl not present or min/max cpu nodes initialization failed
+12-21 22:35:15.038   410   410 E ANDR-PERF-OPTSHANDLER: Error: Sched Frequency Aggregation support not present
+12-21 22:35:15.038   410   410 I ServiceManagement: Removing namespace from process name vendor.qti.hardware.perf@1.0-service to perf@1.0-servic.
+12-21 22:35:15.039   410   465 E ANDR-PERF-MPCTL:  before pthread_cond_wait 1711, chk_core_online_poll
+12-21 22:35:15.039   410   464 E ANDR-PERF-MPCTL: perflock: Workload detect thread created
+12-21 22:35:15.039   410   464 E ANDR-PERF-MPCTL: perflock: iobusy pfd initialized
+12-21 22:35:15.039   410   464 E ANDR-PERF-MPCTL: perflock: mode pfd initialized
+12-21 22:35:15.039   410   464 E ANDR-PERF-MPCTL: perflock: Read file 0: 0
+12-21 22:35:15.039   410   464 E ANDR-PERF-MPCTL: perflock: Read file 1: 0
+12-21 22:35:15.039   410   464 E ANDR-PERF-MPCTL: perflock: Mode change 0
+12-21 22:35:15.042   410   410 E vendor.qti.hardware.perf@1.0-service: Registered IPerf HAL service success!
+12-21 22:35:15.043   364   364 E SELinux : avc:  denied  { add } for interface=android.hardware.gnss::IGnss sid=u:r:init:s0 pid=406 scontext=u:r:init:s0 tcontext=u:object_r:hal_gnss_hwservice:s0 tclass=hwservice_manager permissive=1
+12-21 22:35:15.044   459   459 I lineage :                       |___/
+12-21 22:35:15.044   406   406 I LocSvc_HIDL_vendor.qti.gnss@1.0-service: Registration complete for android.hardware.gnss@1.0::IGnss/default.
+12-21 22:35:15.046   406   406 D vndksupport: Loading /vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:15.047   392   392 I SDM     : HWCDisplay::SetFrameBufferResolution: New framebuffer resolution (720x1280)
+12-21 22:35:15.048   392   392 I SDM     : HWCColorManager::CreateColorManager: Successfully loaded libsdm-disp-vndapis.so
+12-21 22:35:15.048   411   411 D         : QdutilsDisp: svc service starting :)
+12-21 22:35:15.048   411   411 I ServiceManagement: Removing namespace from process name vendor.qti.hardware.qdutils_disp@1.0-service-qti to qdutils_disp@1..
+12-21 22:35:15.050   411   411 E         : Registered IQdutilsDisp HAL service success!
+12-21 22:35:15.061   392   392 I SDM     : HWCColorManager::CreateColorManager: Successfully loaded libsdm-disp-vndapis.so and libsdm-diag.so and diag_init'ed
+12-21 22:35:15.062   392   392 I ServiceManagement: Removing namespace from process name android.hardware.graphics.composer@2.1-service to composer@2.1-se.
+12-21 22:35:15.063   392   392 I android.hardware.graphics.composer@2.1-service: Registration complete for android.hardware.graphics.composer@2.1::IComposer/default.
+12-21 22:35:15.094   469   469 I lineage : Welcome to Android 8.1.0 / LineageOS-15.1-20200311-UNOFFICIAL-perry
+12-21 22:35:15.111   470   470 I sysinit : Running /system/etc/init.d/90userinit
+12-21 22:35:15.113   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::maxFrameBufferAcquiredBuffers retrieved: 3
+12-21 22:35:15.118   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::startGraphicsAllocatorService retrieved: 0
+12-21 22:35:15.120   426   426 I SurfaceFlinger: SurfaceFlinger is starting
+12-21 22:35:15.121   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::vsyncEventPhaseOffsetNs retrieved: 1000000 (default)
+12-21 22:35:15.121   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::vsyncSfEventPhaseOffsetNs retrieved: 1000000 (default)
+12-21 22:35:15.121   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasSyncFramework retrieved: 1
+12-21 22:35:15.121   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::useContextPriority retrieved: 0 (default)
+12-21 22:35:15.121   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::presentTimeOffsetFromVSyncNs retrieved: 0
+12-21 22:35:15.121   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::useHwcForRGBtoYUV retrieved: 1
+12-21 22:35:15.121   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::maxVirtualDisplaySize retrieved: 4096
+12-21 22:35:15.121   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::useVrFlinger retrieved: 0 (default)
+12-21 22:35:15.122   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::maxFrameBufferAcquiredBuffers retrieved: 3
+12-21 22:35:15.122   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+12-21 22:35:15.122   426   426 I SurfaceFlinger: Disabling Triple Buffering
+12-21 22:35:15.122   426   426 I SurfaceFlinger: SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+12-21 22:35:15.122   426   426 I SurfaceFlinger: Phase offest NS: 1000000
+12-21 22:35:15.123   426   426 D vndksupport: Loading /vendor/lib64/egl/libEGL_adreno.so from current namespace instead of sphal namespace.
+12-21 22:35:15.125   426   426 D libEGL  : loaded /vendor/lib64/egl/libEGL_adreno.so
+12-21 22:35:15.161   426   426 D vndksupport: Loading /vendor/lib64/egl/libGLESv1_CM_adreno.so from current namespace instead of sphal namespace.
+12-21 22:35:15.162   426   426 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_adreno.so
+12-21 22:35:15.173   406   406 D LocSvc_LBSProxy: checkIfLocationExtendedClientExists] File Exists
+12-21 22:35:15.174   406   406 I ServiceManagement: Removing namespace from process name vendor.qti.gnss@1.0-service to gnss@1.0-servic.
+12-21 22:35:15.175   406   406 I LocSvc_HIDL_vendor.qti.gnss@1.0-service: Registration complete for vendor.qti.gnss@1.0::ILocHidlGnss/gnss_vendor.
+12-21 22:35:15.178   426   426 D vndksupport: Loading /vendor/lib64/egl/libGLESv2_adreno.so from current namespace instead of sphal namespace.
+12-21 22:35:15.179   426   426 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_adreno.so
+12-21 22:35:15.193   426   426 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/09/19, b6943a4, Ic496d38bee
+12-21 22:35:15.195   426   426 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:15.197   426   426 I /system/bin/surfaceflinger: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+12-21 22:35:15.211   426   426 I SurfaceFlinger: EGL information:
+12-21 22:35:15.211   426   426 I SurfaceFlinger: vendor    : Android
+12-21 22:35:15.211   426   426 I SurfaceFlinger: version   : 1.4 Android META-EGL
+12-21 22:35:15.211   426   426 I SurfaceFlinger: extensions: EGL_KHR_get_all_proc_addresses EGL_ANDROID_presentation_time EGL_KHR_swap_buffers_with_damage EGL_ANDROID_get_native_client_buffer EGL_ANDROID_front_buffer_auto_refresh EGL_ANDROID_get_frame_timestamps EGL_KHR_image EGL_KHR_image_base EGL_KHR_lock_surface EGL_KHR_gl_colorspace EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_3D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_KHR_fence_sync EGL_KHR_create_context EGL_EXT_create_context_robustness EGL_ANDROID_image_native_buffer EGL_KHR_wait_sync EGL_ANDROID_recordable EGL_KHR_partial_update EGL_IMG_context_priority 
+12-21 22:35:15.211   426   426 I SurfaceFlinger: Client API: OpenGL_ES
+12-21 22:35:15.211   426   426 I SurfaceFlinger: EGLSurface: 8-8-8-8, config=0x5
+12-21 22:35:15.211   426   426 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+12-21 22:35:15.214   426   426 I SurfaceFlinger: OpenGL ES informations:
+12-21 22:35:15.214   426   426 I SurfaceFlinger: vendor    : Qualcomm
+12-21 22:35:15.214   426   426 I SurfaceFlinger: renderer  : Adreno (TM) 308
+12-21 22:35:15.214   426   426 I SurfaceFlinger: version   : OpenGL ES 3.0 V@269.0 AU@  (GIT@Ic496d38bee)
+12-21 22:35:15.214   426   426 I SurfaceFlinger: extensions: GL_AMD_compressed_ATC_texture GL_AMD_performance_monitor GL_AMD_program_binary_Z400 GL_EXT_debug_label GL_EXT_debug_marker GL_EXT_discard_framebuffer GL_EXT_robustness GL_EXT_texture_format_BGRA8888 GL_EXT_texture_type_2_10_10_10_REV GL_NV_fence GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_depth24 GL_OES_EGL_image GL_OES_EGL_sync GL_OES_EGL_image_external GL_OES_element_index_uint GL_OES_fbo_render_mipmap GL_OES_fragment_precision_high GL_OES_get_program_binary GL_OES_packed_depth_stencil GL_OES_depth_texture_cube_map GL_OES_rgb8_rgba8 GL_OES_standard_derivatives GL_OES_texture_3D GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_texture_npot GL_OES_vertex_half_float GL_OES_vertex_type_10_10_10_2 GL_OES_vertex_array_object GL_QCOM_alpha_test GL_QCOM_binning_control GL_QCOM_driver_control GL_QCOM_perfmon_global_mode GL_QCOM_extended_get GL_QCOM_extended_get2 GL_QCOM_tiled_rendering GL_QCOM_writeonly_rendering GL_EXT_sRGB GL_EXT_sRGB_write_con
+12-21 22:35:15.214   426   426 I SurfaceFlinger: GL_MAX_TEXTURE_SIZE = 4096
+12-21 22:35:15.214   426   426 I SurfaceFlinger: GL_MAX_VIEWPORT_DIMS = 4096
+12-21 22:35:15.217   392   392 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:15.219   392   392 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:15.221   392   392 D SDM     : HWCSession::RegisterCallback: Registering callback: Hotplug
+12-21 22:35:15.222   392   392 I SDM     : HWCDisplay::GetColorModeCount: Supported color mode count = 1
+12-21 22:35:15.222   392   392 I SDM     : HWCDisplay::GetColorModes: Supports color mode[0] = 0
+12-21 22:35:15.222   426   426 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+12-21 22:35:15.223   426   426 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:15.225   426   426 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:15.226   426   426 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:15.236   392   392 D SDM     : HWCSession::RegisterCallback: Registering callback: Refresh
+12-21 22:35:15.236   392   392 D SDM     : HWCSession::RegisterCallback: Registering callback: Vsync
+12-21 22:35:15.475   426   426 D SurfaceFlinger: shader cache generated - 24 shaders in 238.806320 ms
+12-21 22:35:15.477   426   426 D SurfaceFlinger: Set power mode=2, type=0 flinger=0x711705e000
+12-21 22:35:15.477   392   392 I SDM     : DisplayBase::SetDisplayState: Set state = 1, display 0
+12-21 22:35:15.503   392   482 D qdutils : DEBUG_CALC_FPS: 0
+12-21 22:35:15.503   392   482 D qdutils : period: 10
+12-21 22:35:15.503   392   482 D qdutils : ignorethresh_us: 500000
+12-21 22:35:19.906   421   421 E MSM-irqbalance: __set_smp_affinity: Unable to open /proc/irq/6/smp_affinity
+12-21 22:35:19.907   421   421 E MSM-irqbalance: get_smp_affinity: Unable to open /proc/irq/6/smp_affinity
+12-21 22:35:19.907   421   421 E MSM-irqbalance: Unable to set SMP affinity
+12-21 22:35:19.960   434   434 D QSEECOMD: : QSEECOM DAEMON RUNNING 
+12-21 22:35:19.963   366   366 I android.hardwar: type=1400 audit(0.0:124): avc: denied { read write } for uid=1000 name="qseecom" dev="tmpfs" ino=2612 scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:19.963   366   366 I android.hardwar: type=1400 audit(0.0:125): avc: denied { open } for uid=1000 path="/dev/qseecom" dev="tmpfs" ino=2612 scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:19.963   366   366 I android.hardwar: type=1400 audit(0.0:126): avc: denied { ioctl } for uid=1000 path="/dev/qseecom" dev="tmpfs" ino=2612 ioctlcmd=970a scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:19.964   366   366 D QSEECOMAPI: QSEECom_get_handle sb_length = 0xa000
+12-21 22:35:19.965   366   366 D QSEECOMAPI: App is already loaded QSEE and app id = 65537
+12-21 22:35:19.968   366   366 E keymaster1_device: Keymaster Initialized
+12-21 22:35:19.968   366   366 E keymaster1_device: TA API Major Verion: 1
+12-21 22:35:19.968   366   366 E keymaster1_device: TA API Minor Verion: 0
+12-21 22:35:19.968   366   366 E keymaster1_device: TA Major Verion: 1
+12-21 22:35:19.968   366   366 E keymaster1_device: TA Minor Verion: 10
+12-21 22:35:19.968   366   366 E keymaster1_device: set_version_req->flags: 1
+12-21 22:35:19.969   366   366 D android.hardware.keymaster@3.0-impl: Wrapping keymaster1 module Keymaster QTI HAL with SofKeymasterDevice
+12-21 22:35:19.970   493   493 I init    : type=1400 audit(0.0:127): avc: denied { execute_no_trans } for uid=1000 path="/system/vendor/bin/pm-proxy" dev="mmcblk0p53" ino=3035 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+12-21 22:35:19.973   495   495 I init    : type=1400 audit(0.0:128): avc: denied { execute_no_trans } for uid=0 path="/system/vendor/bin/sh" dev="mmcblk0p53" ino=3065 scontext=u:r:init:s0 tcontext=u:object_r:vendor_shell_exec:s0 tclass=file permissive=1
+12-21 22:35:19.976   366   366 I ServiceManagement: Removing namespace from process name android.hardware.keymaster@3.0-service to keymaster@3.0-s.
+12-21 22:35:19.984   366   366 I android.hardware.keymaster@3.0-service: Registration complete for android.hardware.keymaster@3.0::IKeymasterDevice/default.
+12-21 22:35:19.996   363   363 I servicemanager: type=1400 audit(0.0:129): avc: denied { transfer } for uid=1000 scontext=u:r:servicemanager:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+12-21 22:35:19.996   493   493 I pm-proxy: type=1400 audit(0.0:130): avc: denied { call } for uid=1000 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+12-21 22:35:19.996   493   493 I pm-proxy: type=1400 audit(0.0:131): avc: denied { transfer } for uid=1000 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+12-21 22:35:19.997   494   494 I ssr_setup: Using persist.sys.ssr.restart_level for ssr_setup
+12-21 22:35:19.998   494   494 I ssr_setup: Enabling SSR for subsys0
+12-21 22:35:19.998   494   494 I ssr_setup: Enabling SSR for subsys1
+12-21 22:35:19.998   494   494 I ssr_setup: Enabling SSR for subsys2
+12-21 22:35:19.998   494   494 I ssr_setup: Enabling SSR for subsys3
+12-21 22:35:19.998   493   493 E PerMgrProxy: Starting pm-proxy service
+12-21 22:35:19.998   493   493 I PerMgrProxy: Found internal modem
+12-21 22:35:19.999   363   363 E SELinux : avc:  denied  { find } for service=vendor.qcom.PeripheralManager pid=493 uid=1000 scontext=u:r:init:s0 tcontext=u:object_r:default_android_service:s0 tclass=service_manager permissive=1
+12-21 22:35:20.000   418   418 I Binder:418_2: type=1400 audit(0.0:132): avc: denied { read } for uid=1000 name="subsys_modem" dev="tmpfs" ino=4660 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:20.000   418   418 I Binder:418_2: type=1400 audit(0.0:133): avc: denied { open } for uid=1000 path="/dev/subsys_modem" dev="tmpfs" ino=4660 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:20.000   418   456 D PerMgrSrv: modem state: is off-line, add client PM-PROXY-THREAD
+12-21 22:35:20.000   418   456 D PerMgrSrv: PM-PROXY-THREAD registered
+12-21 22:35:20.000   493   493 D PerMgrLib: PM-PROXY-THREAD successfully registered for modem
+12-21 22:35:20.000   493   493 I PerMgrProxy: pm-proxy-thread Voting for internal modem
+12-21 22:35:20.000   493   493 D PerMgrLib: PM-PROXY-THREAD voting for modem
+12-21 22:35:20.000   418   456 D PerMgrSrv: PM-PROXY-THREAD voting for modem
+12-21 22:35:20.000   418   456 D PerMgrSrv: modem new state: going on-line
+12-21 22:35:20.000   418   456 D PerMgrSrv: modem num voters is 1
+12-21 22:35:20.002   418   456 E PerMgrSrv: power on modem failed /dev/subsys_modem: Try again
+12-21 22:35:20.002   418   456 D PerMgrSrv: modem new state: is off-line
+12-21 22:35:20.010   390   390 I android.hardwar: type=1400 audit(0.0:134): avc: denied { read write } for uid=1000 name="qseecom" dev="tmpfs" ino=2612 scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:20.010   390   390 I android.hardwar: type=1400 audit(0.0:135): avc: denied { open } for uid=1000 path="/dev/qseecom" dev="tmpfs" ino=2612 scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:20.010   390   390 I android.hardwar: type=1400 audit(0.0:136): avc: denied { ioctl } for uid=1000 path="/dev/qseecom" dev="tmpfs" ino=2612 ioctlcmd=970a scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:20.012   390   390 D QSEECOMAPI: QSEECom_get_handle sb_length = 0xa000
+12-21 22:35:20.013   390   390 D QSEECOMAPI: App is already loaded QSEE and app id = 65537
+12-21 22:35:20.013   390   390 E gatekeeper_device: Gatekeeper initialized
+12-21 22:35:20.014   390   390 I ServiceManagement: Removing namespace from process name android.hardware.gatekeeper@1.0-service to gatekeeper@1.0-.
+12-21 22:35:20.015   390   390 I android.hardware.gatekeeper@1.0-service: Registration complete for android.hardware.gatekeeper@1.0::IGatekeeper/default.
+12-21 22:35:20.018   496   502 I adbd    : initializing functionfs
+12-21 22:35:20.018   496   502 I adbd    : opening control endpoint /dev/usb-ffs/adb/ep0
+12-21 22:35:20.320   496   502 I adbd    : functionfs successfully initialized
+12-21 22:35:20.320   496   502 I adbd    : registering usb transport
+12-21 22:35:20.664   492   516 D vndksupport: Loading /vendor/lib64/egl/libEGL_adreno.so from current namespace instead of sphal namespace.
+12-21 22:35:20.665   492   516 D libEGL  : loaded /vendor/lib64/egl/libEGL_adreno.so
+12-21 22:35:20.686   492   516 D vndksupport: Loading /vendor/lib64/egl/libGLESv1_CM_adreno.so from current namespace instead of sphal namespace.
+12-21 22:35:20.686   492   516 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_adreno.so
+12-21 22:35:20.707   492   516 D vndksupport: Loading /vendor/lib64/egl/libGLESv2_adreno.so from current namespace instead of sphal namespace.
+12-21 22:35:20.708   492   516 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_adreno.so
+12-21 22:35:20.723   492   492 I BootAnimation: type=1400 audit(0.0:137): avc: denied { read write } for uid=1003 name="kgsl-3d0" dev="tmpfs" ino=5732 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:20.723   492   492 I BootAnimation: type=1400 audit(0.0:138): avc: denied { open } for uid=1003 path="/dev/kgsl-3d0" dev="tmpfs" ino=5732 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:20.723   492   492 I BootAnimation: type=1400 audit(0.0:139): avc: denied { ioctl } for uid=1003 path="/dev/kgsl-3d0" dev="tmpfs" ino=5732 ioctlcmd=940 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:20.725   492   516 I Adreno-EGL: <qeglDrvAPI_eglInitialize:379>: QUALCOMM Build: 09/09/19, b6943a4, Ic496d38bee
+12-21 22:35:20.726   492   516 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:20.732   492   516 I /system/bin/bootanimation: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+12-21 22:35:20.732   492   516 W Adreno-EGL: <qeglDrvAPI_eglGetConfigAttrib:612>: EGL_BAD_ATTRIBUTE
+12-21 22:35:20.733   492   516 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:20.814   492   516 D BootAnimation: BootAnimationShownTiming start time: 8780ms
+12-21 22:35:20.845   492   516 D vndksupport: Loading /vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl.so from current namespace instead of sphal namespace.
+12-21 22:35:20.846   492   516 D vndksupport: Loading /vendor/lib64/hw/gralloc.msm8937.so from current namespace instead of sphal namespace.
+12-21 22:35:20.863   392   392 I HwBinder:392_2: type=1400 audit(0.0:140): avc: denied { read } for uid=1000 name="caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+12-21 22:35:20.863   392   392 I HwBinder:392_2: type=1400 audit(0.0:141): avc: denied { open } for uid=1000 path="/sys/devices/soc/1a00000.qcom,mdss_mdp/caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+12-21 22:35:20.863   392   392 I HwBinder:392_2: type=1400 audit(0.0:142): avc: denied { getattr } for uid=1000 path="/sys/devices/soc/1a00000.qcom,mdss_mdp/caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+12-21 22:35:21.020   492   492 I BootAnimation: type=1400 audit(0.0:143): avc: denied { ioctl } for uid=1003 path="/dev/kgsl-3d0" dev="tmpfs" ino=5732 ioctlcmd=94a scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:22.863   492   492 I BootAnimation: type=1400 audit(0.0:144): avc: denied { read write } for uid=1003 path="/dev/kgsl-3d0" dev="tmpfs" ino=5732 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:24.945   423   423 E Sensors : sns_debug_mr.c(366):Sensors DIAG Init: Waiting for diag service timed out
+12-21 22:35:24.945   423   423 E Sensors : sns_debug_main.c(488):Sensors DIAG init: Can't register with debug
+12-21 22:35:24.945   423   423 E Sensors : sns_init_la.c(165):Error 5 initializing sns_debug_test_init2
+12-21 22:35:24.943   423   423 I sensors.qcom: type=1400 audit(0.0:145): avc: denied { ioctl } for uid=0 path="socket:[6133]" dev="sockfs" ino=6133 ioctlcmd=c302 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+12-21 22:35:34.945   423   423 E Sensors : sns_main.c(447):Timeout waiting for SMGR service. Exit sensors daemon!
+12-21 22:35:34.945   423   423 W Sensors : sns_main.c(355):sns_main_exit called unlock daemon to exit
+12-21 22:35:34.945   423   423 E Sensors : sns_main.c(561):Exiting! Err 0
+12-21 22:35:34.943   416   416 I rmt_storage: type=1400 audit(0.0:146): avc: denied { read } for uid=1001 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+12-21 22:35:34.966   524   524 I sensors.qcom: type=1400 audit(0.0:147): avc: denied { write } for uid=0 name="diag" dev="tmpfs" ino=12140 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+12-21 22:35:34.970   524   524 I sensors.qcom: type=1400 audit(0.0:149): avc: denied { create } for uid=0 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+12-21 22:35:34.970   524   524 I sensors.qcom: type=1400 audit(0.0:150): avc: denied { bind } for uid=0 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+12-21 22:35:34.973   524   527 E Sensors : sns_fsa_la.c(84):realpath failed for directory name2
+12-21 22:35:34.973   524   527 E Sensors : sns_reg_la.c(289):Error creating registry file
+12-21 22:35:34.973   524   527 W Sensors : sns_reg_mr.c(367):File init failed 5
+12-21 22:35:44.975   524   524 E Sensors : sns_debug_mr.c(366):Sensors DIAG Init: Waiting for diag service timed out
+12-21 22:35:44.975   524   524 E Sensors : sns_debug_main.c(488):Sensors DIAG init: Can't register with debug
+12-21 22:35:44.975   524   524 E Sensors : sns_init_la.c(165):Error 5 initializing sns_debug_test_init2
+12-21 22:35:54.975   524   524 E Sensors : sns_main.c(447):Timeout waiting for SMGR service. Exit sensors daemon!
+12-21 22:35:54.975   524   524 W Sensors : sns_main.c(355):sns_main_exit called unlock daemon to exit
+12-21 22:35:54.975   524   524 E Sensors : sns_main.c(561):Exiting! Err 0
+12-21 22:35:55.002   530   533 E Sensors : sns_fsa_la.c(84):realpath failed for directory name2
+12-21 22:35:55.002   530   533 E Sensors : sns_reg_la.c(289):Error creating registry file
+12-21 22:35:55.002   530   533 W Sensors : sns_reg_mr.c(367):File init failed 5
+12-21 22:36:05.004   530   530 E Sensors : sns_debug_mr.c(366):Sensors DIAG Init: Waiting for diag service timed out
+12-21 22:36:05.004   530   530 E Sensors : sns_debug_main.c(488):Sensors DIAG init: Can't register with debug
+12-21 22:36:05.004   530   530 E Sensors : sns_init_la.c(165):Error 5 initializing sns_debug_test_init2
+12-21 22:36:15.004   530   530 E Sensors : sns_main.c(447):Timeout waiting for SMGR service. Exit sensors daemon!
+12-21 22:36:15.004   530   530 W Sensors : sns_main.c(355):sns_main_exit called unlock daemon to exit
+12-21 22:36:15.004   530   530 E Sensors : sns_main.c(561):Exiting! Err 0
+12-21 22:36:15.031   536   539 E Sensors : sns_fsa_la.c(84):realpath failed for directory name2
+12-21 22:36:15.031   536   539 E Sensors : sns_reg_la.c(289):Error creating registry file
+12-21 22:36:15.031   536   539 W Sensors : sns_reg_mr.c(367):File init failed 5
+12-21 22:36:25.033   536   536 E Sensors : sns_debug_mr.c(366):Sensors DIAG Init: Waiting for diag service timed out
+12-21 22:36:25.033   536   536 E Sensors : sns_debug_main.c(488):Sensors DIAG init: Can't register with debug
+12-21 22:36:25.033   536   536 E Sensors : sns_init_la.c(165):Error 5 initializing sns_debug_test_init2
+12-21 22:36:35.033   536   536 E Sensors : sns_main.c(447):Timeout waiting for SMGR service. Exit sensors daemon!
+12-21 22:36:35.033   536   536 W Sensors : sns_main.c(355):sns_main_exit called unlock daemon to exit
+12-21 22:36:35.033   536   536 E Sensors : sns_main.c(561):Exiting! Err 0
+12-21 22:36:35.060   543   546 E Sensors : sns_fsa_la.c(84):realpath failed for directory name2
+12-21 22:36:35.060   543   546 E Sensors : sns_reg_la.c(289):Error creating registry file
+12-21 22:36:35.060   543   546 W Sensors : sns_reg_mr.c(367):File init failed 5
+12-21 22:36:45.061   543   543 E Sensors : sns_debug_mr.c(366):Sensors DIAG Init: Waiting for diag service timed out
+12-21 22:36:45.061   543   543 E Sensors : sns_debug_main.c(488):Sensors DIAG init: Can't register with debug
+12-21 22:36:45.061   543   543 E Sensors : sns_init_la.c(165):Error 5 initializing sns_debug_test_init2
+12-21 22:36:55.062   543   543 E Sensors : sns_main.c(447):Timeout waiting for SMGR service. Exit sensors daemon!
+12-21 22:36:55.062   543   543 W Sensors : sns_main.c(355):sns_main_exit called unlock daemon to exit
+12-21 22:36:55.062   543   543 E Sensors : sns_main.c(561):Exiting! Err 0
+12-21 22:36:55.089   549   552 E Sensors : sns_fsa_la.c(84):realpath failed for directory name2
+12-21 22:36:55.089   549   552 E Sensors : sns_reg_la.c(289):Error creating registry file
+12-21 22:36:55.089   549   552 W Sensors : sns_reg_mr.c(367):File init failed 5
+12-21 22:37:05.091   549   549 E Sensors : sns_debug_mr.c(366):Sensors DIAG Init: Waiting for diag service timed out
+12-21 22:37:05.091   549   549 E Sensors : sns_debug_main.c(488):Sensors DIAG init: Can't register with debug
+12-21 22:37:05.091   549   549 E Sensors : sns_init_la.c(165):Error 5 initializing sns_debug_test_init2
