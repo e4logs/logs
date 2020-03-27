@@ -1,0 +1,1683 @@
+[    0.000000,0] Initializing cgroup subsys cpuset
+[    0.000000,0] Initializing cgroup subsys cpu
+[    0.000000,0] Initializing cgroup subsys cpuacct
+[    0.000000,0] Linux version 3.18.140-lineage (rebel@lions-den) (Android clang version 5.0.300080 (based on LLVM 5.0.300080)) #1 SMP PREEMPT Thu Mar 26 16:51:21 UTC 2020
+[    0.000000,0] Boot CPU: AArch64 Processor [410fd034]
+[    0.000000,0] Machine: perry
+[    0.000000,0] efi: Getting EFI parameters from FDT:
+[    0.000000,0] efi: UEFI not found.
+[    0.000000,0] Reserved memory: reserved region for node 'other_ext_region@0': base 0x0000000084300000, size 37 MiB
+[    0.000000,0] Reserved memory: reserved region for node 'modem_region@0': base 0x0000000086800000, size 80 MiB
+[    0.000000,0] Reserved memory: reserved region for node 'adsp_fw_region@0': base 0x000000008b800000, size 17 MiB
+[    0.000000,0] Reserved memory: reserved region for node 'wcnss_fw_region@0': base 0x000000008c900000, size 7 MiB
+[    0.000000,0] Reserved memory: reserved region for node 'splash_region@83000000': base 0x0000000090000000, size 20 MiB
+[    0.000000,0] Reserved memory: reserved region for node 'ramoops_mem_region': base 0x00000000ae000000, size 0 MiB
+[    0.000000,0] Reserved memory: reserved region for node 'tzlog_bck_region': base 0x00000000ae400000, size 0 MiB
+[    0.000000,0] Reserved memory: reserved region for node 'wdog_cpuctx_region': base 0x00000000ae800000, size 0 MiB
+[    0.000000,0] Removed memory: created DMA memory pool at 0x0000000084300000, size 37 MiB
+[    0.000000,0] Reserved memory: initialized node other_ext_region@0, compatible id removed-dma-pool
+[    0.000000,0] Removed memory: created DMA memory pool at 0x0000000086800000, size 80 MiB
+[    0.000000,0] Reserved memory: initialized node modem_region@0, compatible id removed-dma-pool
+[    0.000000,0] Removed memory: created DMA memory pool at 0x000000008b800000, size 17 MiB
+[    0.000000,0] Reserved memory: initialized node adsp_fw_region@0, compatible id removed-dma-pool
+[    0.000000,0] Removed memory: created DMA memory pool at 0x000000008c900000, size 7 MiB
+[    0.000000,0] Reserved memory: initialized node wcnss_fw_region@0, compatible id removed-dma-pool
+[    0.000000,0] Reserved memory: allocated memory for 'venus_region@0' node: base 0x000000008f000000, size 16 MiB
+[    0.000000,0] Reserved memory: created CMA memory pool at 0x000000008f000000, size 16 MiB
+[    0.000000,0] Reserved memory: initialized node venus_region@0, compatible id shared-dma-pool
+[    0.000000,0] Reserved memory: allocated memory for 'qseecom_region@0' node: base 0x00000000ff000000, size 16 MiB
+[    0.000000,0] Reserved memory: created CMA memory pool at 0x00000000ff000000, size 16 MiB
+[    0.000000,0] Reserved memory: initialized node qseecom_region@0, compatible id shared-dma-pool
+[    0.000000,0] Reserved memory: allocated memory for 'adsp_region@0' node: base 0x00000000fec00000, size 4 MiB
+[    0.000000,0] Removed memory: created DMA memory pool at 0x00000000fec00000, size 4 MiB
+[    0.000000,0] Reserved memory: initialized node adsp_region@0, compatible id removed-dma-pool
+[    0.000000,0] cma: Reserved 16 MiB at 0x00000000fdc00000
+[    0.000000,0] psci: probing for conduit method from DT.
+[    0.000000,0] psci: PSCIv1.0 detected in firmware.
+[    0.000000,0] psci: Using standard PSCI v0.2 function IDs
+[    0.000000,0] psci: Initializing psci_cpu_init
+[    0.000000,0] psci: Initializing psci_cpu_init
+[    0.000000,0] psci: Initializing psci_cpu_init
+[    0.000000,0] PERCPU: Embedded 15 pages/cpu @ffffffc07da7c000 s22464 r8192 d30784 u61440
+[    0.000000,0] Detected VIPT I-cache on CPU0
+[    0.000000,0] CPU features: enabling workaround for ARM erratum 845719
+[    0.000000,0] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 480423
+[    0.000000,0] Kernel command line: sched_enable_hmp=1 console=null androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 vmalloc=350M androidboot.selinux=permissive buildvariant=eng androidboot.emmc=true androidboot.serialno=ZY224NSVXP androidboot.baseband=msm androidboot.mode=normal androidboot.device=perry androidboot.hwrev=0x83B0 androidboot.radio=US androidboot.powerup_reason=0x00004000 androidboot.bootreason=reboot msm_poweroff.download_mode=0 androidboot.fsg-id= androidboot.wifimacaddr=DC:BF:E9:B2:76:4B,DC:BF:E9:B2:76:4C androidboot.btmacaddr=DC:BF:E9:B2:76:4A mdss_mdp.panel=1:dsi:0:qcom,mdss_dsi_mot_tianma_499_720p_video_v1 androidboot.bootloader=0xBA34 androidboot.carrier=retus androidboot.poweroff_alarm=0 androidboot.build_vars=black androidboot.hardware.sku=XT1768 androidboot.secure_hardware=1 androidboot.bl_state=2 androidboot.cid=0x32 androidboot.uid=F6F99EAA00000000000000000000 androidboot[    0.000000,0] PID hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000000,0] Dentry cache hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.000000,0] Inode-cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.000000,0] Memory: 1810844K/1952196K available (14765K kernel code, 1919K rwdata, 8112K rodata, 512K init, 3205K bss, 92200K reserved, 49152K cma-reserved)
+[    0.000000,0] Virtual kernel memory layout:
+[    0.000000,0]     vmalloc : 0xffffff8000000000 - 0xffffffbdbfff0000   (   246 GB)
+[    0.000000,0]     vmemmap : 0xffffffbdc0000000 - 0xffffffbfc0000000   (     8 GB maximum)
+[    0.000000,0]               0xffffffbdc0000000 - 0xffffffbdc2000000   (    32 MB actual)
+[    0.000000,0]     PCI I/O : 0xffffffbffa000000 - 0xffffffbffb000000   (    16 MB)
+[    0.000000,0]     fixed   : 0xffffffbffbdfb000 - 0xffffffbffbdff000   (    16 KB)
+[    0.000000,0]     modules : 0xffffffbffc000000 - 0xffffffc000000000   (    64 MB)
+[    0.000000,0]     memory  : 0xffffffc000000000 - 0xffffffc080000000   (  2048 MB)
+[    0.000000,0]       .init : 0xffffffc0016e4000 - 0xffffffc001764000   (   512 KB)
+[    0.000000,0]       .text : 0xffffffc000080000 - 0xffffffc000eed578   ( 14774 KB)
+[    0.000000,0]       .data : 0xffffffc00178c000 - 0xffffffc00196bc00   (  1919 KB)
+[    0.000000,0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000,0] HMP scheduling enabled.
+[    0.000000,0] Preemptible hierarchical RCU implementation.
+[    0.000000,0] 	RCU dyntick-idle grace-period acceleration is enabled.
+[    0.000000,0] 	RCU restricting CPUs from NR_CPUS=8 to nr_cpu_ids=4.
+[    0.000000,0] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=4
+[    0.000000,0] 
+[    0.000000,0] **********************************************************
+[    0.000000,0] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.000000,0] **                                                      **
+[    0.000000,0] ** trace_printk() being used. Allocating extra memory.  **
+[    0.000000,0] **                                                      **
+[    0.000000,0] ** This means that this is a DEBUG kernel and it is     **
+[    0.000000,0] ** unsafe for produciton use.                           **
+[    0.000000,0] **                                                      **
+[    0.000000,0] ** If you see this message and you are not debugging    **
+[    0.000000,0] ** the kernel, report this immediately to your vendor!  **
+[    0.000000,0] **                                                      **
+[    0.000000,0] **   NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE NOTICE   **
+[    0.000000,0] **********************************************************
+[    0.000000,0] NR_IRQS:64 nr_irqs:64 0
+[    0.000000,0] mpm_init_irq_domain(): Cannot find irq controller for qcom,gpio-parent
+[    0.000000,0] MPM 1 irq mapping errored -517
+[    0.000000,0] 	Offload RCU callbacks from all CPUs
+[    0.000000,0] 	Offload RCU callbacks from CPUs: 0-3.
+[    0.000000,0] Architected cp15 and mmio timer(s) running at 19.20MHz (virt/virt).
+[    0.000005,0] sched_clock: 56 bits at 19MHz, resolution 52ns, wraps every 3579139424256ns
+[    0.000020,0] Switched to clocksource arch_sys_counter
+[    0.000614,0] Calibrating delay loop (skipped), value calculated using timer frequency.. 38.00 BogoMIPS (lpj=64000)
+[    0.000627,0] pid_max: default: 32768 minimum: 301
+[    0.000725,0] Security Framework initialized
+[    0.000741,0] SELinux:  Initializing.
+[    0.000824,0] Mount-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.000836,0] Mountpoint-cache hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.001501,0] Initializing cgroup subsys freezer
+[    0.001768,0] /cpus/cpu-map/cluster0: empty cluster
+[    0.001875,0] /cpus/cpu@100: Missing clock-frequency property
+[    0.001892,0] /cpus/cpu@101: Missing clock-frequency property
+[    0.001911,0] /cpus/cpu@102: Missing clock-frequency property
+[    0.001932,0] /cpus/cpu@103: Missing clock-frequency property
+[    0.001977,0] hw perfevents: enabled with arm/armv8-pmuv3 PMU driver, 7 counters available
+[    0.002015,0] EFI services will not be available.
+[    0.002034,0] ASID allocator initialised with 32768 entries
+[    0.002781,0] NOHZ: local_softirq_pending 02
+[    0.011519,0] MSM Memory Dump base table set up
+[    0.011548,0] MSM Memory Dump apps data table set up
+[    0.011607,0] Configuring XPU violations to be fatal errors
+[    0.018701,1] Detected VIPT I-cache on CPU1
+[    0.018749,1] CPU1: Booted secondary processor [410fd034]
+[    0.023705,2] Detected VIPT I-cache on CPU2
+[    0.023741,2] CPU2: Booted secondary processor [410fd034]
+[    0.028609,3] Detected VIPT I-cache on CPU3
+[    0.028643,3] CPU3: Booted secondary processor [410fd034]
+[    0.028773,0] Brought up 4 CPUs
+[    0.028807,0] SMP: Total of 4 processors activated.
+[    0.028857,0] alternatives: patching kernel code
+[    0.034032,0] DMI not present or invalid.
+[    0.036893,2] pinctrl core: initialized pinctrl subsystem
+[    0.037407,2] regulator-dummy: no parameters
+[    0.114058,2] NET: Registered protocol family 16
+[    0.117471,2] scm_call failed: func id 0x42000101, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    0.123447,2] cpuidle: using governor ladder
+[    0.130095,2] cpuidle: using governor menu
+[    0.136760,2] cpuidle: using governor qcom
+[    0.138814,2] vdso: 2 pages (1 code @ ffffffc000ef3000, 1 data @ ffffffc001790000)
+[    0.139833,2] software IO TLB: mapped [mem 0xfac00000-0xfb000000] (4MB)
+[    0.140918,2] DMA: preallocated 256 KiB pool for atomic allocations
+[    0.147771,2] __of_mpm_init(): MPM driver mapping exists
+[    0.157117,2] msm_mpm_dev_probe(): Cannot get clk resource for XO: -517
+[    0.181305,2] sps:sps is ready.
+[    0.184483,2] msm_thermal:vdd_restriction_reg_init Defer regulator vdd-dig probe
+[    0.184498,2] msm_thermal:probe_vdd_rstr Err regulator init. err:-517. KTM continues.
+[    0.184514,2] msm-thermal soc:qcom,msm-thermal: probe_vdd_rstr:Failed reading node=/soc/qcom,msm-thermal, key=qcom,max-freq-level. err=-517. KTM continues
+[    0.184527,2] msm_thermal:msm_thermal_dev_probe Failed reading node=/soc/qcom,msm-thermal, key=qcom,online-hotplug-core. err:-517
+[    0.187559,2] msm_rpm_glink_dt_parse: qcom,rpm-glink compatible not matches
+[    0.187571,2] msm_rpm_dev_probe: APSS-RPM communication over SMD
+[    0.188956,2] spmi_pmic_arb 200f000.qcom,spmi: PMIC Arb Version-2 0x20010000
+[    0.190448,2] pm8917_s5: 1050 <--> 1350 mV at 1225 mV normal idle 
+[    0.190676,2] spm_regulator_probe: name=pm8917_s5, range=LV, voltage=1225000 uV, mode=AUTO, step rate=1200 uV/us
+[    0.199988,2] cpu-clock-8939 b011050.qcom,cpu-clock-8939: No PVS version available. Defaulting to 0!
+[    0.200003,2] cpu-clock-8939 b011050.qcom,cpu-clock-8939: Speed bin: 0 PVS Version: 0
+[    0.202553,2] msm_watchdog b017000.qcom,wdt: wdog absent resource not present
+[    0.202951,2] msm_watchdog b017000.qcom,wdt: MSM Watchdog Initialized
+[    0.207667,2] smd_channel_probe_now: allocation table not initialized
+[    0.209047,2] smd_channel_probe_now: allocation table not initialized
+[    0.210201,2] smd_channel_probe_now: allocation table not initialized
+[    0.217578,2] platform soc:qcom,adsprpc-mem: assigned reserved memory node adsp_region@0
+[    0.218594,2] platform 4080000.qcom,mss: assigned reserved memory node modem_region@0
+[    0.219115,2] platform c200000.qcom,lpass: assigned reserved memory node adsp_fw_region@0
+[    0.219633,2] platform a21b000.qcom,pronto: assigned reserved memory node wcnss_fw_region@0
+[    0.219940,2] platform 1de0000.qcom,venus: assigned reserved memory node venus_region@0
+[    0.220941,2] ACC: mem_acc_efuse_init: efuse_addr = 0x00000000000a4000 (len=0x1000)
+[    0.221139,2] ACC: mem_acc_parse_override_fuse_version_map: qcom,override-fuse-version-map tuple match not found
+[    0.221284,2] mem_acc_corner: 0 <--> 0 mV at 0 mV 
+[    0.222343,2] cpr_efuse_init: apc_corner: efuse_addr = 0x00000000000a4000 (len=0x1000)
+[    0.222379,2] cpr_read_fuse_revision: apc_corner: fuse revision = 2
+[    0.222395,2] cpr_parse_speed_bin_fuse: apc_corner: [row: 37]: 0x8a8a821aa9ef9f6, speed_bits = 0
+[    0.222411,2] cpr_parse_pvs_version_fuse: apc_corner: [row: 37]: 0x8a8a821aa9ef9f6, pvs_version = 0
+[    0.222491,2] cpr_adjust_init_voltages: apc_corner: adjusted initial voltage[1]: 1095000 -> 1125000 uV
+[    0.222507,2] cpr_adjust_init_voltages: apc_corner: adjusted initial voltage[2]: 1155000 -> 1160000 uV
+[    0.222521,2] cpr_adjust_init_voltages: apc_corner: adjusted initial voltage[3]: 1270000 -> 1280000 uV
+[    0.222537,2] cpr_pvs_init: apc_corner: pvs voltage: [1125000 1160000 1280000] uV
+[    0.222549,2] cpr_pvs_init: apc_corner: ceiling voltage: [1155000 1225000 1350000] uV
+[    0.222560,2] cpr_pvs_init: apc_corner: floor voltage: [1050000 1050000 1090000] uV
+[    0.222758,2] cpr_init_cpr_parameters: apc_corner: up threshold = 2, down threshold = 4
+[    0.222786,2] cpr_init_cpr_parameters: apc_corner: CPR is enabled by default.
+[    0.222816,2] cpr_init_cpr_efuse: apc_corner: [row:67] = 0x248e3a63f79d2fa8
+[    0.222839,2] cpr_init_cpr_efuse: apc_corner: Corner[1]: ro_sel = 2, target quot = 910
+[    0.222851,2] cpr_init_cpr_efuse: apc_corner: Corner[2]: ro_sel = 2, target quot = 1015
+[    0.222863,2] cpr_init_cpr_efuse: apc_corner: Corner[3]: ro_sel = 2, target quot = 1214
+[    0.222890,2] cpr_adjust_target_quots: apc_corner: Corner[1]: adjusted target quot = 960
+[    0.222904,2] cpr_adjust_target_quots: apc_corner: Corner[2]: adjusted target quot = 1055
+[    0.222917,2] cpr_adjust_target_quots: apc_corner: Corner[3]: adjusted target quot = 1264
+[    0.223001,2] cpr_get_corner_quot_adjustment: apc_corner: fuse corner 2 quotient adjustment scaling factor: 0.708
+[    0.223012,2] cpr_get_corner_quot_adjustment: apc_corner: fuse corner 3 quotient adjustment scaling factor: 0.680
+[    0.223027,2] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[1] = 960
+[    0.223036,2] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[2] = 1055
+[    0.223045,2] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[3] = 1160
+[    0.223054,2] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[4] = 1264
+[    0.223063,2] cpr_get_corner_quot_adjustment: apc_corner: adjusted quotient[5] = 1264
+[    0.223240,2] cpr_config: apc_corner: Timer count: 0x17700 (for 5000 us)
+[    0.223658,2] apc_corner: 0 <--> 0 mV 
+[    0.231574,2] persistent_ram: persistent_ram: paddr: 00000000ae000000, vaddr: ffffff80003c0000, buf size = 0x1fff4
+[    0.231603,2] persistent_ram: persistent_ram: paddr: 00000000ae020000, vaddr: ffffff8001900000, buf size = 0x3fff4
+[    0.232138,2] persistent_ram: persistent_ram: paddr: 00000000ae060000, vaddr: ffffff800039a000, buf size = 0x7f4
+[    0.233171,2] console [pstore-1] enabled
+[    0.233180,2] pstore: Registered ramoops as persistent store backend
+[    0.233191,2] ramoops: attached 0x80000@0xae000000, ecc: 0/0
+[    0.234623,0] msm_mpm_dev_probe(): Cannot get clk resource for XO: -517
+[    0.235441,0] msm_thermal:sensor_mgr_init_threshold threshold id already initialized
+[    0.235588,0] msm_thermal:vdd_restriction_reg_init Defer regulator vdd-dig probe
+[    0.235600,0] msm_thermal:probe_vdd_rstr Err regulator init. err:-517. KTM continues.
+[    0.235619,0] msm-thermal soc:qcom,msm-thermal: probe_vdd_rstr:Failed reading node=/soc/qcom,msm-thermal, key=qcom,max-freq-level. err=-517. KTM continues
+[    0.235633,0] msm_thermal:msm_thermal_dev_probe Failed reading node=/soc/qcom,msm-thermal, key=qcom,online-hotplug-core. err:-517
+[    0.235742,0] msm_rpm_glink_dt_parse: qcom,rpm-glink compatible not matches
+[    0.235754,0] msm_rpm_dev_probe: APSS-RPM communication over SMD
+[    0.236737,0] pm8917_s1: 1000 <--> 1225 mV at 1000 mV normal idle 
+[    0.237603,0] pm8917_s2_level: 0 <--> 0 mV at 0 mV normal idle 
+[    0.238206,0] pm8917_s2_floor_level: 0 <--> 0 mV at 0 mV normal idle 
+[    0.238812,0] pm8917_s2_level_ao: 0 <--> 0 mV at 0 mV normal idle 
+[    0.239608,0] pm8917_s3: 1300 mV normal idle 
+[    0.240457,0] pm8917_s4: 2050 mV normal idle 
+[    0.241270,0] pm8917_l2: 1200 mV normal idle 
+[    0.242095,0] pm8917_l3_level_ao: 0 <--> 0 mV at 0 mV normal idle 
+[    0.242681,0] pm8917_l3_level_so: 0 <--> 0 mV at 0 mV normal idle 
+[    0.243539,0] pm8917_l5: 1800 mV normal idle 
+[    0.244609,0] pm8917_l6: 1800 mV normal idle 
+[    0.245440,0] pm8917_l7: 1800 mV normal idle 
+[    0.246023,0] pm8917_l7_ao: 1800 mV normal idle 
+[    0.246876,0] pm8917_l8: 2850 <--> 2900 mV at 2900 mV normal idle 
+[    0.247675,0] pm8917_l9: 3000 <--> 3300 mV at 3000 mV normal idle 
+[    0.248792,0] pm8917_l10: 2800 <--> 3000 mV at 2800 mV normal idle 
+[    0.249589,0] pm8917_l11: 2950 mV normal idle 
+[    0.250442,0] pm8917_l12: 1800 <--> 2950 mV at 1800 mV normal idle 
+[    0.251242,0] pm8917_l13: 3075 mV normal idle 
+[    0.252054,0] pm8917_l14: 1800 <--> 3300 mV at 1800 mV normal idle 
+[    0.252849,0] pm8917_l15: 1800 <--> 3300 mV at 1800 mV normal idle 
+[    0.253701,0] pm8917_l16: 1800 mV normal idle 
+[    0.254921,0] pm8917_l17: 2800 <--> 2900 mV at 2800 mV normal idle 
+[    0.255757,0] pm8917_l19: 1225 <--> 1350 mV at 1225 mV normal idle 
+[    0.256554,0] pm8917_l22: 2800 mV normal idle 
+[    0.257409,0] pm8917_l23: 1200 mV normal idle 
+[    0.258203,0] pm8917_l18: 2700 mV normal idle 
+[    0.259559,0] qcom,gcc-8952 1800000.qcom,gcc: GPU speed bin: 0
+[    0.285778,0] qcom,gcc-8952 1800000.qcom,gcc: Registered GCC clocks
+[    0.285967,0] cpu-clock-8939 b011050.qcom,cpu-clock-8939: No PVS version available. Defaulting to 0!
+[    0.285983,0] cpu-clock-8939 b011050.qcom,cpu-clock-8939: Speed bin: 0 PVS Version: 0
+[    0.287376,0] populate_opp_table: clock-cpu-8939: OPP tables populated (cpu 0 and 3)
+[    0.287389,0] print_opp_table: clock_cpu: a53_c1: OPP voltage for 960000000: 1125000
+[    0.287403,0] print_opp_table: clock_cpu: a53_c1: OPP voltage for 1401000000: 1280000
+[    0.288776,1] msm_thermal:sensor_mgr_init_threshold threshold id already initialized
+[    0.289286,1] msm_thermal:update_cpu_freq Unable to update policy for cpu:0. err:-19
+[    0.290935,1] msm_thermal:update_cpu_freq Unable to update policy for cpu:0. err:-19
+[    0.348692,2] qcom,qpnp-pin qpnp-pin-15: qpnp_pin_probe: no device nodes specified in topology
+[    0.348721,2] qcom,qpnp-pin: probe of qpnp-pin-15 failed with error -22
+[    0.349360,2] msm_cpuss_dump soc:cpuss_dump: Couldn't get memory for dumping
+[    0.352097,2] KPI: Bootloader start count = 60786
+[    0.352114,2] KPI: Bootloader end count = 287472
+[    0.352125,2] KPI: Bootloader display count = 2629092074
+[    0.352134,2] KPI: Bootloader load kernel count = 2606
+[    0.352145,2] KPI: Kernel MPM timestamp = 305581
+[    0.352154,2] KPI: Kernel MPM Clock frequency = 32768
+[    0.352184,2] socinfo_print: v0.10, id=303, ver=1.0, raw_id=86, raw_ver=0, hw_plat=8, hw_plat_ver=65536
+[    0.352184,2]  accessory_chip=0, hw_plat_subtype=0, pmic_model=65561, pmic_die_revision=65536 foundry_id=1 serial_number=2862545398
+[    0.353247,2] qpnp_pin_of_gpio_xlate: no such PMIC gpio 7 in device topology
+[    0.353474,2] eldo2_pm8917: no parameters
+[    0.353961,2] vdda_touch: no parameters
+[    0.354488,2] vgaarb: loaded
+[    0.355644,2] SCSI subsystem initialized
+[    0.356620,2] usbcore: registered new interface driver usbfs
+[    0.356753,2] usbcore: registered new interface driver hub
+[    0.356913,2] usbcore: registered new device driver usb
+[    0.358299,2] i2c-msm-v2 78b6000.i2c: probing driver i2c-msm-v2
+[    0.358663,0] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.358678,2] i2c-msm-v2 78b6000.i2c: msm_bus_scale_register_client(mstr-id:86):0 (not a problem)
+[    0.359936,2] i2c-msm-v2 78b7000.i2c: probing driver i2c-msm-v2
+[    0.360262,2] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.360277,2] i2c-msm-v2 78b7000.i2c: msm_bus_scale_register_client(mstr-id:86):0 (not a problem)
+[    0.361456,2] i2c-msm-v2 7af5000.i2c: probing driver i2c-msm-v2
+[    0.361736,2] AXI: msm_bus_scale_register_client(): msm_bus_scale_register_client: Bus driver not ready.
+[    0.361750,2] i2c-msm-v2 7af5000.i2c: msm_bus_scale_register_client(mstr-id:84):0 (not a problem)
+[    0.362710,2] media: Linux media interface: v0.10
+[    0.362789,2] Linux video capture interface: v2.00
+[    0.362892,2] EDAC MC: Ver: 3.0.0
+[    0.376852,2] cpufreq: driver msm up and running
+[    0.377650,2] platform soc:qcom,ion:qcom,ion-heap@27: assigned reserved memory node qseecom_region@0
+[    0.377940,2] ION heap system created
+[    0.378069,2] ION heap mm created at 0x00000000fdc00000 with size 1000000
+[    0.378085,2] ION heap qsecom created at 0x00000000ff000000 with size 1000000
+[    0.378594,2] msm_bus_fabric_init_driver
+[    0.379937,2] msm_bus_device 580000.ad-hoc-bus: Coresight support absent for bus: 2048
+[    0.393502,2] qcom,qpnp-power-on qpnp-power-on-4: PMIC@SID0 Power-on reason: Triggered from Hard Reset and 'cold' boot
+[    0.393527,2] qcom,qpnp-power-on qpnp-power-on-4: PMIC@SID0: Power-off reason: Triggered from PS_HOLD (PS_HOLD/MSM controlled shutdown)
+[    0.393722,2] input: qpnp_pon as /devices/virtual/input/input0
+[    0.394165,2] pon_spare_reg: no parameters
+[    0.394263,2] qcom,qpnp-power-on qpnp-power-on-13: No PON config. specified
+[    0.394315,2] qcom,qpnp-power-on qpnp-power-on-13: PMIC@SID2 Power-on reason: Triggered from PON1 (secondary PMIC) and 'cold' boot
+[    0.394333,2] qcom,qpnp-power-on qpnp-power-on-13: PMIC@SID2: Power-off reason: Triggered from PS_HOLD (PS_HOLD/MSM controlled shutdown)
+[    0.394526,2] PMIC@SID0: PM8937 v1.0 options: 0, 2, 0, 0
+[    0.394628,2] PMIC@SID2: PMI8940 v2.0 options: 0, 0, 0, 0
+[    0.396173,2] gdsc_venus: no parameters
+[    0.396539,2] gdsc_mdss: no parameters
+[    0.396941,2] gdsc_jpeg: no parameters
+[    0.397550,2] gdsc_vfe: no parameters
+[    0.398179,2] gdsc_vfe1: no parameters
+[    0.398525,2] gdsc_cpp: no parameters
+[    0.398882,2] gdsc_oxili_gx: no parameters
+[    0.399154,2] gdsc_venus_core0: fast normal 
+[    0.399881,2] mdss_pll_probe: MDSS pll label = MDSS DSI 0 PLL
+[    0.399891,2] mdss_pll_probe: mdss_pll_probe: label=MDSS DSI 0 PLL PLL SSC enabled
+[    0.399913,2] mdss_pll_util_parse_dt_supply: : error reading ulp load. rc=-22
+[    0.399926,2] mdss_pll_util_parse_dt_supply: : error reading ulp load. rc=-22
+[    0.400750,2] dsi_pll_clock_register_lpm: Registered DSI PLL:0 clocks successfully
+[    0.401787,2] msm_iommu 1f00000.qcom,iommu: device gfx_iommu (model: 500) mapped at ffffff80014c0000, with 1 ctx banks
+[    0.402564,2] msm_iommu 1e00000.qcom,iommu: device apps_iommu (model: 500) mapped at ffffff8001c00000, with 21 ctx banks
+[    0.410467,2] msm_iommu_ctx 1f08000.qcom,iommu-ctx: context gfx3d_user using bank 0
+[    0.410668,2] msm_iommu_ctx 1e20000.qcom,iommu-ctx: context q6 using bank 0
+[    0.410859,2] msm_iommu_ctx 1e21000.qcom,iommu-ctx: context adsp_sec_pixel using bank 1
+[    0.411044,2] msm_iommu_ctx 1e22000.qcom,iommu-ctx: context mdp_1 using bank 2
+[    0.411237,2] msm_iommu_ctx 1e23000.qcom,iommu-ctx: context venus_fw using bank 3
+[    0.411421,2] msm_iommu_ctx 1e24000.qcom,iommu-ctx: context venus_sec_non_pixel using bank 4
+[    0.411612,2] msm_iommu_ctx 1e25000.qcom,iommu-ctx: context venus_sec_bitstream using bank 5
+[    0.411797,2] msm_iommu_ctx 1e26000.qcom,iommu-ctx: context venus_sec_pixel using bank 6
+[    0.412021,2] msm_iommu_ctx 1e28000.qcom,iommu-ctx: context pronto_pil using bank 8
+[    0.412243,2] msm_iommu_ctx 1e29000.qcom,iommu-ctx: context mss_nav using bank 9
+[    0.412467,2] msm_iommu_ctx 1e2a000.qcom,iommu-ctx: context periph_rpm using bank 10
+[    0.412690,2] msm_iommu_ctx 1e2b000.qcom,iommu-ctx: context lpass using bank 11
+[    0.412912,2] msm_iommu_ctx 1e2f000.qcom,iommu-ctx: context adsp_io using bank 15
+[    0.413135,2] msm_iommu_ctx 1e30000.qcom,iommu-ctx: context adsp_opendsp using bank 16
+[    0.413384,2] msm_iommu_ctx 1e31000.qcom,iommu-ctx: context adsp_shared using bank 17
+[    0.413611,2] msm_iommu_ctx 1e32000.qcom,iommu-ctx: context cpp using bank 18
+[    0.413834,2] msm_iommu_ctx 1e33000.qcom,iommu-ctx: context jpeg_enc0 using bank 19
+[    0.414054,2] msm_iommu_ctx 1e34000.qcom,iommu-ctx: context vfe using bank 20
+[    0.414276,2] msm_iommu_ctx 1e35000.qcom,iommu-ctx: context mdp_0 using bank 21
+[    0.414496,2] msm_iommu_ctx 1e36000.qcom,iommu-ctx: context venus_ns using bank 22
+[    0.414722,2] msm_iommu_ctx 1e38000.qcom,iommu-ctx: context mss_mcdma using bank 24
+[    0.414941,2] msm_iommu_ctx 1e37000.qcom,iommu-ctx: context access_control using bank 23
+[    0.418393,2] Advanced Linux Sound Architecture Driver Initialized.
+[    0.419577,2] Bluetooth: ffffffc02e0c7d80
+[    0.419612,2] NET: Registered protocol family 31
+[    0.419620,2] Bluetooth: ffffffc02e0c7d80
+[    0.419630,2] Bluetooth: ffffffc02e0c7d60Bluetooth: ffffffc02e0c7d40
+[    0.419669,2] Bluetooth: ffffffc02e0c7d60[    0.420061,2] cfg80211: Calling CRDA to update world regulatory domain
+[    0.420084,2] cfg80211: World regulatory domain updated:
+[    0.420090,2] cfg80211:  DFS Master region: unset
+[    0.420095,2] cfg80211:   (start_freq - end_freq @ bandwidth), (max_antenna_gain, max_eirp), (dfs_cac_time)
+[    0.420105,2] cfg80211:   (2402000 KHz - 2472000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+[    0.420112,2] cfg80211:   (2457000 KHz - 2482000 KHz @ 40000 KHz), (N/A, 2000 mBm), (N/A)
+[    0.420119,2] cfg80211:   (2474000 KHz - 2494000 KHz @ 20000 KHz), (N/A, 2000 mBm), (N/A)
+[    0.420126,2] cfg80211:   (5170000 KHz - 5250000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+[    0.420133,2] cfg80211:   (5250000 KHz - 5330000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+[    0.420140,2] cfg80211:   (5490000 KHz - 5710000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+[    0.420147,2] cfg80211:   (5735000 KHz - 5835000 KHz @ 80000 KHz), (N/A, 2000 mBm), (N/A)
+[    0.420154,2] cfg80211:   (57240000 KHz - 63720000 KHz @ 2160000 KHz), (N/A, 0 mBm), (N/A)
+[    0.420271,0] pcie:pcie_init.
+[    0.422434,3] ibb_reg: 4600 <--> 6000 mV at 5000 mV 
+[    0.422744,3] lab_reg: 4600 <--> 6000 mV at 5000 mV 
+[    0.423984,0] Switched to clocksource arch_sys_counter
+[    0.472464,0] NET: Registered protocol family 2
+[    0.472939,0] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.473034,0] TCP bind hash table entries: 16384 (order: 6, 262144 bytes)
+[    0.473216,0] TCP: Hash tables configured (established 16384 bind 16384)
+[    0.473275,0] TCP: reno registered
+[    0.473285,0] UDP hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.473324,0] UDP-Lite hash table entries: 1024 (order: 3, 32768 bytes)
+[    0.473541,0] NET: Registered protocol family 1
+[    0.474840,0] gcc-mdss-8952 soc:qcom,gcc-mdss@1800000: Registered GCC MDSS clocks.
+[    0.476080,0] Trying to unpack rootfs image as initramfs...
+[    0.519579,2] Freeing initrd memory: 1204K
+[    0.524603,2] futex hash table entries: 1024 (order: 4, 65536 bytes)
+[    0.524673,2] audit: initializing netlink subsys (disabled)
+[    0.524723,2] audit: type=2000 audit(0.523:1): initialized
+[    0.525163,2] vmscan: error setting kswapd cpu affinity mask
+[    0.530488,2] VFS: Disk quotas dquot_6.5.2
+[    0.530609,2] Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.532065,2] exFAT: Version 1.2.9
+[    0.532694,2] Registering sdcardfs 0.1
+[    0.532864,2] fuse init (API version 7.23)
+[    0.535689,2] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.535705,2] io scheduler noop registered
+[    0.535716,2] io scheduler deadline registered
+[    0.535900,2] io scheduler cfq registered (default)
+[    0.540917,2] msm_dss_get_res_byname: 'vbif_nrt_phys' resource not found
+[    0.540933,2] mdss_mdp_probe+0x238/0x29d0->msm_dss_ioremap_byname: 'vbif_nrt_phys' msm_dss_get_res_byname failed
+[    0.541660,2] mdss_mdp_irq_clk_register: unable to get clk: lut_clk
+[    0.542497,2] No change in context(0==0), skip
+[    0.542976,2] mdss_mdp_pipe_addr_setup: type:0 ftchid:-1 xinid:0 num:0 rect:0 ndx:0x1 prio:0
+[    0.542999,2] mdss_mdp_pipe_addr_setup: type:1 ftchid:-1 xinid:1 num:3 rect:0 ndx:0x8 prio:1
+[    0.543007,2] mdss_mdp_pipe_addr_setup: type:1 ftchid:-1 xinid:5 num:4 rect:0 ndx:0x10 prio:2
+[    0.543025,2] mdss_mdp_pipe_addr_setup: type:2 ftchid:-1 xinid:2 num:6 rect:0 ndx:0x40 prio:3
+[    0.543043,2] mdss_mdp_pipe_addr_setup: type:3 ftchid:-1 xinid:7 num:10 rect:0 ndx:0x400 prio:0
+[    0.543056,2] mdss_mdp_parse_dt_handler: Error from prop qcom,mdss-pipe-sw-reset-off : u32 array read
+[    0.543165,2] mdss_mdp_parse_dt_handler: Error from prop qcom,mdss-ib-factor-overlap : u32 array read
+[    0.543523,2] xlog_status: enable:0, panic:1, dump:2
+[    0.544275,2] mdss_mdp_probe: mdss version = 0x100f0000, bootloader display is on, num 1, intf_sel=0x00000100
+[    0.547305,2] mdss_smmu_util_parse_dt_clock: clocks are not defined
+[    0.547372,2] mdss_smmu_probe: iommu v2 domain[0] mapping and clk register successful!
+[    0.547405,2] mdss_smmu_util_parse_dt_clock: clocks are not defined
+[    0.547450,2] mdss_smmu_probe: iommu v2 domain[2] mapping and clk register successful!
+[    0.548356,2] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    0.548372,2] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    0.548392,2] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    0.550162,2] mdss_dsi_ctrl_probe: DSI Ctrl name = MDSS DSI CTRL->0
+[    0.550891,2] mdss_panel_parse_panel_config_dt: BL: panel=mipi_mot_video_tianma_hd_499, manufacture_id(0xDA)= 0x1A controller_ver(0xDB)= 0x50 controller_drv_ver(0XDC)= 0x47, full=0x000000000047501A
+[    0.550902,2] mdss_dsi_find_panel_of_node: cmdline:0:qcom,mdss_dsi_mot_tianma_499_720p_video_v1 panel_name:qcom,mdss_dsi_mot_tianma_499_720p_video_v1
+[    0.550943,2] mdss_dsi_panel_init: Panel Name = mipi_mot_video_tianma_720p_499
+[    0.551107,2] mdss_dsi_panel_timing_from_dt: found new timing "qcom,mdss_dsi_mot_tianma_499_720p_video_v1" (ffffffc02e0c7558)
+[    0.551129,2] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-post-panel-on-command
+[    0.551139,2] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-timing-switch-command
+[    0.551145,2] mdss_dsi_panel_get_dsc_cfg_np: cannot find dsc config node:
+[    0.551254,2] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-idle-on-command
+[    0.551264,2] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-idle-off-command
+[    0.551293,2] mdss_dsi_parse_panel_features: ulps feature disabled
+[    0.551301,2] mdss_dsi_parse_panel_features: ulps during suspend feature disabled
+[    0.551310,2] mdss_dsi_parse_dms_config: dynamic switch feature enabled: 0
+[    0.551371,2] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-lp-mode-on
+[    0.551382,2] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-lp-mode-off
+[    0.551432,2] mdss_panel_parse_param_prop: HBM feature enabled with 2 dt cmds
+[    0.551438,2] mdss_panel_parse_param_prop: HBM type = 1
+[    0.551484,2] mdss_panel_parse_param_prop: CABC feature enabled with 3 dt cmds
+[    0.551494,2] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-lp-mode-on
+[    0.551505,2] mdss_dsi_parse_dcs_cmds: failed, key=qcom,mdss-dsi-lp-mode-off
+[    0.551528,2] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    0.551542,2] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    0.551556,2] mdss_dsi_get_dt_vreg_data: error reading ulp load. rc=-22
+[    0.551818,2] mdss_dsi_parse_gpio_params:4125, TE gpio not specified
+[    0.551826,2] mdss_dsi_parse_gpio_params: bklt_en gpio not specified
+[    0.551863,2] mdss_dsi_retrieve_ctrl_resources: phy_regulator_base=ffffff8001484b80 phy_regulator_size=30
+[    0.551870,2] mdss_dsi_retrieve_ctrl_resources: ctrl_base=ffffff8000c56000 ctrl_size=300 phy_base=ffffff8001482400 phy_size=280
+[    0.552009,2] dsi_panel_device_register: Continuous splash enabled
+[    0.552298,2] mdss_register_panel: adding framebuffer device 1a94000.qcom,mdss_dsi_ctrl0
+[    0.573675,2] mdss_dsi_ctrl_probe: Dsi Ctrl->0 initialized, DSI rev:0x10040002, PHY rev:0x1
+[    0.573736,2] mdss_dsi_status_init: DSI status check interval:8000
+[    0.574412,2] mdss_register_panel: adding framebuffer device soc:qcom,mdss_wb_panel
+[    0.575501,2] mdss_fb_probe: fb0: split_mode:0 left:0 right:0
+[    0.576268,2] mdss_fb_register: FrameBuffer[0] 720x1280 registered successfully!
+[    0.576857,2] mdss_fb_probe: fb1: split_mode:0 left:0 right:0
+[    0.576981,2] mdss_fb_register: FrameBuffer[1] 640x640 registered successfully!
+[    0.577115,2] mdss_mdp_splash_parse_dt: splash mem child node is not present
+[    0.577147,2] anx7805 anx7805_init: anx7805_init
+[    0.577182,3] anx7805 anx7805_init_async: anx7805_init_async
+[    0.580990,2] IPC_RTR: msm_ipc_router_smd_driver_register Already driver registered IPCRTR
+[    0.581026,2] IPC_RTR: msm_ipc_router_smd_driver_register Already driver registered IPCRTR
+[    0.584223,1] In memshare_probe, Memshare probe success
+[    0.589049,1] msm_rpm_log_probe: OK
+[    0.593533,1] subsys-pil-tz 1de0000.qcom,venus: for venus segments only will be dumped.
+[    0.596077,1] pil-q6v5-mss 4080000.qcom,mss: Failed to find the pas_id.
+[    0.596678,1] mmi_unit_info (SMEM) for modem: version = 0x03, device = 'perry', radio = 0x0, radio_str = 'US', system_rev = 0x83b0, system_serial = 0xf6f99eaa00000000, machine = '', barcode = 'ZY224NSVXP', baseband = '', carrier = 'retus', pu_reason = 0x00004000
+[    0.596752,1] ACPU Bin is not available.
+[    0.596815,1] mmi_storage_info :eMMC: 16GB SAMSUNG QE63MB FV=0000000000000003
+[    0.597706,1] msm_serial_hs module loaded
+[    0.618914,3] brd: module loaded
+[    0.621168,3] loop: module loaded
+[    0.621536,3] zram: Added device: zram0
+[    0.622079,3] QSEECOM: qseecom_probe: qseecom.qsee_version = 0x1001000
+[    0.622111,2] QSEECOM: qseecom_retrieve_ce_data: Device does not support PFE
+[    0.622121,3] QSEECOM: qseecom_probe: qseecom clocks handled by other subsystem
+[    0.622129,3] QSEECOM: qseecom_probe: qsee reentrancy support phase is not defined, setting to default 0
+[    0.622989,3] QSEECOM: qseecom_probe: qseecom.whitelist_support = 1
+[    0.625916,3] alsa-to-h2w soc:alsa_to_h2w: alsa_to_h2w_probe success
+[    0.626180,3] i2c-core: driver [tabla-i2c-core] using legacy suspend method
+[    0.626186,3] i2c-core: driver [tabla-i2c-core] using legacy resume method
+[    0.626285,3] i2c-core: driver [wcd9xxx-i2c-core] using legacy suspend method
+[    0.626291,3] i2c-core: driver [wcd9xxx-i2c-core] using legacy resume method
+[    0.626386,3] i2c-core: driver [tasha-i2c-core] using legacy suspend method
+[    0.626392,3] i2c-core: driver [tasha-i2c-core] using legacy resume method
+[    0.626905,3] Loading pn544 driver
+[    0.627908,3] qce 720000.qcedev: Qualcomm Crypto 5.3.3 device found @0x720000
+[    0.627922,3] qce 720000.qcedev: CE device = 0x0
+[    0.627922,3] IO base, CE = 0xffffff8001a40000
+[    0.627922,3] Consumer (IN) PIPE 2,    Producer (OUT) PIPE 3
+[    0.627922,3] IO base BAM = 0x0000000000000000
+[    0.627922,3] BAM IRQ 267
+[    0.627922,3] Engines Availability = 0x2010853
+[    0.628195,3] sps:BAM 0x0000000000704000 is registered.
+[    0.628371,3] sps:BAM 0x0000000000704000 (va:0xffffff8001b40000) enabled: ver:0x27, number of pipes:8
+[    0.628497,3] QCE50: qce_sps_init:  Qualcomm MSM CE-BAM at 0x0000000000704000 irq 267
+[    0.630371,3] qcrypto 720000.qcrypto: Qualcomm Crypto 5.3.3 device found @0x720000
+[    0.630385,3] qcrypto 720000.qcrypto: CE device = 0x0
+[    0.630385,3] IO base, CE = 0xffffff8001d40000
+[    0.630385,3] Consumer (IN) PIPE 4,    Producer (OUT) PIPE 5
+[    0.630385,3] IO base BAM = 0x0000000000000000
+[    0.630385,3] BAM IRQ 267
+[    0.630385,3] Engines Availability = 0x2010853
+[    0.630578,3] QCE50: qce_sps_init:  Qualcomm MSM CE-BAM at 0x0000000000704000 irq 267
+[    0.631137,3] qcrypto 720000.qcrypto: qcrypto-ecb-aes
+[    0.631239,3] qcrypto 720000.qcrypto: qcrypto-cbc-aes
+[    0.631330,3] qcrypto 720000.qcrypto: qcrypto-ctr-aes
+[    0.631422,3] qcrypto 720000.qcrypto: qcrypto-ecb-des
+[    0.631522,3] qcrypto 720000.qcrypto: qcrypto-cbc-des
+[    0.631614,3] qcrypto 720000.qcrypto: qcrypto-ecb-3des
+[    0.631706,3] qcrypto 720000.qcrypto: qcrypto-cbc-3des
+[    0.631798,3] qcrypto 720000.qcrypto: qcrypto-xts-aes
+[    0.631893,3] qcrypto 720000.qcrypto: qcrypto-sha1
+[    0.631988,3] qcrypto 720000.qcrypto: qcrypto-sha256
+[    0.632080,3] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha1-cbc-aes
+[    0.632172,3] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha1-cbc-des
+[    0.632265,3] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha1-cbc-3des
+[    0.632358,3] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha256-cbc-aes
+[    0.632456,3] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha256-cbc-des
+[    0.632548,3] qcrypto 720000.qcrypto: qcrypto-aead-hmac-sha256-cbc-3des
+[    0.632641,3] qcrypto 720000.qcrypto: qcrypto-hmac-sha1
+[    0.632734,3] qcrypto 720000.qcrypto: qcrypto-hmac-sha256
+[    0.632830,3] qcrypto 720000.qcrypto: qcrypto-aes-ccm
+[    0.632923,3] qcrypto 720000.qcrypto: qcrypto-rfc4309-aes-ccm
+[    0.632929,3] qcrypto: FIPS140-2 Known Answer Tests: Skipped
+[    0.634276,3] qcom_ice_get_device_tree_data: No vdd-hba-supply regulator, assuming not needed
+[    0.634527,3] ICE IRQ = 269
+[    0.635796,3] SCSI Media Changer driver v0.25 
+[    0.637605,3] tun: Universal TUN/TAP device driver, 1.6
+[    0.637613,3] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    0.637692,3] PPP generic driver version 2.4.2
+[    0.637794,3] PPP BSD Compression module registered
+[    0.637804,3] PPP Deflate Compression module registered
+[    0.637826,3] PPP MPPE Compression module registered
+[    0.637841,3] NET: Registered protocol family 24
+[    0.638596,3] wcnss_wlan probed in built-in mode
+[    0.642280,3] pegasus: v0.9.3 (2013/04/25), Pegasus/Pegasus II USB Ethernet driver
+[    0.642363,3] usbcore: registered new interface driver pegasus
+[    0.642425,3] usbcore: registered new interface driver asix
+[    0.642475,3] usbcore: registered new interface driver ax88179_178a
+[    0.642521,3] usbcore: registered new interface driver cdc_ether
+[    0.642567,3] usbcore: registered new interface driver net1080
+[    0.642615,3] usbcore: registered new interface driver cdc_subset
+[    0.642662,3] usbcore: registered new interface driver zaurus
+[    0.642709,3] usbcore: registered new interface driver MOSCHIP usb-ethernet driver
+[    0.642911,3] usbcore: registered new interface driver cdc_ncm
+[    0.643459,3] msm_sharedmem: sharedmem_register_qmi: qmi init successful
+[    0.644600,3] scm_call failed: func id 0x42000c16, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    0.644610,3] hyp_assign_table: Failed to assign memory protection, ret = -5
+[    0.644620,3] msm_sharedmem: setup_shared_ram_perms: hyp_assign_phys failed IPA=0x0160x00000000fe000000 size=1572864 err=-5
+[    0.644750,3] msm_sharedmem: msm_sharedmem_probe: Device created for client 'rmtfs'
+[    0.645694,3] msm_otg 78db000.usb: msm_otg probe
+[    0.649808,3] msm_otg 78db000.usb: OTG regs = ffffff8001768000
+[    0.655832,3] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.655848,3] ehci-pci: EHCI PCI platform driver
+[    0.655909,3] ehci-msm: Qualcomm On-Chip EHCI Host Controller
+[    0.656499,3] Unable to get vbus_otg
+[    0.656511,3] msm_hsusb_host msm_hsusb_host: unable to register with transceiver
+[    0.656623,3] usbcore: registered new interface driver cdc_acm
+[    0.656630,3] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[    0.656720,3] usbcore: registered new interface driver usb-storage
+[    0.656835,3] usbcore: registered new interface driver usbserial
+[    0.656888,3] usbcore: registered new interface driver usb_ehset_test
+[    0.657344,3] gbridge_init: gbridge_init successs.
+[    0.658571,3] mousedev: PS/2 mouse device common for all mice
+[    0.658802,3] usbcore: registered new interface driver xpad
+[    0.659800,3] synaptics_dsx_dt_parse_modifiers: processing modifier config_modifier-aod[0]
+[    0.659899,3] synaptics_dsx_i2c 3-0020: no valid patch sets found
+[    0.659909,3] synaptics_dsx_dt_parse_modifiers: processing modifier config_modifier-fps[5]
+[    0.659917,3] synaptics_dsx_dt_parse_modifiers: using fingerprint sensor detection
+[    0.659926,3] synaptics_dsx_dt_parse_modifier: using touch clip area in fps-active
+[    0.659963,3] synaptics_dsx_of_init: using gpio config
+[    0.660228,3] 3-0020 supply vdd_quirk not found, using dummy regulator
+[    0.678340,3] i2c-msm-v2 78b7000.i2c: msm_bus_scale_register_client(mstr-id:86):0xe (ok)
+[    0.688527,3] synaptics_dsx_i2c 3-0020: synaptics_rmi4_cap_button_map: cap_button_map is 				NULL in board file
+[    0.690136,3] synaptics_dsx_i2c 3-0020: synaptics_rmi4_query_device: No handler for F51
+[    0.693840,3] input: synaptics_dsx_i2c as /devices/soc/78b7000.i2c/i2c-3/3-0020/input/input1
+[    0.693931,3] synaptics_rmi4_query_device: Product: s3603r, firmware id: 27030e, config id: 17030802
+[    0.694824,3] synaptics_dsx_sensor_state: state change UNKNOWN -> STANDBY
+[    0.694835,3] synaptics_dsx_sysfs_touchscreen: assigned minor 32
+[    0.703840,1] synaptics_dsx_i2c 3-0020: RxTx mapped from F$55
+[    0.703840,1] 
+[    0.703840,1] 	Rx mapped count 25(28)
+[    0.703840,1] 	Tx 				mapped count 14(16)
+[    0.703840,1] 
+[    0.704726,1] statistics_start_timekeeping: F51 data: invalid offset
+[    0.704733,1] statistics_init: statistics init failed
+[    0.705338,1] synaptics_dsx_i2c 3-0020: fwu_scan_pdt: BL version = 7
+[    0.705975,3] input: hbtp_vm as /devices/virtual/input/input2
+[    0.706249,3] et320_init  enter
+[    0.707308,3] etspi_probe initial
+[    0.707342,3] etspi_parse_dt: sleepPin=127
+[    0.707351,3] etspi_parse_dt: drdyPin=128
+[    0.707359,3] etspi_parse_dt: 3.3v power pin=133
+[    0.707367,3] etspi_parse_dt: 18v power pin=132
+[    0.707372,3] etspi_parse_dt is successful
+[    0.707378,3] etspi_platformInit
+[    0.707393,3] etspi:  vdd_18v_Pin set to high
+[    0.708405,3] etspi:  vcc_33v_Pin set to high
+[    0.710416,3] etspi:  reset to high
+[    0.710427,3] ets320: etspi_platformInit successful status=0
+[    0.710506,3] Egis navigation driver, egis_input device init
+[    0.710717,3] Egis navigation driver, uinput_egis_init
+[    0.710835,0] nav_input_thread enter
+[    0.710965,3] input: uinput-egis as /devices/virtual/input/input3
+[    0.711042,3] etspi:etspi_reset
+[    0.749737,1] sps: BAM device 0x0000000007884000 is not registered yet.
+[    0.749997,3] sps:BAM 0x0000000007884000 is registered.
+[    0.750179,1] sps:BAM 0x0000000007884000 (va:0xffffff80018a0000) enabled: ver:0x19, number of pipes:12
+[    0.766717,3]   add_timer ---- 
+[    0.766724,3] etspi_probe : initialize success 0
+[    0.766939,3] et320_init  done
+[    0.767251,3] input: SX9310 Cap Touch as /devices/virtual/input/input4
+[    0.767709,3] SX9310registered with threaded irq (38)
+[    0.768018,3] i2c-msm-v2 78b6000.i2c: msm_bus_scale_register_client(mstr-id:86):0xf (ok)
+[    0.768262,0] irq 6, desc: ffffffc02e3eb600, depth: 0, count: 0, unhandled: 0
+[    0.768268,1] ->handle_irq():  ffffffc00037fd80, msm_gpio_irq_handler+0x0/0x150
+[    0.768281,0] ->irq_data.chip(): ffffffc0017ccc60, gic_chip+0x0/0xe8
+[    0.768292,0] ->action():           (null)
+[    0.768297,0]    IRQ_NOPROBE set
+[    0.768302,0]  IRQ_NOREQUEST set
+[    0.768307,0]   IRQ_NOTHREAD set
+[    0.770034,0] FPS interrupt count = 0
+[    0.770039,3] FPS triggered !!!!!!!
+[    1.174165,3] i2c-core: driver [bma25x-accel] using legacy suspend method
+[    1.174171,3] i2c-core: driver [bma25x-accel] using legacy resume method
+[    1.174185,3] AKM compass driver: initialize.
+[    1.174250,3] i2c-core: driver [EPL8802] using legacy suspend method
+[    1.174258,3] i2c-core: driver [EPL8802] using legacy resume method
+[    1.175027,3] input: qwerty as /devices/virtual/input/input5
+[    1.175317,3] hb_init hb done
+[    1.175615,3] qcom,qpnp-rtc qpnp-rtc-7: rtc core: registered qpnp_rtc as rtc0
+[    1.175631,3] Current shipmode info is 0x88e = 0x60
+[    1.175645,3] Current shipmode info is 0x88e = 0x60
+[    1.175668,3] Write shipmode info to 0x88e with 0x0
+[    1.175848,3] i2c /dev entries driver
+[    1.181335,3] /soc/qcom,cam_smmu/msm_cam_smmu_cb1: could not get #iommu-cells for /soc/qcom,iommu@1e00000
+[    1.181934,3] CAM-SMMU cam_populate_smmu_context_banks:1586 Invalid pointer of ctx : vfe_secure rc = -517
+[    1.181942,3] CAM-SMMU cam_smmu_probe:1636 Error: populating context banks
+[    1.181956,3] msm_cam_smmu: probe of soc:qcom,cam_smmu:msm_cam_smmu_cb2 failed with error -12
+[    1.182033,3] /soc/qcom,cam_smmu/msm_cam_smmu_cb3: could not get #iommu-cells for /soc/qcom,iommu@1e00000
+[    1.182351,3] /soc/qcom,cam_smmu/msm_cam_smmu_cb4: could not get #iommu-cells for /soc/qcom,iommu@1e00000
+[    1.183294,3] CAM-SMMU cam_populate_smmu_context_banks:1586 Invalid pointer of ctx : vfe_secure rc = -517
+[    1.183302,3] CAM-SMMU cam_smmu_probe:1636 Error: populating context banks
+[    1.183315,3] msm_cam_smmu: probe of soc:qcom,cam_smmu:msm_cam_smmu_cb2 failed with error -12
+[    1.185980,3] msm_camera_get_dt_vreg_data:1198 number of entries is 0 or not present in dts
+[    1.188391,3] msm_camera_get_dt_vreg_data:1198 number of entries is 0 or not present in dts
+[    1.189863,3] msm_camera_get_dt_vreg_data:1198 number of entries is 0 or not present in dts
+[    1.193115,3] msm_camera_get_dt_vreg_data:1198 number of entries is 0 or not present in dts
+[    1.194710,3] msm_camera_get_dt_vreg_data:1198 number of entries is 0 or not present in dts
+[    1.196258,3] msm_camera_get_dt_vreg_data:1198 number of entries is 0 or not present in dts
+[    1.197565,3] msm_actuator_platform_probe:2092 No valid actuator GPIOs data
+[    1.198638,3] msm_eeprom_platform_probe failed 1825
+[    1.199164,3] msm_eeprom_platform_probe failed 1825
+[    1.200448,3] msm_flash_get_pmic_source_info:1000 alternate current: read failed
+[    1.200458,3] msm_flash_get_pmic_source_info:1020 alternate max-current: read failed
+[    1.200466,3] msm_flash_get_pmic_source_info:1040 alternate duration: read failed
+[    1.200512,3] msm_flash_get_pmic_source_info:1000 alternate current: read failed
+[    1.200519,3] msm_flash_get_pmic_source_info:1020 alternate max-current: read failed
+[    1.200526,3] msm_flash_get_pmic_source_info:1040 alternate duration: read failed
+[    1.200573,3] msm_flash_get_pmic_source_info:1110 alternate current: read failed
+[    1.200580,3] msm_flash_get_pmic_source_info:1130 alternate current: read failed
+[    1.200628,3] msm_flash_get_pmic_source_info:1110 alternate current: read failed
+[    1.200635,3] msm_flash_get_pmic_source_info:1130 alternate current: read failed
+[    1.200644,3] msm_flash_get_dt_data:1203 No valid flash GPIOs data
+[    1.200651,3] msm_camera_get_dt_vreg_data:1198 number of entries is 0 or not present in dts
+[    1.202019,3] adp1660 i2c_add_driver success
+[    1.209011,3] ------------[ cut here ]------------
+[    1.209030,3] WARNING: CPU: 3 PID: 1 at ../../../../../../kernel/motorola/msm8937/drivers/clk/msm/clock-local2.c:233 rcg_clk_enable+0x98/0x9c()
+[    1.209036,3] Attempting to prepare camss_top_ahb_clk_src before setting its rate. Set the rate first!
+[    1.209042,3] Modules linked in:
+[    1.209052,3] CPU: 3 PID: 1 Comm: swapper/0 Not tainted 3.18.140-lineage #1
+[    1.209057,3] Hardware name: perry (DT)
+[    1.209062,3] Call trace:
+[    1.209072,3] [<ffffffc000089a34>] dump_backtrace+0x0/0x21c
+[    1.209080,3] [<ffffffc000089a2c>] show_stack+0x18/0x20
+[    1.209088,3] [<ffffffc00035061c>] __dump_stack+0x20/0x28
+[    1.209095,3] [<ffffffc0003505d4>] dump_stack+0x60/0x88
+[    1.209103,3] [<ffffffc0000a3b48>] warn_slowpath_common+0x98/0xc4
+[    1.209109,3] [<ffffffc0000a3aa4>] warn_slowpath_fmt+0x44/0x50
+[    1.209115,3] [<ffffffc000be1f7c>] rcg_clk_enable+0x98/0x9c
+[    1.209124,3] [<ffffffc000bdee10>] clk_enable+0x174/0x1b8
+[    1.209131,3] [<ffffffc000bded30>] clk_enable+0x94/0x1b8
+[    1.209140,3] [<ffffffc0007d7ed4>] msm_camera_clk_enable+0xe0/0x23c
+[    1.209149,3] [<ffffffc0008013b8>] cpp_init_hardware+0x7c/0x484
+[    1.209156,3] [<ffffffc000800f04>] cpp_probe+0x324/0x618
+[    1.209165,3] [<ffffffc00054a460>] platform_drv_probe+0x3c/0x88
+[    1.209173,3] [<ffffffc00054828c>] driver_probe_device+0xc8/0x1e8
+[    1.209180,3] [<ffffffc000548584>] __driver_attach+0x64/0x90
+[    1.209187,3] [<ffffffc000546a30>] bus_for_each_dev+0x64/0x94
+[    1.209194,3] [<ffffffc000548518>] driver_attach+0x24/0x2c
+[    1.209200,3] [<ffffffc000547110>] bus_add_driver+0x118/0x1e0
+[    1.209208,3] [<ffffffc000549268>] driver_register+0x8c/0xd8
+[    1.209215,3] [<ffffffc00054a41c>] __platform_driver_register+0x5c/0x64
+[    1.209223,3] [<ffffffc001724d20>] msm_cpp_init_module+0x18/0x20
+[    1.209230,3] [<ffffffc00008298c>] do_one_initcall+0xec/0x17c
+[    1.209238,3] [<ffffffc0016e4b40>] kernel_init_freeable+0x198/0x22c
+[    1.209245,3] [<ffffffc000eddec4>] kernel_init+0x10/0xfc
+[    1.209261,3] ---[ end trace 501bd90f96ad2743 ]---
+[    1.209288,3] MSM-CPP cpp_init_hardware:1011 CPP HW Version: 0x40030004
+[    1.209298,3] MSM-CPP cpp_init_hardware:1029 stream_cnt:0
+[    1.211798,2] CAM-SOC msm_camera_get_reg_base:787 err: mem resource vfe_fuse not found
+[    1.211809,2] CAM-SOC msm_camera_get_res_size:830 err: mem resource vfe_fuse not found
+[    1.213941,2] CAM-SOC msm_camera_get_reg_base:787 err: mem resource vfe_fuse not found
+[    1.213951,2] CAM-SOC msm_camera_get_res_size:830 err: mem resource vfe_fuse not found
+[    1.226750,3] __msm_jpeg_init:1537] Jpeg Device id 0
+[    1.230192,2] usbcore: registered new interface driver uvcvideo
+[    1.230203,2] USB Video Class driver (1.1.1)
+[    1.231172,2] FG: fg_check_ima_exception: Initial ima_err_sts=0 ima_exp_sts=0 ima_hw_sts=66
+[    1.232403,2] FG: fg_power_get_property: ESR Bad: -22 mOhm
+[    1.232742,2] FG: fg_power_get_property: ESR Bad: -22 mOhm
+[    1.232819,2] FG: fg_probe: FG Probe success - FG Revision DIG:3.1 ANA:1.2 PMIC subtype=64
+[    1.233691,2] qpnp-smbcharger qpnp-smbcharger-17: node /soc/qcom,spmi@200f000/qcom,pmi8950@2/qcom,qpnp-smbcharger IO resource absent!
+[    1.234028,2] SMBCHG: smbchg_wa_config: PMIC subtype 64 not supported, WA flags not set
+[    1.234323,2] qpnp-smbcharger qpnp-smbcharger-17: length=6
+[    1.234333,2] qpnp-smbcharger qpnp-smbcharger-17: num parallel charge entries=6
+[    1.234738,2] smbcharger_charger_otg: no parameters
+[    1.236797,2] FG: fg_vbat_est_check: vbat(-22),est-vbat(-22),diff(0),threshold(40000)
+[    1.260427,2] FG: fg_vbat_est_check: vbat(-22),est-vbat(-22),diff(0),threshold(40000)
+[    1.260608,2] FG: fg_vbat_est_check: vbat(-22),est-vbat(-22),diff(0),threshold(40000)
+[    1.261026,2] FG: fg_vbat_est_check: vbat(-22),est-vbat(-22),diff(0),threshold(40000)
+[    1.261202,2] FG: fg_vbat_est_check: vbat(-22),est-vbat(-22),diff(0),threshold(40000)
+[    1.264735,1] qpnp-smbcharger qpnp-smbcharger-17: node /soc/qcom,spmi@200f000/qcom,pmi8950@2/qcom,qpnp-smbcharger IO resource absent!
+[    1.265560,1] qpnp-smbcharger qpnp-smbcharger-17: SMBCHG successfully probe Charger version=SCHG_LITE Revision DIG:0.0 ANA:0.1 batt=1 dc=0 usb=0
+[    1.267648,3] unable to find DT imem DLOAD mode node
+[    1.268280,3] unable to find DT imem EDLOAD mode node
+[    1.270110,1] qpnp-smbcharger qpnp-smbcharger-17: Battery Temp State = Slightly Cool
+[    1.270520,3] thermal thermal_zone2: failed to read out thermal zone 2
+[    1.270738,3] thermal thermal_zone3: failed to read out thermal zone 3
+[    1.270953,3] thermal thermal_zone4: failed to read out thermal zone 4
+[    1.271172,3] thermal thermal_zone5: failed to read out thermal zone 5
+[    1.271736,3] qpnp_vadc_read: Error reading die_temp
+[    1.293925,1] device-mapper: uevent: version 1.0.3
+[    1.294132,1] device-mapper: ioctl: 4.28.0-ioctl (2014-09-17) initialised: dm-devel@redhat.com
+[    1.294250,1] device-mapper: req-crypt: dm-req-crypt successfully initalized.
+[    1.294250,1] 
+[    1.295332,1] sdhci: Secure Digital Host Controller Interface driver
+[    1.295339,1] sdhci: Copyright(c) Pierre Ossman
+[    1.295350,1] sdhci-pltfm: SDHCI platform and OF driver helper
+[    1.296330,1] qcom_ice_get_pdevice: found ice device ffffffc02e70b800
+[    1.296337,1] qcom_ice_get_pdevice: matching platform device ffffffc07a9d1000
+[    1.300139,1] qcom_ice 7803000.sdcc1ice: QC ICE 2.1.44 device found @0xffffff8001770000
+[    1.300500,1] sdhci_msm 7824900.sdhci: No vmmc regulator found
+[    1.300509,1] sdhci_msm 7824900.sdhci: No vqmmc regulator found
+[    1.300918,1] mmc0: SDHCI controller on 7824900.sdhci [7824900.sdhci] using 64-bit ADMA in CMDQ mode
+[    1.334165,1] sdhci_msm 7864900.sdhci: sdhci_msm_probe: ICE device is not enabled
+[    1.340047,1] sdhci_msm 7864900.sdhci: No vmmc regulator found
+[    1.340060,1] sdhci_msm 7864900.sdhci: No vqmmc regulator found
+[    1.340550,1] mmc1: SDHCI controller on 7864900.sdhci [7864900.sdhci] using 64-bit ADMA in legacy mode
+[    1.369446,1] mmc0: Out-of-interrupt timeout is 100[ms]
+[    1.369453,1] mmc0: BKOPS_EN equals 0x2
+[    1.369460,1] mmc0: eMMC FW version: 0x03
+[    1.369465,1] mmc0: CMDQ supported: depth: 16
+[    1.369471,1] mmc0: cache barrier support 0 flush policy 0
+[    1.375467,1] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.375888,0] tz_log 8600720.tz-log: Hyp log service is not supported
+[    1.375963,1] usbcore: registered new interface driver usbhid
+[    1.375970,1] usbhid: USB HID core driver
+[    1.376446,1] ashmem: initialized
+[    1.376960,1] qpnp_coincell_charger_show_state: enabled=Y, voltage=3200 mV, resistance=2100 ohm
+[    1.377301,2] cmdq_host_alloc_tdl: desc_size: 768 data_sz: 253952 slot-sz: 24
+[    1.377514,2] mmc0: CMDQ enabled on card
+[    1.377527,2] mmc0: new HS400 MMC card at address 0001
+[    1.377922,2] sdhci_msm_pm_qos_cpu_init (): voted for group #0 (mask=0xf) latency=13
+[    1.380182,0] mmcblk0: mmc0:0001 QE63MB 14.5 GiB 
+[    1.380342,0] mmcblk0rpmb: mmc0:0001 QE63MB partition 3 4.00 MiB
+[    1.381643,1] bimc-bwmon 408000.qcom,cpu-bwmon: BW HWmon governor registered.
+[    1.381899,0]  mmcblk0: p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12 p13 p14 p15 p16 p17 p18 p19 p20 p21 p22 p23 p24 p25 p26 p27 p28 p29 p30 p31 p32 p33 p34 p35 p36 p37 p38 p39 p40 p41 p42 p43 p44 p45 p46 p47 p48 p49 p50 p51 p52 p53 p54
+[    1.385652,2] devfreq soc:qcom,cpubw: Couldn't update frequency transition information.
+[    1.385856,2] devfreq soc:qcom,mincpubw: Couldn't update frequency transition information.
+[    1.388637,2] coresight-fuse a601c.fuse: Fuse initialized
+[    1.389254,2] coresight-cti: probe of 6010000.cti failed with error -1
+[    1.389287,2] coresight-cti: probe of 6011000.cti failed with error -1
+[    1.389319,2] coresight-cti: probe of 6012000.cti failed with error -1
+[    1.389351,2] coresight-cti: probe of 6013000.cti failed with error -1
+[    1.389382,2] coresight-cti: probe of 6014000.cti failed with error -1
+[    1.389413,2] coresight-cti: probe of 6015000.cti failed with error -1
+[    1.389444,2] coresight-cti: probe of 6016000.cti failed with error -1
+[    1.389475,2] coresight-cti: probe of 6017000.cti failed with error -1
+[    1.389507,2] coresight-cti: probe of 6018000.cti failed with error -1
+[    1.389539,2] coresight-cti: probe of 6019000.cti failed with error -1
+[    1.389570,2] coresight-cti: probe of 601a000.cti failed with error -1
+[    1.389601,2] coresight-cti: probe of 601b000.cti failed with error -1
+[    1.389632,2] coresight-cti: probe of 601c000.cti failed with error -1
+[    1.389663,2] coresight-cti: probe of 601d000.cti failed with error -1
+[    1.389694,2] coresight-cti: probe of 601e000.cti failed with error -1
+[    1.389725,2] coresight-cti: probe of 601f000.cti failed with error -1
+[    1.389757,2] coresight-cti: probe of 61b8000.cti failed with error -1
+[    1.389789,2] coresight-cti: probe of 61b9000.cti failed with error -1
+[    1.389820,2] coresight-cti: probe of 61ba000.cti failed with error -1
+[    1.389851,2] coresight-cti: probe of 61bb000.cti failed with error -1
+[    1.389882,2] coresight-cti: probe of 6124000.cti failed with error -1
+[    1.389913,2] coresight-cti: probe of 6139000.cti failed with error -1
+[    1.389944,2] coresight-cti: probe of 6134000.cti failed with error -1
+[    1.389975,2] coresight-cti: probe of 613c000.cti failed with error -1
+[    1.390006,2] coresight-cti: probe of 610c000.cti failed with error -1
+[    1.390663,2] coresight-csr 6001000.csr: CSR initialized
+[    1.391351,2] coresight-tmc: probe of 6028000.tmc failed with error -1
+[    1.391573,2] coresight-tmc 6027000.tmc: failed to get flush cti
+[    1.391581,2] coresight-tmc 6027000.tmc: failed to get reset cti
+[    1.391722,2] coresight-tmc 6027000.tmc: TMC initialized
+[    1.393594,2] nidnt boot config: 0
+[    1.393607,2] coresight-tpiu 6020000.tpiu: NIDnT hw support disabled
+[    1.393615,2] coresight-tpiu 6020000.tpiu: NIDnT on SDCARD only mode
+[    1.393707,2] coresight-tpiu 6020000.tpiu: TPIU initialized
+[    1.396127,2] coresight-replicator 6026000.replicator: REPLICATOR initialized
+[    1.396916,2] coresight-stm: probe of 6002000.stm failed with error -1
+[    1.397775,2] coresight-hwevent 6101000.hwevent: Hardware Event driver initialized
+[    1.398536,2] sensors-ssc soc:qcom,msm-ssc-sensors: msm_ssc_sensors_dt_parse: get qdsp timer cntpct hi offset fail
+[    1.398546,2] sensors-ssc soc:qcom,msm-ssc-sensors: slpi_loader_init_sysfs: Could not parse dt
+[    1.398881,2] Trustonic TEE: mobicore_init: MobiCore mcDrvModuleApi version is 6.3
+[    1.399198,2] Trustonic TEE: mobicore_probe: MobiCore t-base-QC-MSM8996-Android-400A-V011-20180312_223608_45564_75403
+[    1.400392,2] usbcore: registered new interface driver snd-usb-audio
+[    1.420416,2] msm-pcm-lpa soc:qcom,msm-pcm-lpa: msm_pcm_probe: dev name soc:qcom,msm-pcm-lpa
+[    1.427806,2] u32 classifier
+[    1.427817,2]     Actions configured
+[    1.427850,2] Netfilter messages via NETLINK v0.30.
+[    1.427903,2] nf_conntrack version 0.5.0 (16384 buckets, 65536 max)
+[    1.428235,2] ctnetlink v0.93: registering with nfnetlink.
+[    1.428902,2] xt_time: kernel timezone is -0000
+[    1.429178,2] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    1.429352,2] arp_tables: (C) 2002 David S. Miller
+[    1.429407,2] TCP: cubic registered
+[    1.429417,2] Initializing XFRM netlink socket
+[    1.429791,2] NET: Registered protocol family 10
+[    1.430695,2] mip6: Mobile IPv6
+[    1.430728,2] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    1.430887,2] sit: IPv6 over IPv4 tunneling driver
+[    1.431339,2] NET: Registered protocol family 17
+[    1.431368,2] NET: Registered protocol family 15
+[    1.431403,2] bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+[    1.431425,2] Bridge firewalling registered
+[    1.431435,2] Ebtables v2.0 registered
+[    1.431588,2] Bluetooth: ffffffc02e0c7d60
+[    1.431603,2] Bluetooth: ffffffc02e0c7d60Bluetooth: ffffffc02e0c7d80
+[    1.431657,2] Bluetooth: ffffffc02e0c7d50Bluetooth: ffffffc02e0c7d50
+[    1.431675,2] Bluetooth: ffffffc02e0c7d30Bluetooth: ffffffc02e0c7d90
+[    1.431694,2] Bluetooth: ffffffc02e0c7d70[    1.431738,2] l2tp_core: L2TP core driver, V2.0
+[    1.431756,2] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+[    1.431765,2] l2tp_ip: L2TP IP encapsulation support (L2TPv3)
+[    1.431788,2] l2tp_netlink: L2TP netlink interface
+[    1.431817,2] l2tp_eth: L2TP ethernet pseudowire support (L2TPv3)
+[    1.431840,2] l2tp_debugfs: L2TP debugfs support
+[    1.431850,2] l2tp_ip6: L2TP IP encapsulation support for IPv6 (L2TPv3)
+[    1.432793,2] NET: Registered protocol family 27
+[    1.439609,2] subsys-pil-tz a21b000.qcom,pronto: for wcnss segments only will be dumped.
+[    1.441389,2] pil-q6v5-mss 4080000.qcom,mss: Failed to find the pas_id.
+[    1.442101,2] pil-q6v5-mss 4080000.qcom,mss: for modem segments only will be dumped.
+[    1.443871,1] msm_otg 78db000.usb: phy_reset: success
+[    1.444721,0] Registered cp15_barrier emulation handler
+[    1.444736,0] Registered setend emulation handler
+[    1.445174,0] registered taskstats version 1
+[    1.451970,1] fastrpc soc:qcom,adsprpc-mem: for adsp_rh segments only will be dumped.
+[    1.454257,1] drv260x: drv260x_init success
+[    1.455062,1] utags (utags_probe): Done [config]
+[    1.455106,1] utags (utags_dt_init): backup storage path not provided
+[    1.456152,1] utags (utags_probe): Done [hw]
+[    1.457349,2] RNDIS_IPA module is loaded.
+[    1.458148,1] file system registered
+[    1.458221,1] mbim_init: initialize 1 instances
+[    1.458296,1] mbim_init: Initialized 1 ports
+[    1.459952,1] rndis_qc_init: initialize rndis QC instance
+[    1.460243,1] Number of LUNs=8
+[    1.460254,1] Mass Storage Function, version: 2009/09/11
+[    1.460263,1] LUN: removable file: (no medium)
+[    1.460279,1] Number of LUNs=1
+[    1.460336,1] LUN: removable file: (no medium)
+[    1.460342,1] Number of LUNs=1
+[    1.460713,1] android_usb gadget: android_usb ready
+[    1.460725,1] msm_hsusb msm_hsusb: [ci13xxx_start] hw_ep_max = 32
+[    1.460742,1] msm_hsusb msm_hsusb: CI13XXX_CONTROLLER_UDC_STARTED_EVENT received
+[    1.462520,1] input: gpio-keys as /devices/soc/soc:gpio_keys/input/input6
+[    1.462985,1] i2c-core: driver [stmvl53l0] using legacy resume method
+[    1.463905,1] qcom,qpnp-rtc qpnp-rtc-7: setting system clock to 1970-12-27 08:04:11 UTC (31133051)
+[    1.470459,0] parse_cpu_levels: idx 1 594
+[    1.473639,0] qcom,qpnp-flash-led qpnp-flash-led-22: Unable to acquire pinctrl
+[    1.480974,0] qcom,cc-debug-8952 1874000.qcom,cc-debug: Registered Debug Mux successfully
+[    1.483859,0] msm8952-asoc-wcd c051000.sound: default codec configured
+[    1.489128,0] msm8952-asoc-wcd c051000.sound: ASoC: platform (null) not registered
+[    1.489184,0] msm8952-asoc-wcd c051000.sound: snd_soc_register_card failed (-517)
+[    1.490723,0] mem_acc_corner: disabling
+[    1.490765,0] vdda_touch: disabling
+[    1.490842,0] clock_late_init: Removing enables held for handed-off clocks
+[    1.493674,0] ALSA device list:
+[    1.493682,0]   No soundcards found.
+[    1.493748,0] Warning: unable to open an initial console.
+[    1.548040,1] ipa_get_transport_type:2368 IPA HW is not supported
+[    1.550161,1] msm_otg 78db000.usb: USB in low power mode
+[    1.551151,0] msm8952-asoc-wcd c051000.sound: default codec configured
+[    1.555981,0] msm8952-asoc-wcd c051000.sound: ASoC: platform (null) not registered
+[    1.556041,0] msm8952-asoc-wcd c051000.sound: snd_soc_register_card failed (-517)
+[    1.563407,0] bcl_peripheral:bcl_poll_vbat_high Vbat reached high clear trip. vbat:3856320
+[    1.563466,0] bcl_peripheral:bcl_poll_ibat_low Invalid ibat state 1
+[    1.571899,0] Freeing unused kernel memory: 512K
+[    1.571949,0] Freeing alternatives memory: 116K
+[    1.573613,0] init: init first stage started!
+[    1.573898,0] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    1.604529,1] EXT4-fs (mmcblk0p53): mounted filesystem with ordered data mode. Opts: barrier=1,discard
+[    1.604628,1] init: [libfs_mgr]__mount(source=/dev/block/platform/soc/7824900.sdhci/by-name/system,target=/system,type=ext4)=0: Success
+[    1.623523,0] init: Skipped setting INIT_AVB_VERSION (not in recovery mode)
+[    1.623551,0] init: Loading SELinux policy
+[    1.720480,0] audit: type=1403 audit(31133051.753:2): policy loaded auid=4294967295 ses=4294967295
+[    1.720708,0] selinux: SELinux: Loaded policy from /sepolicy
+[    1.720708,0] 
+[    1.722999,0] selinux: SELinux: Loaded file_contexts
+[    1.722999,0] 
+[    1.724116,0] random: init urandom read with 32 bits of entropy available
+[    1.725041,0] init: init second stage started!
+[    1.729536,0] init: Using Android DT directory /proc/device-tree/firmware/android/
+[    1.731979,0] selinux: SELinux: Loaded file_contexts
+[    1.731979,0] 
+[    1.732502,0] selinux: SELinux: Loaded property_contexts from /plat_property_contexts & /nonplat_property_contexts.
+[    1.732502,0] 
+[    1.732529,0] init: Running restorecon...
+[    1.737349,0] init: waitid failed: No child processes
+[    1.737436,0] init: Couldn't load property file: Unable to open '/system/etc/prop.default': No such file or directory: No such file or directory
+[    1.737471,0] init: Couldn't load property file: Unable to open '/prop.default': No such file or directory: No such file or directory
+[    1.737753,0] init: Couldn't load property file: Unable to open '/odm/default.prop': No such file or directory: No such file or directory
+[    1.740401,2] init: Couldn't load property file: Unable to open '/vendor/default.prop': No such file or directory: No such file or directory
+[    1.740871,2] init: Created socket '/dev/socket/property_service', mode 666, user 0, group 0
+[    1.740992,2] init: Parsing file /init.rc...
+[    1.741251,2] init: Added '/init.environ.rc' to import list
+[    1.741270,2] init: Added '/init.usb.rc' to import list
+[    1.741293,2] init: Added '/init.qcom.rc' to import list
+[    1.741315,2] init: Added '/vendor/etc/init/hw/init.qcom.rc' to import list
+[    1.741332,2] init: Added '/init.usb.configfs.rc' to import list
+[    1.741352,2] init: Added '/init.zygote64_32.rc' to import list
+[    1.742642,2] init: Parsing file /init.environ.rc...
+[    1.742732,2] init: Parsing file /init.usb.rc...
+[    1.743144,2] init: Parsing file /init.qcom.rc...
+[    1.743178,2] init: Unable to open '/init.qcom.rc': No such file or directory
+[    1.743200,2] init: /init.rc: 9: Could not import file '/init.qcom.rc': No such file or directory
+[    1.746515,2] init: Parsing file /vendor/etc/init/hw/init.qcom.rc...
+[    1.747576,2] init: Added '/vendor/etc/init/hw/init.mmi.rc' to import list
+[    1.747600,2] init: Added '/vendor/etc/init/hw/init.qcom_device.rc' to import list
+[    1.749787,2] init: Parsing file /vendor/etc/init/hw/init.mmi.rc...
+[    1.750431,2] init: Added '/vendor/etc/init/hw/init.mmi.usb.rc' to import list
+[    1.750452,2] init: Added '/vendor/etc/init/hw/init.mmi_device.rc' to import list
+[    1.750725,2] init: /vendor/etc/init/hw/init.mmi.rc: 162: invalid keyword 'setfattr'
+[    1.750749,2] init: /vendor/etc/init/hw/init.mmi.rc: 164: invalid keyword 'setfattr'
+[    1.751155,2] init: Parsing file /vendor/etc/init/hw/init.mmi.usb.rc...
+[    1.753100,2] init: Parsing file /vendor/etc/init/hw/init.mmi_device.rc...
+[    1.753709,2] init: Parsing file /vendor/etc/init/hw/init.qcom_device.rc...
+[    1.753747,2] init: Unable to open '/vendor/etc/init/hw/init.qcom_device.rc': No such file or directory
+[    1.753771,2] init: /init.rc: 31: Could not import file '/vendor/etc/init/hw/init.qcom_device.rc': No such file or directory
+[    1.753795,2] init: Parsing file /init.usb.configfs.rc...
+[    1.754318,2] init: Parsing file /init.zygote64_32.rc...
+[    1.754548,2] init: Parsing directory /system/etc/init...
+[    1.755056,2] init: Parsing file /system/etc/init/android.hidl.allocator@1.0-service.rc...
+[    1.755384,2] init: Parsing file /system/etc/init/atrace.rc...
+[    1.756234,2] init: Parsing file /system/etc/init/atrace_userdebug.rc...
+[    1.756614,2] init: Parsing file /system/etc/init/audioserver.rc...
+[    1.756977,2] init: Parsing file /system/etc/init/bootanim.rc...
+[    1.757277,2] init: Parsing file /system/etc/init/bootstat.rc...
+[    1.757696,2] init: Parsing file /system/etc/init/cameraserver.rc...
+[    1.758009,2] init: Parsing file /system/etc/init/drmserver.rc...
+[    1.758311,2] init: Parsing file /system/etc/init/dumpstate.rc...
+[    1.758642,2] init: Parsing file /system/etc/init/gatekeeperd.rc...
+[    1.758911,2] init: Parsing file /system/etc/init/hwservicemanager.rc...
+[    1.759198,2] init: Parsing file /system/etc/init/init-debug.rc...
+[    1.759468,2] init: Parsing file /system/etc/init/init.qti.fm.rc...
+[    1.759725,2] init: /system/etc/init/init.qti.fm.rc: 1: ignored duplicate definition of service 'fm_dl'
+[    1.759746,2] init: Parsing file /system/etc/init/installd.rc...
+[    1.760311,2] init: Parsing file /system/etc/init/keystore.rc...
+[    1.760598,2] init: Parsing file /system/etc/init/lineage-adb.rc...
+[    1.760885,2] init: Parsing file /system/etc/init/lineage-governor.rc...
+[    1.761415,2] init: Parsing file /system/etc/init/lineage-iosched.rc...
+[    1.761817,2] init: Parsing file /system/etc/init/lineage-livedisplay.rc...
+[    1.762129,2] init: Parsing file /system/etc/init/lineage-radio.rc...
+[    1.762412,2] init: Parsing file /system/etc/init/lineage-ssh.rc...
+[    1.762671,2] init: Parsing file /system/etc/init/lineage-system.rc...
+[    1.762991,2] init: Parsing file /system/etc/init/lineage-tcp.rc...
+[    1.763272,2] init: Parsing file /system/etc/init/lineage-updates.rc...
+[    1.763588,2] init: Parsing file /system/etc/init/lmkd.rc...
+[    1.763915,2] init: Parsing file /system/etc/init/logcatd.rc...
+[    1.764347,2] init: Parsing file /system/etc/init/logd.rc...
+[    1.764715,2] init: Parsing file /system/etc/init/logtagd.rc...
+[    1.765022,2] init: Parsing file /system/etc/init/mdnsd.rc...
+[    1.765318,2] init: Parsing file /system/etc/init/mediadrmserver.rc...
+[    1.765607,2] init: Parsing file /system/etc/init/mediaextractor.rc...
+[    1.765910,2] init: Parsing file /system/etc/init/mediametrics.rc...
+[    1.766197,2] init: Parsing file /system/etc/init/mediaserver.rc...
+[    1.766523,2] init: Parsing file /system/etc/init/mtpd.rc...
+[    1.766828,2] init: Parsing file /system/etc/init/netd.rc...
+[    1.767145,2] init: Parsing file /system/etc/init/perfprofd.rc...
+[    1.767440,2] init: Parsing file /system/etc/init/racoon.rc...
+[    1.767741,2] init: Parsing file /system/etc/init/servicemanager.rc...
+[    1.768058,2] init: Parsing file /system/etc/init/storaged.rc...
+[    1.768367,2] init: Parsing file /system/etc/init/surfaceflinger.rc...
+[    1.768693,2] init: Parsing file /system/etc/init/thermalservice.rc...
+[    1.768978,2] init: Parsing file /system/etc/init/tombstoned.rc...
+[    1.769283,2] init: Parsing file /system/etc/init/uncrypt.rc...
+[    1.769621,2] init: Parsing file /system/etc/init/vdc.rc...
+[    1.769889,2] init: Parsing file /system/etc/init/vold.rc...
+[    1.770193,2] init: Parsing file /system/etc/init/webview_zygote32.rc...
+[    1.770480,2] init: Parsing file /system/etc/init/webview_zygote64.rc...
+[    1.770774,2] init: Parsing file /system/etc/init/wifi-events.rc...
+[    1.771161,2] init: Parsing file /system/etc/init/wificond.rc...
+[    1.771510,2] init: Parsing directory /vendor/etc/init...
+[    1.771623,2] init: Parsing file /vendor/etc/init/android.hardware.audio@2.0-service.rc...
+[    1.772021,2] init: Parsing file /vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service_32.rc...
+[    1.772318,2] init: Parsing file /vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc...
+[    1.772615,2] init: Parsing file /vendor/etc/init/android.hardware.bluetooth@1.0-service.rc...
+[    1.772883,2] init: /vendor/etc/init/android.hardware.bluetooth@1.0-service.rc: 1: ignored duplicate definition of service 'bluetooth-1-0'
+[    1.772935,2] init: Parsing file /vendor/etc/init/android.hardware.cas@1.0-service.rc...
+[    1.773247,2] init: Parsing file /vendor/etc/init/android.hardware.configstore@1.0-service.rc...
+[    1.773534,2] init: Parsing file /vendor/etc/init/android.hardware.drm@1.0-service.rc...
+[    1.773831,2] init: Parsing file /vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc...
+[    1.774122,2] init: Parsing file /vendor/etc/init/android.hardware.graphics.allocator@2.0-service.rc...
+[    1.774416,2] init: Parsing file /vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc...
+[    1.774701,2] init: Parsing file /vendor/etc/init/android.hardware.health@1.0-service.rc...
+[    1.774991,2] init: Parsing file /vendor/etc/init/android.hardware.keymaster@3.0-service.rc...
+[    1.775270,2] init: Parsing file /vendor/etc/init/android.hardware.light@2.0-service.rc...
+[    1.775549,2] init: Parsing file /vendor/etc/init/android.hardware.media.omx@1.0-service.rc...
+[    1.775835,2] init: Parsing file /vendor/etc/init/android.hardware.memtrack@1.0-service.rc...
+[    1.776110,2] init: Parsing file /vendor/etc/init/android.hardware.power@1.0-service-qti.rc...
+[    1.776418,2] init: Parsing file /vendor/etc/init/android.hardware.sensors@1.0-service.rc...
+[    1.776732,2] init: Parsing file /vendor/etc/init/android.hardware.thermal@1.0-service.rc...
+[    1.777020,2] init: Parsing file /vendor/etc/init/android.hardware.vibrator@1.0-service.rc...
+[    1.777314,2] init: Parsing file /vendor/etc/init/android.hardware.wifi@1.0-service.rc...
+[    1.777610,2] init: Parsing file /vendor/etc/init/hostapd.android.rc...
+[    1.777923,2] init: Parsing file /vendor/etc/init/rild.rc...
+[    1.778227,2] init: Parsing file /vendor/etc/init/vendor.display.color@1.0-service.rc...
+[    1.778506,2] init: Parsing file /vendor/etc/init/vendor.lineage.livedisplay@1.0-service-sdm.rc...
+[    1.778793,2] init: Parsing file /vendor/etc/init/vendor.qti.gnss@1.0-service.rc...
+[    1.779072,2] init: Parsing file /vendor/etc/init/vendor.qti.hardware.iop@1.0-service.rc...
+[    1.779349,2] init: Parsing file /vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc...
+[    1.779626,2] init: Parsing file /vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc...
+[    1.779905,2] init: Parsing file /vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc...
+[    1.780198,2] init: Parsing file /vendor/etc/init/vndservicemanager.rc...
+[    1.780619,2] init: Parsing file /odm/etc/init...
+[    1.780652,2] init: Unable to open '/odm/etc/init': No such file or directory
+[    1.780743,2] init: processing action (early-init) from (/init.rc:14)
+[    1.782744,2] init: starting service 'ueventd'...
+[    1.783684,2] init: processing action (early-init) from (/vendor/etc/init/hw/init.qcom.rc:33)
+[    1.784516,2] init: processing action (wait_for_coldboot_done) from (<Builtin Action>:0)
+[    1.785339,0] ueventd: ueventd started!
+[    1.785406,0] ueventd: Parsing file /ueventd.rc...
+[    1.788400,1] ueventd: Parsing file /vendor/ueventd.rc...
+[    1.790557,2] ueventd: Parsing file /odm/ueventd.rc...
+[    1.790598,2] ueventd: Unable to open '/odm/ueventd.rc': No such file or directory
+[    1.790698,2] ueventd: Parsing file /ueventd.qcom.rc...
+[    1.790732,2] ueventd: Unable to open '/ueventd.qcom.rc': No such file or directory
+[    1.792577,2] selinux: SELinux: Loaded file_contexts
+[    1.792577,2] 
+[    1.947325,1] selinux: SELinux: Loaded file_contexts
+[    1.947325,1] 
+[    2.019313,0] ueventd: Coldboot took 0.226 seconds
+[    2.027186,0] init: Command 'wait_for_coldboot_done' action=wait_for_coldboot_done (<Builtin Action>:0) returned 0 took 242ms.
+[    2.027250,0] init: processing action (mix_hwrng_into_linux_rng) from (<Builtin Action>:0)
+[    2.028165,0] init: Mixed 512 bytes from /dev/hw_random into /dev/urandom
+[    2.028216,0] init: processing action (set_mmap_rnd_bits) from (<Builtin Action>:0)
+[    2.028932,0] init: processing action (set_kptr_restrict) from (<Builtin Action>:0)
+[    2.029129,0] init: processing action (keychord_init) from (<Builtin Action>:0)
+[    2.029194,0] keychord: using input dev qpnp_pon for fevent
+[    2.029203,0] keychord: using input dev synaptics_dsx_i2c for fevent
+[    2.029240,0] input input6: gpio-keys report volume_up [0x73] type 0x1 state Off
+[    2.029248,0] keychord: using input dev gpio-keys for fevent
+[    2.029293,0] init: processing action (console_init) from (<Builtin Action>:0)
+[    2.029350,0] init: processing action (init) from (/init.rc:44)
+[    2.035032,1] audit: type=1400 audit(31133052.066:3): avc:  denied  { create } for  uid=0 pid=1 comm="init" name="sdcard" scontext=u:r:init:s0 tcontext=u:object_r:tmpfs:s0 tclass=lnk_file permissive=1
+[    2.035237,1] init: Unable to open '/proc/sys/kernel/hung_task_timeout_secs': No such file or directory
+[    2.035288,1] init: Unable to open '/proc/cpu/alignment': No such file or directory
+[    2.035332,1] init: Unable to open '/proc/sys/kernel/sched_tunable_scaling': No such file or directory
+[    2.035375,1] init: Unable to open '/proc/sys/kernel/sched_latency_ns': No such file or directory
+[    2.035416,1] init: Unable to open '/proc/sys/kernel/sched_wakeup_granularity_ns': No such file or directory
+[    2.037926,1] init: Unable to write to '/dev/cpuset/foreground/cpus': Invalid argument
+[    2.038381,1] init: Unable to write to '/dev/cpuset/background/cpus': Invalid argument
+[    2.038827,1] init: Unable to write to '/dev/cpuset/system-background/cpus': Invalid argument
+[    2.039253,1] init: Unable to write to '/dev/cpuset/top-app/cpus': Invalid argument
+[    2.041109,1] pstore: Found record type 2, psi name ramoops
+[    2.041124,1] persistent_ram: persistent_ram_annotation_merge: merged 63
+[    2.041140,1] pstore: Found record type 8, psi name ramoops
+[    2.041469,1] Registered swp emulation handler
+[    2.041615,1] init: Unable to open '/sys/class/leds/vibrator/trigger': No such file or directory
+[    2.041650,1] init: processing action (init) from (/init.environ.rc:2)
+[    2.041757,1] init: processing action (init) from (/vendor/etc/init/hw/init.qcom.rc:60)
+[    2.042158,1] init: Unable to open '/sys/fs/cgroup/memory/bg/memory.swappiness': No such file or directory
+[    2.042200,1] init: Unable to open '/sys/fs/cgroup/memory/bg/memory.move_charge_at_immigrate': No such file or directory
+[    2.042271,1] init: processing action (init) from (/vendor/etc/init/hw/init.mmi.rc:11)
+[    2.042540,1] init: processing action (init) from (/vendor/etc/init/hw/init.mmi.usb.rc:28)
+[    2.042656,1] init: processing action (init) from (/system/etc/init/lineage-iosched.rc:1)
+[    2.043468,1] init: processing action (init) from (/system/etc/init/lineage-system.rc:2)
+[    2.043520,1] init: processing action (mix_hwrng_into_linux_rng) from (<Builtin Action>:0)
+[    2.044413,1] init: Mixed 512 bytes from /dev/hw_random into /dev/urandom
+[    2.044468,1] init: processing action (late-init) from (/init.rc:264)
+[    2.044541,1] init: processing action (queue_property_triggers) from (<Builtin Action>:0)
+[    2.044605,1] init: processing action (fs) from (/vendor/etc/init/hw/init.qcom.rc:43)
+[    2.049137,0] init: [libfs_mgr]Running /system/bin/fsck.f2fs -a /dev/block/bootdevice/by-name/userdata
+[    2.115826,0] audit: type=1400 audit(31133052.146:4): avc:  denied  { read } for  uid=0 pid=337 comm="fsck.f2fs" name="mmcblk0p54" dev="tmpfs" ino=4334 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    2.115869,0] audit: type=1400 audit(31133052.146:5): avc:  denied  { open } for  uid=0 pid=337 comm="fsck.f2fs" path="/dev/block/mmcblk0p54" dev="tmpfs" ino=4334 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    2.115949,0] audit: type=1400 audit(31133052.146:6): avc:  denied  { write } for  uid=0 pid=337 comm="fsck.f2fs" name="mmcblk0p54" dev="tmpfs" ino=4334 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    2.116044,0] audit: type=1400 audit(31133052.146:7): avc:  denied  { ioctl } for  uid=0 pid=337 comm="fsck.f2fs" path="/dev/block/mmcblk0p54" dev="tmpfs" ino=4334 ioctlcmd=1268 scontext=u:r:fsck:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    2.407778,2] fsck.f2fs: Info: Fix the reported corruption.
+[    2.407778,2] 
+[    2.407852,2] fsck.f2fs: Info: Segments per section = 1
+[    2.407852,2] 
+[    2.407867,2] fsck.f2fs: Info: Sections per zone = 1
+[    2.407867,2] 
+[    2.407880,2] fsck.f2fs: Info: sector size = 512
+[    2.407880,2] 
+[    2.407893,2] fsck.f2fs: Info: total sectors = 21032927 (10269 MB)
+[    2.407893,2] 
+[    2.407906,2] fsck.f2fs: Info: MKFS version
+[    2.407906,2] 
+[    2.407921,2] fsck.f2fs:   "Linux version 3.18.63-NPL26.118-20-g9365253f167e (sultan@sprocket) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Fri Aug 17 00:06:48 EDT 2018"
+[    2.407921,2] 
+[    2.407934,2] fsck.f2fs: Info: FSCK version
+[    2.407934,2] 
+[    2.407948,2] fsck.f2fs:   from "Linux version 3.18.63-NPL26.118-20-g9365253f167e (sultan@sprocket) (gcc version 4.9 20150123 (prerelease) (GCC) ) #1 SMP PREEMPT Fri Aug 17 00:06:48 EDT 2018"
+[    2.407948,2] 
+[    2.407963,2] fsck.f2fs:     to "Linux version 3.18.140-lineage (rebel@lions-den) (Android clang version 5.0.300080 (based on LLVM 5.0.300080)) #1 SMP PREEMPT Thu Mar 26 16:51:21 UTC 2020"
+[    2.407963,2] 
+[    2.407977,2] fsck.f2fs: Info: superblock features = 0 : 
+[    2.407977,2] 
+[    2.407990,2] fsck.f2fs: Info: superblock encrypt level = 0, salt = 00000000000000000000000000000000
+[    2.407990,2] 
+[    2.408003,2] fsck.f2fs: Info: total FS sectors = 21032920 (10269 MB)
+[    2.408003,2] 
+[    2.408016,2] fsck.f2fs: Info: CKPT version = 9
+[    2.408016,2] 
+[    2.408029,2] fsck.f2fs: Info: checkpoint state = 4 :  compacted_summary sudden-power-off
+[    2.408029,2] 
+[    2.408042,2] fsck.f2fs: 
+[    2.408042,2] 
+[    2.408055,2] fsck.f2fs: [FSCK] Unreachable nat entries                        [Ok..] [0x0]
+[    2.408055,2] 
+[    2.408068,2] fsck.f2fs: [FSCK] SIT valid block bitmap checking                [Ok..]
+[    2.408068,2] 
+[    2.408082,2] fsck.f2fs: [FSCK] Hard link checking for regular file            [Ok..] [0x0]
+[    2.408082,2] 
+[    2.408095,2] fsck.f2fs: [FSCK] valid_block_count matching with CP             [Ok..] [0xd]
+[    2.408095,2] 
+[    2.408109,2] fsck.f2fs: [FSCK] valid_node_count matcing with CP (de lookup)   [Ok..] [0x9]
+[    2.408109,2] 
+[    2.408122,2] fsck.f2fs: [FSCK] valid_node_count matcing with CP (nat lookup)  [Ok..] [0x9]
+[    2.408122,2] 
+[    2.408136,2] fsck.f2fs: [FSCK] valid_inode_count matched with CP              [Ok..] [0x5]
+[    2.408136,2] 
+[    2.408149,2] fsck.f2fs: [FSCK] free segment_count matched with CP             [Ok..] [0x13e1]
+[    2.408149,2] 
+[    2.408163,2] fsck.f2fs: [FSCK] next block offset is free                      [Ok..]
+[    2.408163,2] 
+[    2.408176,2] fsck.f2fs: [FSCK] fixing SIT types
+[    2.408176,2] 
+[    2.408189,2] fsck.f2fs: [FSCK] other corrupted bugs                           [Ok..]
+[    2.408189,2] 
+[    2.408201,2] fsck.f2fs: 
+[    2.408201,2] 
+[    2.408213,2] fsck.f2fs: Done.
+[    2.408213,2] 
+[    2.465678,2] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/userdata,target=/data,type=f2fs)=0: Success
+[    2.466401,2] init: [libfs_mgr]superblock s_max_mnt_count:10,/dev/block/bootdevice/by-name/cache
+[    2.466708,2] EXT4-fs (mmcblk0p52): Ignoring removed nomblk_io_submit option
+[    2.469472,2] EXT4-fs (mmcblk0p52): mounted filesystem with ordered data mode. Opts: errors=remount-ro,nomblk_io_submit
+[    2.469601,2] init: [libfs_mgr]check_fs(): mount(/dev/block/bootdevice/by-name/cache,/cache,ext4)=0: Success
+[    2.470665,1] init: [libfs_mgr]check_fs(): unmount(/cache) succeeded
+[    2.470768,1] init: [libfs_mgr]Running /system/bin/e2fsck on /dev/block/bootdevice/by-name/cache
+[    2.496313,0] e2fsck: e2fsck 1.43.3 (04-Sep-2016)
+[    2.496313,0] 
+[    2.496347,0] e2fsck: /dev/block/bootdevice/by-name/cache: clean, 18/16384 files, 2134/65536 blocks
+[    2.496347,0] 
+[    2.500045,1] EXT4-fs (mmcblk0p52): mounted filesystem with ordered data mode. Opts: barrier=1,data=ordered
+[    2.500190,1] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/cache,target=/cache,type=ext4)=0: Success
+[    2.501005,1] init: [libfs_mgr]superblock s_max_mnt_count:10,/dev/block/bootdevice/by-name/modem
+[    2.502289,1] EXT4-fs (mmcblk0p19): barriers disabled
+[    2.502816,1] EXT4-fs (mmcblk0p19): mounted filesystem with ordered data mode. Opts: barrier=0
+[    2.502838,1] SELinux: security_context_to_sid(u:object_r:firmware_file:s0) failed for (dev mmcblk0p19, type ext4) errno=-22
+[    2.503177,1] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/modem,target=/firmware,type=ext4)=-1: Invalid argument
+[    2.503215,1] init: [libfs_mgr]Running /system/bin/e2fsck on /dev/block/bootdevice/by-name/modem
+[    2.531348,1] e2fsck: e2fsck 1.43.3 (04-Sep-2016)
+[    2.531348,1] 
+[    2.531382,1] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    2.531382,1] 
+[    2.531396,1] e2fsck: Pass 2: Checking directory structure
+[    2.531396,1] 
+[    2.531409,1] e2fsck: Pass 3: Checking directory connectivity
+[    2.531409,1] 
+[    2.531422,1] e2fsck: Pass 4: Checking reference counts
+[    2.531422,1] 
+[    2.531435,1] e2fsck: Pass 5: Checking group summary information
+[    2.531435,1] 
+[    2.531449,1] e2fsck: /dev/block/bootdevice/by-name/modem: 157/6400 files (2.5% non-contiguous), 16492/25600 blocks
+[    2.531449,1] 
+[    2.533123,0] EXT4-fs (mmcblk0p19): barriers disabled
+[    2.533685,1] EXT4-fs (mmcblk0p19): mounted filesystem with ordered data mode. Opts: barrier=0
+[    2.533708,1] SELinux: security_context_to_sid(u:object_r:firmware_file:s0) failed for (dev mmcblk0p19, type ext4) errno=-22
+[    2.534102,1] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/modem,target=/firmware,type=ext4)=-1: Invalid argument
+[    2.534717,1] init: [libfs_mgr]Failed to mount an un-encryptable or wiped partition on /dev/block/bootdevice/by-name/modem at /firmware options: barrier=0,context=u:object_r:firmware_file:s0: Invalid argument
+[    2.535157,1] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/bootdevice/by-name/fsg
+[    2.536463,1] EXT4-fs (mmcblk0p29): mounted filesystem without journal. Opts: 
+[    2.536487,1] SELinux: security_context_to_sid(u:object_r:fsg_file:s0) failed for (dev mmcblk0p29, type ext4) errno=-22
+[    2.536752,1] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/fsg,target=/fsg,type=ext4)=-1: Invalid argument
+[    2.536789,1] init: [libfs_mgr]Running /system/bin/e2fsck on /dev/block/bootdevice/by-name/fsg
+[    2.559000,1] e2fsck: e2fsck 1.43.3 (04-Sep-2016)
+[    2.559000,1] 
+[    2.559034,1] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    2.559034,1] 
+[    2.559048,1] e2fsck: Pass 2: Checking directory structure
+[    2.559048,1] 
+[    2.559061,1] e2fsck: Pass 3: Checking directory connectivity
+[    2.559061,1] 
+[    2.559074,1] e2fsck: Pass 4: Checking reference counts
+[    2.559074,1] 
+[    2.559087,1] e2fsck: Pass 5: Checking group summary information
+[    2.559087,1] 
+[    2.559100,1] e2fsck: FSG: 88/384 files (0.0% non-contiguous), 353/356 blocks
+[    2.559100,1] 
+[    2.560708,1] EXT4-fs (mmcblk0p29): mounted filesystem without journal. Opts: 
+[    2.560735,1] SELinux: security_context_to_sid(u:object_r:fsg_file:s0) failed for (dev mmcblk0p29, type ext4) errno=-22
+[    2.561034,1] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/fsg,target=/fsg,type=ext4)=-1: Invalid argument
+[    2.561478,1] init: [libfs_mgr]Failed to mount an un-encryptable or wiped partition on /dev/block/bootdevice/by-name/fsg at /fsg options: context=u:object_r:fsg_file:s0: Invalid argument
+[    2.561932,1] init: [libfs_mgr]superblock s_max_mnt_count:65535,/dev/block/bootdevice/by-name/dsp
+[    2.565794,1] EXT4-fs (mmcblk0p22): mounted filesystem with ordered data mode. Opts: barrier=1
+[    2.565862,1] SELinux:  Context u:object_r:adsprpcd_file:s0 is not valid (left unmapped).
+[    2.565931,1] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/dsp,target=/dsp,type=ext4)=0: Success
+[    2.566511,1] init: [libfs_mgr]superblock s_max_mnt_count:10,/dev/block/bootdevice/by-name/persist
+[    2.568143,1] EXT4-fs (mmcblk0p30): warning: maximal mount count reached, running e2fsck is recommended
+[    2.568385,1] EXT4-fs (mmcblk0p30): mounted filesystem with ordered data mode. Opts: barrier=1,noauto_da_alloc
+[    2.568406,1] SELinux: security_context_to_sid(u:object_r:persist_file:s0) failed for (dev mmcblk0p30, type ext4) errno=-22
+[    2.569354,1] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/persist,target=/persist,type=ext4)=-1: Invalid argument
+[    2.569395,1] init: [libfs_mgr]Running /system/bin/e2fsck on /dev/block/bootdevice/by-name/persist
+[    2.598028,2] e2fsck: e2fsck 1.43.3 (04-Sep-2016)
+[    2.598028,2] 
+[    2.598061,2] e2fsck: Pass 1: Checking inodes, blocks, and sizes
+[    2.598061,2] 
+[    2.598076,2] e2fsck: Pass 2: Checking directory structure
+[    2.598076,2] 
+[    2.598089,2] e2fsck: Pass 3: Checking directory connectivity
+[    2.598089,2] 
+[    2.598102,2] e2fsck: Pass 4: Checking reference counts
+[    2.598102,2] 
+[    2.598114,2] e2fsck: Pass 5: Checking group summary information
+[    2.598114,2] 
+[    2.598129,2] e2fsck: /dev/block/bootdevice/by-name/persist: 109/2048 files (1.8% non-contiguous), 1302/8192 blocks
+[    2.598129,2] 
+[    2.600411,2] EXT4-fs (mmcblk0p30): mounted filesystem with ordered data mode. Opts: barrier=1,noauto_da_alloc
+[    2.600437,2] SELinux: security_context_to_sid(u:object_r:persist_file:s0) failed for (dev mmcblk0p30, type ext4) errno=-22
+[    2.601361,2] init: [libfs_mgr]__mount(source=/dev/block/bootdevice/by-name/persist,target=/persist,type=ext4)=-1: Invalid argument
+[    2.602173,2] init: [libfs_mgr]Failed to mount an un-encryptable or wiped partition on /dev/block/bootdevice/by-name/persist at /persist options: barrier=1,noauto_da_alloc,context=u:object_r:persist_file:s0: Invalid argument
+[    2.602226,2] init: fs_mgr_mount_all returned an error: Invalid argument
+[    2.602697,1] init: Parsing file /odm/etc/init...
+[    2.602739,1] init: Unable to open '/odm/etc/init': No such file or directory
+[    2.602767,1] init: fs_mgr_mount_all returned unexpected error 255: No such file or directory
+[    2.602806,1] init: Command 'mount_all /vendor/etc/fstab.qcom' action=fs (/vendor/etc/init/hw/init.qcom.rc:47) returned 255 took 558ms.
+[    2.605848,1] init: processing action (fs) from (/vendor/etc/init/hw/init.mmi.rc:23)
+[    2.605932,1] init: processing action (fs) from (/vendor/etc/init/hw/init.mmi.usb.rc:54)
+[    2.606766,1] init: processing action (fs) from (/system/etc/init/logd.rc:18)
+[    2.607064,1] init: processing action (fs) from (/system/etc/init/wifi-events.rc:17)
+[    2.607136,1] init: processing action (post-fs) from (/init.rc:297)
+[    2.609422,1] init: Couldn't load property file: Unable to open '/odm/build.prop': No such file or directory: No such file or directory
+[    2.609942,1] init: Couldn't load property file: Unable to open '/factory/factory.prop': No such file or directory: No such file or directory
+[    2.612587,1] init: starting service 'logd'...
+[    2.613931,2] init: Created socket '/dev/socket/logd', mode 666, user 1036, group 1036
+[    2.614025,1] init: starting service 'servicemanager'...
+[    2.614374,2] init: Created socket '/dev/socket/logdr', mode 666, user 1036, group 1036
+[    2.614678,0] init: couldn't write 360 to /dev/cpuset/system-background/tasks: No space left on device
+[    2.614771,2] init: Created socket '/dev/socket/logdw', mode 222, user 1036, group 1036
+[    2.614870,2] init: Opened file '/proc/kmsg', flags 0
+[    2.614911,2] init: Opened file '/dev/kmsg', flags 1
+[    2.615034,2] init: couldn't write 359 to /dev/cpuset/system-background/tasks: No space left on device
+[    2.615078,1] init: starting service 'hwservicemanager'...
+[    2.615754,2] init: couldn't write 361 to /dev/cpuset/system-background/tasks: No space left on device
+[    2.616439,2] init: starting service 'vndservicemanager'...
+[    2.617274,1] init: couldn't write 362 to /dev/cpuset/system-background/tasks: No space left on device
+[    2.629638,0] init: processing action (post-fs) from (/vendor/etc/init/hw/init.mmi.rc:27)
+[    2.635904,0] init: processing action (post-fs) from (/system/etc/init/atrace.rc:3)
+[    2.638570,2] audit: type=1400 audit(31133052.670:8): avc:  denied  { search } for  uid=1036 pid=359 comm="logd" name="/" dev="mmcblk0p54" ino=3 scontext=u:r:logd:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+[    2.639687,3] logd.auditd: start
+[    2.639724,3] logd.klogd: 2639696042
+[    2.641756,0] init: Unable to open '/sys/kernel/tracing/tracing_on': Permission denied
+[    2.641920,0] init: processing action (post-fs) from (/system/etc/init/atrace_userdebug.rc:6)
+[    2.643473,0] init: processing action (late-fs) from (/init.rc:357)
+[    2.644278,0] init: starting service 'keymaster-3-0'...
+[    2.645272,0] init: processing action (post-fs-data) from (/init.rc:365)
+[    2.646256,0] init: starting service 'vold'...
+[    2.647689,1] init: Created socket '/dev/socket/vold', mode 660, user 0, group 1009
+[    2.648131,1] init: Created socket '/dev/socket/cryptd', mode 660, user 0, group 1009
+[    2.648260,1] init: couldn't write 369 to /dev/cpuset/foreground/tasks: No space left on device
+[    2.648482,0] init: Unable to open '/data/system/entropy.dat': No such file or directory
+[    2.649519,0] init: Unable to open '/data/misc/recovery/ro.build.fingerprint': No such file or directory
+[    2.650226,0] init: Unable to open '/data/misc/recovery/proc/version': No such file or directory
+[    2.682671,0] init: starting service 'exec 1 (/system/bin/vdc --wait cryptfs init_user0)'...
+[    2.683744,0] init: SVC_EXEC pid 372 (uid 0 gid 0+0 context default) started; waiting...
+[    2.685511,2] binder: 361:361 ioctl 4018620d 7fc81f1840 returned -22
+[    2.687143,2] binder: 361:361 ioctl 620a 0 returned -22
+[    2.740312,0] init: Service 'exec 1 (/system/bin/vdc --wait cryptfs init_user0)' (pid 372) exited with status 0 waiting took 0.057000 seconds
+[    2.755884,1] init: starting service 'exec 2 (/system/bin/tzdatacheck /system/usr/share/zoneinfo /data/misc/zoneinfo)'...
+[    2.756630,1] init: SVC_EXEC pid 376 (uid 1000 gid 1000+0 context default) started; waiting...
+[    2.769153,1] init: Service 'exec 2 (/system/bin/tzdatacheck /system/usr/share/zoneinfo /data/misc/zoneinfo)' (pid 376) exited with status 0 waiting took 0.013000 seconds
+[    2.769318,1] init: processing action (post-fs-data) from (/init.usb.rc:6)
+[    2.770776,1] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.qcom.rc:282)
+[    2.790799,3] init: Unable to open '/sys/bus/msm_subsys/devices/subsys4/restart_level': No such file or directory
+[    2.791207,3] init: processing action (post-fs-data) from (/vendor/etc/init/hw/init.mmi.rc:78)
+[    2.797225,3] init: processing action (post-fs-data) from (/system/etc/init/bootstat.rc:3)
+[    2.798357,3] init: processing action (post-fs-data) from (/system/etc/init/lineage-ssh.rc:1)
+[    2.798936,3] init: processing action (post-fs-data) from (/system/etc/init/lineage-system.rc:6)
+[    2.799519,3] init: starting service 'sysinit'...
+[    2.800580,3] init: processing action (post-fs-data) from (/system/etc/init/lineage-updates.rc:1)
+[    2.801094,3] init: processing action (post-fs-data) from (/system/etc/init/logtagd.rc:4)
+[    2.801995,3] init: processing action (post-fs-data) from (/vendor/etc/init/hostapd.android.rc:9)
+[    2.802462,3] init: processing action (load_persist_props_action) from (/init.rc:254)
+[    2.802530,3] init: Couldn't load property file: Unable to open '/data/local.prop': No such file or directory: No such file or directory
+[    2.802789,3] init: starting service 'logd-reinit'...
+[    2.803580,0] init: couldn't write 378 to /dev/cpuset/system-background/tasks: No space left on device
+[    2.803659,3] init: processing action (load_persist_props_action) from (/system/etc/init/logcatd.rc:31)
+[    2.803807,3] init: processing action (firmware_mounts_complete) from (/init.rc:260)
+[    2.803903,3] init: processing action (early-boot) from (/vendor/etc/init/hw/init.qcom.rc:73)
+[    2.804016,3] adsp-loader soc:qcom,msm-adsp-loader: adsp_loader_do: scheduling work to load ADSP fw
+[    2.804416,3] init: Unable to open '/sys/kernel/boot_cdsp/boot': No such file or directory
+[    2.804464,3] init: processing action (early-boot) from (/vendor/etc/init/hw/init.mmi.rc:7)
+[    2.804755,3] init: processing action (early-boot) from (/system/etc/init/installd.rc:5)
+[    2.814038,3] init: processing action (boot) from (/init.rc:548)
+[    2.817601,1] logd.daemon: reinit
+[    2.818583,0] init: starting service 'hidl_memory'...
+[    2.819699,0] init: starting service 'audio-hal-2-0'...
+[    2.821095,0] init: service bluetooth-1-0 does not have a SELinux domain defined
+[    2.821124,0] init: starting service 'bluetooth-1-0'...
+[    2.822397,0] init: starting service 'cas-hal-1-0'...
+[    2.823103,3] type=1400 audit(31133052.853:9): avc: denied { execute_no_trans } for uid=1002 pid=383 comm="init" path="/system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti" dev="mmcblk0p53" ino=2954 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[    2.824259,0] init: starting service 'configstore-hal-1-0'...
+[    2.825684,0] init: starting service 'drm-hal-1-0'...
+[    2.826960,0] init: starting service 'gatekeeper-1-0'...
+[    2.828209,0] init: starting service 'gralloc-2-0'...
+[    2.829386,0] init: starting service 'hwcomposer-2-1'...
+[    2.830938,2] init: couldn't write 386 to /dev/cpuset/foreground/tasks: No space left on device
+[    2.831220,0] init: couldn't write 384 to /dev/cpuset/foreground/tasks: No space left on device
+[    2.831610,0] init: couldn't write 382 to /dev/cpuset/foreground/tasks: No space left on device
+[    2.832851,0] init: starting service 'health-hal-1-0'...
+[    2.836251,0] init: starting service 'light-hal-2-0'...
+[    2.849497,0] init: starting service 'memtrack-hal-1-0'...
+[    2.851307,0] init: service power-hal-1-0 does not have a SELinux domain defined
+[    2.851337,0] init: starting service 'power-hal-1-0'...
+[    2.865048,0] init: starting service 'sensors-hal-1-0'...
+[    2.866267,0] init: starting service 'thermal-hal-1-0'...
+[    2.867882,0] init: starting service 'vibrator-1-0'...
+[    2.879122,0] init: starting service 'wifi_hal_legacy'...
+[    2.894917,0] init: service display-color-hal-1-0 does not have a SELinux domain defined
+[    2.894946,0] init: starting service 'display-color-hal-1-0'...
+[    2.900756,0] init: starting service 'livedisplay-hal-1-0'...
+[    2.902766,3] type=1400 audit(31133052.853:9): avc: denied { execute_no_trans } for uid=1002 pid=383 comm="init" path="/system/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti" dev="mmcblk0p53" ino=2954 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[    2.902794,3] type=1400 audit(31133052.933:10): avc: denied { call } for uid=1002 pid=383 comm="android.hardwar" scontext=u:r:init:s0 tcontext=u:r:hwservicemanager:s0 tclass=binder permissive=1
+[    2.902968,3] type=1400 audit(31133052.933:10): avc: denied { call } for uid=1002 pid=383 comm="android.hardwar" scontext=u:r:init:s0 tcontext=u:r:hwservicemanager:s0 tclass=binder permissive=1
+[    2.902985,3] type=1400 audit(31133052.933:11): avc: denied { search } for uid=1000 pid=361 comm="hwservicemanage" name="383" dev="proc" ino=5593 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+[    2.903088,3] type=1400 audit(31133052.933:11): avc: denied { search } for uid=1000 pid=361 comm="hwservicemanage" name="383" dev="proc" ino=5593 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+[    2.903102,3] type=1400 audit(31133052.933:12): avc: denied { read } for uid=1000 pid=361 comm="hwservicemanage" name="current" dev="proc" ino=5720 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    2.903185,3] type=1400 audit(31133052.933:12): avc: denied { read } for uid=1000 pid=361 comm="hwservicemanage" name="current" dev="proc" ino=5720 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    2.903199,3] type=1400 audit(31133052.933:13): avc: denied { open } for uid=1000 pid=361 comm="hwservicemanage" path="/proc/383/attr/current" dev="proc" ino=5720 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    2.903279,3] type=1400 audit(31133052.933:13): avc: denied { open } for uid=1000 pid=361 comm="hwservicemanage" path="/proc/383/attr/current" dev="proc" ino=5720 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    2.903292,3] type=1400 audit(31133052.933:14): avc: denied { getattr } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[    2.917977,0] init: service qti_gnss_service does not have a SELinux domain defined
+[    2.918005,0] init: starting service 'qti_gnss_service'...
+[    2.919231,0] init: service iop-hal-1-0 does not have a SELinux domain defined
+[    2.919259,0] init: starting service 'iop-hal-1-0'...
+[    2.920298,3] type=1400 audit(31133052.933:14): avc: denied { getattr } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[    2.920322,3] type=1400 audit(31133052.950:15): avc: denied { execute_no_trans } for uid=1000 pid=399 comm="init" path="/system/vendor/bin/hw/vendor.display.color@1.0-service" dev="mmcblk0p53" ino=2972 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[    2.920560,0] init: service perf-hal-1-0 does not have a SELinux domain defined
+[    2.920581,0] init: starting service 'perf-hal-1-0'...
+[    2.921624,0] init: service qdutils_disp-1-0 does not have a SELinux domain defined
+[    2.921650,0] init: starting service 'qdutils_disp-1-0'...
+[    2.922730,0] init: service tui_comm-1-0 does not have a SELinux domain defined
+[    2.922759,0] init: starting service 'tui_comm-1-0'...
+[    2.940171,3] type=1400 audit(31133052.950:15): avc: denied { execute_no_trans } for uid=1000 pid=399 comm="init" path="/system/vendor/bin/hw/vendor.display.color@1.0-service" dev="mmcblk0p53" ino=2972 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[    2.940195,3] type=1400 audit(31133052.960:16): avc: denied { getattr } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[    2.940320,3] type=1400 audit(31133052.960:16): avc: denied { getattr } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[    2.940335,3] type=1400 audit(31133052.963:17): avc: denied { transfer } for uid=1002 pid=383 comm="bluetooth@1.0-s" scontext=u:r:init:s0 tcontext=u:r:hwservicemanager:s0 tclass=binder permissive=1
+[    2.940425,3] type=1400 audit(31133052.963:17): avc: denied { transfer } for uid=1002 pid=383 comm="bluetooth@1.0-s" scontext=u:r:init:s0 tcontext=u:r:hwservicemanager:s0 tclass=binder permissive=1
+[    2.940438,3] type=1400 audit(31133052.963:18): avc: denied { call } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    2.940517,3] type=1400 audit(31133052.963:18): avc: denied { call } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    2.940533,3] type=1400 audit(31133052.966:19): avc: denied { search } for uid=1000 pid=361 comm="hwservicemanage" name="383" dev="proc" ino=5593 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+[    2.970259,2] ueventd: firmware: loading 'adsp.mdt' for '/devices/soc/c200000.qcom,lpass/firmware/adsp.mdt'
+[    2.971269,0] init: Command 'class_start hal' action=boot (/init.rc:640) returned 0 took 153ms.
+[    2.971530,0] init: Service 'logd-reinit' (pid 378) exited with status 0
+[    2.972645,0] init: starting service 'healthd'...
+[    2.973657,3] type=1400 audit(31133052.966:19): avc: denied { search } for uid=1000 pid=361 comm="hwservicemanage" name="383" dev="proc" ino=5593 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+[    2.973681,3] type=1400 audit(31133052.973:20): avc: denied { read } for uid=1000 pid=361 comm="hwservicemanage" name="current" dev="proc" ino=5720 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    2.973815,3] type=1400 audit(31133052.973:20): avc: denied { read } for uid=1000 pid=361 comm="hwservicemanage" name="current" dev="proc" ino=5720 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    2.973830,3] type=1400 audit(31133052.973:21): avc: denied { open } for uid=1000 pid=361 comm="hwservicemanage" path="/proc/383/attr/current" dev="proc" ino=5720 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    2.974090,0] init: service qseecomd does not have a SELinux domain defined
+[    2.974112,0] init: starting service 'qseecomd'...
+[    2.975293,0] init: service esepmdaemon does not have a SELinux domain defined
+[    2.975321,0] init: starting service 'esepmdaemon'...
+[    2.976238,2] ueventd: firmware: could not find firmware for adsp.mdt
+[    2.976462,3] subsys-pil-tz c200000.qcom,lpass: adsp: Failed to locate adsp.mdt
+[    2.976497,3] adsp-loader soc:qcom,msm-adsp-loader: adsp_load_fw: pil get failed,
+[    2.976506,3] adsp-loader soc:qcom,msm-adsp-loader: adsp_load_fw: Q6 image loading failed
+[    2.976588,2] ueventd: loading /devices/soc/c200000.qcom,lpass/firmware/adsp.mdt took 6ms
+[    2.985392,0] init: couldn't write 410 to /dev/cpuset/system-background/tasks: No space left on device
+[    3.013994,0] init: service irsc_util does not have a SELinux domain defined
+[    3.014022,0] init: starting service 'irsc_util'...
+[    3.015424,0] init: service rmt_storage does not have a SELinux domain defined
+[    3.015451,0] init: starting service 'rmt_storage'...
+[    3.016491,0] init: service tftp_server does not have a SELinux domain defined
+[    3.016518,0] init: starting service 'tftp_server'...
+[    3.030811,0] init: couldn't write 413 to /dev/cpuset/system-background/tasks: No space left on device
+[    3.031601,0] init: couldn't write 414 to /dev/cpuset/system-background/tasks: No space left on device
+[    3.041671,0] init: service per_mgr does not have a SELinux domain defined
+[    3.041699,0] init: starting service 'per_mgr'...
+[    3.043013,0] init: service vendor.msm_irqbalance does not have a SELinux domain defined
+[    3.043039,0] init: starting service 'vendor.msm_irqbalance'...
+[    3.044198,0] init: service mmi-laser-sh does not have a SELinux domain defined
+[    3.044226,0] init: starting service 'mmi-laser-sh'...
+[    3.059718,0] init: couldn't write 415 to /dev/cpuset/system-background/tasks: No space left on device
+[    3.074864,3] type=1400 audit(31133052.973:21): avc: denied { open } for uid=1000 pid=361 comm="hwservicemanage" path="/proc/383/attr/current" dev="proc" ino=5720 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    3.074886,3] type=1400 audit(31133053.106:22): avc: denied { execute_no_trans } for uid=0 pid=417 comm="init" path="/system/vendor/bin/sh" dev="mmcblk0p53" ino=3068 scontext=u:r:init:s0 tcontext=u:object_r:vendor_shell_exec:s0 tclass=file permissive=1
+[    3.089498,0] init: service sensors does not have a SELinux domain defined
+[    3.089525,0] init: starting service 'sensors'...
+[    3.091401,0] init: starting service 'lmkd'...
+[    3.107760,0] init: Created socket '/dev/socket/lmkd', mode 660, user 1000, group 1000
+[    3.107956,0] init: couldn't write 420 to /dev/cpuset/system-background/tasks: No space left on device
+[    3.117058,0] init: starting service 'surfaceflinger'...
+[    3.118767,0] init: starting service 'thermalservice'...
+[    3.120140,0] init: Command 'class_start core' action=boot (/init.rc:642) returned 0 took 148ms.
+[    3.120214,0] init: processing action (boot) from (/init.usb.rc:25)
+[    3.120274,0] init: processing action (persist.sys.usb.config=* && boot) from (/init.usb.rc:106)
+[    3.120319,0] init: processing action (boot) from (/vendor/etc/init/hw/init.qcom.rc:82)
+[    3.127896,3] capability: warning: `msm_irqbalance' uses 32-bit capabilities (legacy support in use)
+[    3.128125,0] init: Failed to bind socket 'pdx/system/vr/display/client': No such file or directory
+[    3.128708,0] init: Failed to bind socket 'pdx/system/vr/display/manager': No such file or directory
+[    3.129513,0] init: Failed to bind socket 'pdx/system/vr/display/vsync': No such file or directory
+[    3.165811,0] init: Service 'irsc_util' (pid 412) exited with status 0
+[    3.180296,2] audit: audit_lost=1 audit_rate_limit=20 audit_backlog_limit=64
+[    3.180309,2] audit: rate limit exceeded
+[    3.190388,2] kgsl-3d 1c00000.qcom,kgsl-3d0: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    3.190497,2] devbw soc:qcom,gpubw: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    3.205035,2] healthd: battery l=73 v=3850 t=24.5 h=2 st=3 c=400 fc=3000000 cc=0 chg=
+[    3.215571,0] rmt_storage:INFO:main: Done with init now waiting for messages!
+[    3.222008,2] devbw soc:qcom,cpubw: dev_pm_opp_get_opp_count: device OPP not found (-19)
+[    3.225149,0] init: Unable to write to '/dev/cpuset/top-app/cpus': Invalid argument
+[    3.225216,0] init: Unable to open '/dev/cpuset/top-app/boost/cpus': No such file or directory
+[    3.225290,0] init: Unable to write to '/dev/cpuset/foreground/cpus': Invalid argument
+[    3.236119,0] init: processing action (boot) from (/vendor/etc/init/hw/init.mmi.rc:166)
+[    3.265712,3] type=1400 audit(31133053.106:22): avc: denied { execute_no_trans } for uid=0 pid=417 comm="init" path="/system/vendor/bin/sh" dev="mmcblk0p53" ino=3068 scontext=u:r:init:s0 tcontext=u:object_r:vendor_shell_exec:s0 tclass=file permissive=1
+[    3.265735,3] type=1400 audit(31133053.130:23): avc: denied { read } for uid=1000 pid=395 comm="android.hardwar" name="devices" dev="sysfs" ino=10212 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    3.265928,3] type=1400 audit(31133053.130:23): avc: denied { read } for uid=1000 pid=395 comm="android.hardwar" name="devices" dev="sysfs" ino=10212 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    3.265943,3] type=1400 audit(31133053.130:24): avc: denied { open } for uid=1000 pid=395 comm="android.hardwar" path="/sys/bus/msm_subsys/devices" dev="sysfs" ino=10212 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    3.266031,3] type=1400 audit(31133053.130:24): avc: denied { open } for uid=1000 pid=395 comm="android.hardwar" path="/sys/bus/msm_subsys/devices" dev="sysfs" ino=10212 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=dir permissive=1
+[    3.266045,3] type=1400 audit(31133053.130:25): avc: denied { read } for uid=1000 pid=395 comm="android.hardwar" name="name" dev="sysfs" ino=21288 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    3.266127,3] type=1400 audit(31133053.130:25): avc: denied { read } for uid=1000 pid=395 comm="android.hardwar" name="name" dev="sysfs" ino=21288 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    3.266141,3] type=1400 audit(31133053.130:26): avc: denied { open } for uid=1000 pid=395 comm="android.hardwar" path="/sys/devices/soc/1de0000.qcom,venus/subsys0/name" dev="sysfs" ino=21288 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    3.266221,3] type=1400 audit(31133053.130:26): avc: denied { open } for uid=1000 pid=395 comm="android.hardwar" path="/sys/devices/soc/1de0000.qcom,venus/subsys0/name" dev="sysfs" ino=21288 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    3.266234,3] type=1400 audit(31133053.130:27): avc: denied { read write } for uid=1000 pid=395 comm="android.hardwar" name="diag" dev="tmpfs" ino=1898 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    3.266315,3] type=1400 audit(31133053.130:27): avc: denied { read write } for uid=1000 pid=395 comm="android.hardwar" name="diag" dev="tmpfs" ino=1898 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    3.266328,3] type=1400 audit(31133053.130:28): avc: denied { open } for uid=1000 pid=395 comm="android.hardwar" path="/dev/diag" dev="tmpfs" ino=1898 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    3.266421,3] type=1400 audit(31133053.130:28): avc: denied { open } for uid=1000 pid=395 comm="android.hardwar" path="/dev/diag" dev="tmpfs" ino=1898 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    3.266434,3] type=1400 audit(31133053.130:29): avc: denied { ioctl } for uid=1000 pid=395 comm="android.hardwar" path="/dev/diag" dev="tmpfs" ino=1898 ioctlcmd=20 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    3.266515,3] type=1400 audit(31133053.130:29): avc: denied { ioctl } for uid=1000 pid=395 comm="android.hardwar" path="/dev/diag" dev="tmpfs" ino=1898 ioctlcmd=20 scontext=u:r:hal_sensors_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    3.266529,3] type=1400 audit(31133053.136:30): avc: denied { read write } for uid=1013 pid=386 comm="android.hardwar" name="vndbinder" dev="tmpfs" ino=5380 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.266613,3] type=1400 audit(31133053.136:30): avc: denied { read write } for uid=1013 pid=386 comm="android.hardwar" name="vndbinder" dev="tmpfs" ino=5380 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.266630,3] type=1400 audit(31133053.136:31): avc: denied { read write } for uid=1000 pid=389 comm="android.hardwar" name="vndbinder" dev="tmpfs" ino=5380 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.276537,0] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.277669,0] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.279291,0] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.284725,1] init.mmi.laser.sh: Error: the calibration sys file not show up
+[    3.285041,0] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.287111,0] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.287449,2] ueventd: firmware: loading 'a300_pm4.fw' for '/devices/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/a300_pm4.fw'
+[    3.289692,1] ueventd: loading /devices/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/a300_pm4.fw took 5ms
+[    3.290591,0] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.292737,2] ueventd: firmware: loading 'a300_pfp.fw' for '/devices/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/a300_pfp.fw'
+[    3.293693,1] type=1400 audit(31133053.136:31): avc: denied { read write } for uid=1000 pid=389 comm="android.hardwar" name="vndbinder" dev="tmpfs" ino=5380 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.293718,1] type=1400 audit(31133053.136:33): avc: denied { open } for uid=1013 pid=386 comm="android.hardwar" path="/dev/vndbinder" dev="tmpfs" ino=5380 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.293833,1] type=1400 audit(31133053.136:33): avc: denied { open } for uid=1013 pid=386 comm="android.hardwar" path="/dev/vndbinder" dev="tmpfs" ino=5380 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.293848,1] type=1400 audit(31133053.136:34): avc: denied { ioctl } for uid=1013 pid=386 comm="android.hardwar" path="/dev/vndbinder" dev="tmpfs" ino=5380 ioctlcmd=6209 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.296876,1] type=1400 audit(31133053.136:34): avc: denied { ioctl } for uid=1013 pid=386 comm="android.hardwar" path="/dev/vndbinder" dev="tmpfs" ino=5380 ioctlcmd=6209 scontext=u:r:hal_drm_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.296899,1] type=1400 audit(31133053.136:32): avc: denied { open } for uid=1000 pid=389 comm="android.hardwar" path="/dev/vndbinder" dev="tmpfs" ino=5380 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.297051,1] type=1400 audit(31133053.136:32): avc: denied { open } for uid=1000 pid=389 comm="android.hardwar" path="/dev/vndbinder" dev="tmpfs" ino=5380 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.297066,1] type=1400 audit(31133053.136:35): avc: denied { ioctl } for uid=1000 pid=389 comm="android.hardwar" path="/dev/vndbinder" dev="tmpfs" ino=5380 ioctlcmd=6209 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.297157,1] type=1400 audit(31133053.136:35): avc: denied { ioctl } for uid=1000 pid=389 comm="android.hardwar" path="/dev/vndbinder" dev="tmpfs" ino=5380 ioctlcmd=6209 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.297172,1] type=1400 audit(31133053.163:36): avc: denied { getattr } for uid=9999 pid=416 comm="msm_irqbalance" path="/proc/interrupts" dev="proc" ino=4026532299 scontext=u:r:init:s0 tcontext=u:object_r:proc_interrupts:s0 tclass=file permissive=1
+[    3.297265,1] type=1400 audit(31133053.163:36): avc: denied { getattr } for uid=9999 pid=416 comm="msm_irqbalance" path="/proc/interrupts" dev="proc" ino=4026532299 scontext=u:r:init:s0 tcontext=u:object_r:proc_interrupts:s0 tclass=file permissive=1
+[    3.297279,1] type=1400 audit(31133053.173:37): avc: denied { execute_no_trans } for uid=0 pid=429 comm="sh" path="/system/vendor/bin/toybox_vendor" dev="mmcblk0p53" ino=3099 scontext=u:r:init:s0 tcontext=u:object_r:vendor_toolbox_exec:s0 tclass=file permissive=1
+[    3.297516,1] type=1400 audit(31133053.173:37): avc: denied { execute_no_trans } for uid=0 pid=429 comm="sh" path="/system/vendor/bin/toybox_vendor" dev="mmcblk0p53" ino=3099 scontext=u:r:init:s0 tcontext=u:object_r:vendor_toolbox_exec:s0 tclass=file permissive=1
+[    3.297531,1] type=1400 audit(31133053.186:38): avc: denied { create } for uid=0 pid=412 comm="irsc_util" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[    3.297725,1] type=1400 audit(31133053.186:38): avc: denied { create } for uid=0 pid=412 comm="irsc_util" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[    3.297739,1] type=1400 audit(31133053.186:39): avc: denied { ioctl } for uid=0 pid=412 comm="irsc_util" path="socket:[13009]" dev="sockfs" ino=13009 ioctlcmd=c305 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[    3.297939,1] type=1400 audit(31133053.186:39): avc: denied { ioctl } for uid=0 pid=412 comm="irsc_util" path="socket:[13009]" dev="sockfs" ino=13009 ioctlcmd=c305 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[    3.297954,1] type=1400 audit(31133053.196:40): avc: denied { read write } for uid=1000 pid=399 comm="vendor.display." name="vndbinder" dev="tmpfs" ino=5380 scontext=u:r:init:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.298043,1] type=1400 audit(31133053.196:40): avc: denied { read write } for uid=1000 pid=399 comm="vendor.display." name="vndbinder" dev="tmpfs" ino=5380 scontext=u:r:init:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.298057,1] type=1400 audit(31133053.203:41): avc: denied { search } for uid=1000 pid=361 comm="hwservicemanage" name="402" dev="proc" ino=12789 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+[    3.298143,1] type=1400 audit(31133053.203:41): avc: denied { search } for uid=1000 pid=361 comm="hwservicemanage" name="402" dev="proc" ino=12789 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=dir permissive=1
+[    3.298156,1] type=1400 audit(31133053.203:42): avc: denied { read } for uid=1000 pid=361 comm="hwservicemanage" name="current" dev="proc" ino=5913 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    3.298255,1] type=1400 audit(31133053.203:42): avc: denied { read } for uid=1000 pid=361 comm="hwservicemanage" name="current" dev="proc" ino=5913 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    3.298268,1] type=1400 audit(31133053.203:43): avc: denied { open } for uid=1000 pid=361 comm="hwservicemanage" path="/proc/402/attr/current" dev="proc" ino=5913 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    3.298354,1] type=1400 audit(31133053.203:43): avc: denied { open } for uid=1000 pid=361 comm="hwservicemanage" path="/proc/402/attr/current" dev="proc" ino=5913 scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+[    3.298367,1] type=1400 audit(31133053.203:44): avc: denied { getattr } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[    3.298449,1] type=1400 audit(31133053.203:44): avc: denied { getattr } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=process permissive=1
+[    3.298461,1] type=1400 audit(31133053.206:45): avc: denied { call } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    3.298543,1] type=1400 audit(31133053.206:45): avc: denied { call } for uid=1000 pid=361 comm="hwservicemanage" scontext=u:r:hwservicemanager:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    3.298556,1] type=1400 audit(31133053.206:46): avc: denied { write } for uid=0 pid=410 comm="qseecomd" name="mmcblk0rpmb" dev="tmpfs" ino=5323 scontext=u:r:init:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    3.298644,1] type=1400 audit(31133053.206:46): avc: denied { write } for uid=0 pid=410 comm="qseecomd" name="mmcblk0rpmb" dev="tmpfs" ino=5323 scontext=u:r:init:s0 tcontext=u:object_r:block_device:s0 tclass=blk_file permissive=1
+[    3.298658,1] type=1400 audit(31133053.210:47): avc: denied { ioctl } for uid=1000 pid=389 comm="Binder:389_1" path="/dev/vndbinder" dev="tmpfs" ino=5380 ioctlcmd=6201 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    3.309154,2] ueventd: loading /devices/soc/1c00000.qcom,kgsl-3d0/kgsl/kgsl-3d0/a300_pfp.fw took 15ms
+[    3.313811,1] devfreq soc:qcom,kgsl-busmon: Couldn't update frequency transition information.
+[    3.321303,0] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.323461,2] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.327570,0] scm_call failed: func id 0x72000206, ret: -1, syscall returns: 0x0, 0x0, 0x0
+[    3.598378,0] random: nonblocking pool is initialized
+[    3.761867,2] synaptics_dsx_sensor_state: state change STANDBY -> ACTIVE
+[    4.746786,2] FG: fg_get_mmi_battid: Battsn unused
+[    4.746805,2] qcom,qpnp-fg qpnp-fg-18: Default Serial Number SNN5976A
+[    4.746816,2] qcom,qpnp-fg qpnp-fg-18: Battery Match Found using default qcom,gk40-atl
+[    4.752355,2] FG: fg_batt_profile_init: Battery profiles same, using default
+[    4.756216,2] FG: populate_system_data: cutoff_voltage = 3399943, nom_cap_uah = 2876000 p1p2 = 34, p2p3 = 7
+[    4.756290,2] FG: fg_batt_profile_init: Battery SOC: 73, V: 3850685uV
+[    4.756345,2] FG: fg_vbat_est_check: vbat(3850685),est-vbat(3932777),diff(82092),threshold(40000)
+[    4.757176,1] type=1400 audit(31133053.210:47): avc: denied { ioctl } for uid=1000 pid=389 comm="Binder:389_1" path="/dev/vndbinder" dev="tmpfs" ino=5380 ioctlcmd=6201 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:vndbinder_device:s0 tclass=chr_file permissive=1
+[    4.757198,1] type=1400 audit(31133054.786:124): avc: denied { read } for uid=1000 pid=389 comm="HWC_UeventThrea" scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[    4.758132,0] healthd: battery l=73 v=3850 t=24.5 h=2 st=3 c=400 fc=2876000 cc=0 chg=
+[    4.759197,0] healthd: battery l=73 v=3850 t=24.5 h=2 st=3 c=400 fc=2876000 cc=0 chg=
+[    8.241843,2] init: Command 'wait /sys/kernel/aov/event' action=boot (/vendor/etc/init/hw/init.mmi.rc:224) returned -1 took 5000ms.
+[    8.241957,2] init: Service 'sysinit' (pid 377) exited with status 0
+[    8.242234,2] init: Service 'mmi-laser-sh' (pid 417) killed by signal 4
+[    8.243974,2] init: starting service 'bootanim'...
+[    8.244944,0] init: Unable to open '/persist/chargeonly/cooldown': No such file or directory
+[    8.245192,3] init: processing action (boot) from (/vendor/etc/init/hw/init.mmi.usb.rc:31)
+[    8.246597,3] init: processing action (boot) from (/vendor/etc/init/hw/init.mmi_device.rc:1)
+[    8.247721,3] init: processing action (boot) from (/system/etc/init/bootstat.rc:57)
+[    8.247775,3] init: processing action (boot) from (/system/etc/init/dumpstate.rc:1)
+[    8.247931,3] init: processing action (boot) from (/system/etc/init/lineage-governor.rc:1)
+[    8.249528,3] init: processing action (boot) from (/system/etc/init/lineage-iosched.rc:16)
+[    8.250126,3] selinux: SELinux: Could not get canonical path for /sys/block/sda/queue/scheduler restorecon: No such file or directory.
+[    8.250126,3] 
+[    8.250218,3] selinux: SELinux: Could not get canonical path for /sys/block/sde/queue/scheduler restorecon: No such file or directory.
+[    8.250218,3] 
+[    8.250307,3] selinux: SELinux: Could not get canonical path for /sys/block/dm-0/queue/scheduler restorecon: No such file or directory.
+[    8.250307,3] 
+[    8.250350,3] init: processing action (boot) from (/system/etc/init/lineage-livedisplay.rc:1)
+[    8.250790,3] init: processing action (boot) from (/system/etc/init/lineage-system.rc:16)
+[    8.250935,3] init: processing action (boot) from (/system/etc/init/lineage-tcp.rc:1)
+[    8.251128,3] init: processing action (enable_property_trigger) from (<Builtin Action>:0)
+[    8.251473,3] init: processing action (ro.debuggable=1) from (/init.rc:724)
+[    8.251618,3] init: service 'console' couldn't open console '/dev/console': No such device
+[    8.251647,3] init: processing action (sys.usb.config=adb && sys.usb.configfs=0) from (/init.usb.rc:38)
+[    8.251738,3] enable_store: android_usb: already disabled
+[    8.252167,3] init: starting service 'adbd'...
+[    8.253061,3] init: processing action (init.svc.per_mgr=running) from (/vendor/etc/init/hw/init.qcom.rc:659)
+[    8.253416,3] init: service per_proxy does not have a SELinux domain defined
+[    8.253437,1] init: Created socket '/dev/socket/adbd', mode 660, user 1000, group 1000
+[    8.253439,3] init: starting service 'per_proxy'...
+[    8.254388,3] init: processing action (ro.hw.ecompass=true) from (/vendor/etc/init/hw/init.qcom.rc:665)
+[    8.254390,1] type=1400 audit(31133054.786:124): avc: denied { read } for uid=1000 pid=389 comm="HWC_UeventThrea" scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:r:hal_graphics_composer_default:s0 tclass=netlink_kobject_uevent_socket permissive=1
+[    8.254400,1] type=1400 audit(31133058.286:125): avc: denied { execute_no_trans } for uid=1000 pid=494 comm="init" path="/system/vendor/bin/pm-proxy" dev="mmcblk0p53" ino=3038 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[    8.254475,3] init: processing action (persist.sys.ssr.restart_level=*) from (/vendor/etc/init/hw/init.qcom.rc:817)
+[    8.254864,3] init: service ssr_setup does not have a SELinux domain defined
+[    8.254883,3] init: starting service 'ssr_setup'...
+[    8.255789,3] init: processing action (ro.boot.dualsim=false) from (/vendor/etc/init/hw/init.mmi.rc:265)
+[    8.264681,0] type=1400 audit(31133058.286:125): avc: denied { execute_no_trans } for uid=1000 pid=494 comm="init" path="/system/vendor/bin/pm-proxy" dev="mmcblk0p53" ino=3038 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[    8.264702,0] type=1400 audit(31133058.296:126): avc: denied { read write } for uid=1000 pid=387 comm="android.hardwar" name="qseecom" dev="tmpfs" ino=5397 scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.264912,0] type=1400 audit(31133058.296:126): avc: denied { read write } for uid=1000 pid=387 comm="android.hardwar" name="qseecom" dev="tmpfs" ino=5397 scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.264928,0] type=1400 audit(31133058.296:127): avc: denied { open } for uid=1000 pid=387 comm="android.hardwar" path="/dev/qseecom" dev="tmpfs" ino=5397 scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.265012,0] type=1400 audit(31133058.296:127): avc: denied { open } for uid=1000 pid=387 comm="android.hardwar" path="/dev/qseecom" dev="tmpfs" ino=5397 scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.265026,0] type=1400 audit(31133058.296:128): avc: denied { ioctl } for uid=1000 pid=387 comm="android.hardwar" path="/dev/qseecom" dev="tmpfs" ino=5397 ioctlcmd=970a scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.278313,2] init: processing action (ro.boot.hwrev=*) from (/vendor/etc/init/hw/init.mmi.rc:270)
+[    8.278632,2] init: service mmi-boot-sh does not have a SELinux domain defined
+[    8.278653,2] init: starting service 'mmi-boot-sh'...
+[    8.279591,2] init: processing action (ro.bootmode=normal) from (/vendor/etc/init/hw/init.mmi.usb.rc:60)
+[    8.279659,2] init: Unable to open '/sys/module/usb3813_hub/parameters/boost_val': No such file or directory
+[    8.283216,0] subsys-restart: __subsystem_get(): Changing subsys fw_name to modem
+[    8.283247,0] ipa_get_ipc_logbuf_low:2802 IPA HW is not supported
+[    8.283580,1] type=1400 audit(31133058.296:128): avc: denied { ioctl } for uid=1000 pid=387 comm="android.hardwar" path="/dev/qseecom" dev="tmpfs" ino=5397 ioctlcmd=970a scontext=u:r:hal_gatekeeper_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.283599,1] type=1400 audit(31133058.310:129): avc: denied { execute_no_trans } for uid=0 pid=496 comm="init" path="/system/vendor/bin/sh" dev="mmcblk0p53" ino=3068 scontext=u:r:init:s0 tcontext=u:object_r:vendor_shell_exec:s0 tclass=file permissive=1
+[    8.283980,1] type=1400 audit(31133058.310:129): avc: denied { execute_no_trans } for uid=0 pid=496 comm="init" path="/system/vendor/bin/sh" dev="mmcblk0p53" ino=3068 scontext=u:r:init:s0 tcontext=u:object_r:vendor_shell_exec:s0 tclass=file permissive=1
+[    8.283999,1] type=1400 audit(31133058.313:130): avc: denied { transfer } for uid=1000 pid=360 comm="servicemanager" scontext=u:r:servicemanager:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    8.284095,1] type=1400 audit(31133058.313:130): avc: denied { transfer } for uid=1000 pid=360 comm="servicemanager" scontext=u:r:servicemanager:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    8.284109,1] type=1400 audit(31133058.313:131): avc: denied { call } for uid=1000 pid=494 comm="pm-proxy" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    8.284191,1] type=1400 audit(31133058.313:131): avc: denied { call } for uid=1000 pid=494 comm="pm-proxy" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    8.284204,1] type=1400 audit(31133058.313:132): avc: denied { transfer } for uid=1000 pid=494 comm="pm-proxy" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    8.284284,1] type=1400 audit(31133058.313:132): avc: denied { transfer } for uid=1000 pid=494 comm="pm-proxy" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+[    8.284296,1] type=1400 audit(31133058.313:133): avc: denied { read } for uid=1000 pid=415 comm="Binder:415_2" name="subsys_modem" dev="tmpfs" ino=4338 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.284439,1] type=1400 audit(31133058.313:133): avc: denied { read } for uid=1000 pid=415 comm="Binder:415_2" name="subsys_modem" dev="tmpfs" ino=4338 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.284453,1] type=1400 audit(31133058.313:134): avc: denied { open } for uid=1000 pid=415 comm="Binder:415_2" path="/dev/subsys_modem" dev="tmpfs" ino=4338 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.284788,2] ueventd: firmware: loading 'modem.mdt' for '/devices/soc/4080000.qcom,mss/firmware/modem.mdt'
+[    8.285131,2] ueventd: firmware: could not find firmware for modem.mdt
+[    8.285228,2] ueventd: loading /devices/soc/4080000.qcom,mss/firmware/modem.mdt took 0ms
+[    8.285333,1] pil-q6v5-mss 4080000.qcom,mss: modem: Failed to locate modem.mdt
+[    8.285362,1] ipa_get_ipc_logbuf_low:2802 IPA HW is not supported
+[    8.296598,2] init: Service 'ssr_setup' (pid 495) exited with status 0
+[    8.318781,1] type=1400 audit(31133058.313:134): avc: denied { open } for uid=1000 pid=415 comm="Binder:415_2" path="/dev/subsys_modem" dev="tmpfs" ino=4338 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.318803,1] type=1400 audit(31133058.350:135): avc: denied { read write } for uid=1000 pid=368 comm="android.hardwar" name="qseecom" dev="tmpfs" ino=5397 scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.319006,1] type=1400 audit(31133058.350:135): avc: denied { read write } for uid=1000 pid=368 comm="android.hardwar" name="qseecom" dev="tmpfs" ino=5397 scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.319020,1] type=1400 audit(31133058.350:136): avc: denied { open } for uid=1000 pid=368 comm="android.hardwar" path="/dev/qseecom" dev="tmpfs" ino=5397 scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.319099,1] type=1400 audit(31133058.350:136): avc: denied { open } for uid=1000 pid=368 comm="android.hardwar" path="/dev/qseecom" dev="tmpfs" ino=5397 scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.319113,1] type=1400 audit(31133058.350:137): avc: denied { ioctl } for uid=1000 pid=368 comm="android.hardwar" path="/dev/qseecom" dev="tmpfs" ino=5397 ioctlcmd=970a scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    8.413768,3] init: Service 'mmi-boot-sh' (pid 496) exited with status 0
+[    9.003007,1] type=1400 audit(31133058.350:137): avc: denied { ioctl } for uid=1000 pid=368 comm="android.hardwar" path="/dev/qseecom" dev="tmpfs" ino=5397 ioctlcmd=970a scontext=u:r:hal_keymaster_default:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.003030,1] type=1400 audit(31133059.033:138): avc: denied { read write } for uid=1003 pid=492 comm="BootAnimation" name="kgsl-3d0" dev="tmpfs" ino=5365 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.003255,1] type=1400 audit(31133059.033:138): avc: denied { read write } for uid=1003 pid=492 comm="BootAnimation" name="kgsl-3d0" dev="tmpfs" ino=5365 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.003270,1] type=1400 audit(31133059.033:139): avc: denied { open } for uid=1003 pid=492 comm="BootAnimation" path="/dev/kgsl-3d0" dev="tmpfs" ino=5365 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.003484,1] type=1400 audit(31133059.033:139): avc: denied { open } for uid=1003 pid=492 comm="BootAnimation" path="/dev/kgsl-3d0" dev="tmpfs" ino=5365 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.003498,1] type=1400 audit(31133059.033:140): avc: denied { ioctl } for uid=1003 pid=492 comm="BootAnimation" path="/dev/kgsl-3d0" dev="tmpfs" ino=5365 ioctlcmd=940 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.135312,1] type=1400 audit(31133059.033:140): avc: denied { ioctl } for uid=1003 pid=492 comm="BootAnimation" path="/dev/kgsl-3d0" dev="tmpfs" ino=5365 ioctlcmd=940 scontext=u:r:bootanim:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[    9.135335,1] type=1400 audit(31133059.166:141): avc: denied { read } for uid=1000 pid=389 comm="HwBinder:389_2" name="caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    9.135470,1] type=1400 audit(31133059.166:141): avc: denied { read } for uid=1000 pid=389 comm="HwBinder:389_2" name="caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    9.135484,1] type=1400 audit(31133059.166:142): avc: denied { open } for uid=1000 pid=389 comm="HwBinder:389_2" path="/sys/devices/soc/1a00000.qcom,mdss_mdp/caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    9.135604,1] type=1400 audit(31133059.166:142): avc: denied { open } for uid=1000 pid=389 comm="HwBinder:389_2" path="/sys/devices/soc/1a00000.qcom,mdss_mdp/caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    9.135618,1] type=1400 audit(31133059.166:143): avc: denied { getattr } for uid=1000 pid=389 comm="HwBinder:389_2" path="/sys/devices/soc/1a00000.qcom,mdss_mdp/caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[    9.136451,1] mdss_dsi_on[0]+.
+[   23.288335,3] init: Service 'sensors' (pid 419) exited with status 0
+[   23.288368,3] init: Sending signal 9 to service 'sensors' (pid 419) process group...
+[   23.288498,3] init: Successfully killed process cgroup uid 0 pid 419 in 0ms
+[   23.289679,3] init: service sensors does not have a SELinux domain defined
+[   23.289700,3] init: starting service 'sensors'...
+[   23.290580,3] init: property_set("ro.boottime.sensors", "23290141589") failed: property already set
+[   23.290691,1] type=1400 audit(31133059.166:143): avc: denied { getattr } for uid=1000 pid=389 comm="HwBinder:389_2" path="/sys/devices/soc/1a00000.qcom,mdss_mdp/caps" dev="sysfs" ino=20790 scontext=u:r:hal_graphics_composer_default:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+[   23.290710,1] type=1400 audit(31133073.323:144): avc: denied { execute_no_trans } for uid=0 pid=520 comm="init" path="/system/vendor/bin/sensors.qcom" dev="mmcblk0p53" ino=3063 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[   23.310674,1] type=1400 audit(31133073.323:144): avc: denied { execute_no_trans } for uid=0 pid=520 comm="init" path="/system/vendor/bin/sensors.qcom" dev="mmcblk0p53" ino=3063 scontext=u:r:init:s0 tcontext=u:object_r:vendor_file:s0 tclass=file permissive=1
+[   23.310721,1] type=1400 audit(31133073.343:145): avc: denied { write } for uid=0 pid=520 comm="sensors.qcom" name="diag" dev="tmpfs" ino=1898 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   23.310852,1] type=1400 audit(31133073.343:145): avc: denied { write } for uid=0 pid=520 comm="sensors.qcom" name="diag" dev="tmpfs" ino=1898 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   23.310868,1] type=1400 audit(31133073.343:146): avc: denied { ioctl } for uid=0 pid=520 comm="sensors.qcom" path="/dev/diag" dev="tmpfs" ino=1898 ioctlcmd=20 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   23.312296,1] type=1400 audit(31133073.343:146): avc: denied { ioctl } for uid=0 pid=520 comm="sensors.qcom" path="/dev/diag" dev="tmpfs" ino=1898 ioctlcmd=20 scontext=u:r:init:s0 tcontext=u:object_r:device:s0 tclass=chr_file permissive=1
+[   23.312336,1] type=1400 audit(31133073.343:147): avc: denied { create } for uid=0 pid=520 comm="sensors.qcom" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[   23.312467,1] type=1400 audit(31133073.343:147): avc: denied { create } for uid=0 pid=520 comm="sensors.qcom" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[   23.312481,1] type=1400 audit(31133073.343:148): avc: denied { ioctl } for uid=0 pid=520 comm="sensors.qcom" path="socket:[13504]" dev="sockfs" ino=13504 ioctlcmd=c304 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[   23.312561,1] type=1400 audit(31133073.343:148): avc: denied { ioctl } for uid=0 pid=520 comm="sensors.qcom" path="socket:[13504]" dev="sockfs" ino=13504 ioctlcmd=c304 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[   23.312573,1] type=1400 audit(31133073.343:149): avc: denied { bind } for uid=0 pid=520 comm="sensors.qcom" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[   23.313044,1] type=1400 audit(31133073.343:149): avc: denied { bind } for uid=0 pid=520 comm="sensors.qcom" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[   23.313062,1] type=1400 audit(31133073.343:150): avc: denied { read } for uid=1001 pid=413 comm="rmt_storage" scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=socket permissive=1
+[   43.317433,3] init: Service 'sensors' (pid 520) exited with status 0
+[   43.317465,3] init: Sending signal 9 to service 'sensors' (pid 520) process group...
+[   43.317572,3] init: Successfully killed process cgroup uid 0 pid 520 in 0ms
+[   43.318434,3] init: service sensors does not have a SELinux domain defined
+[   43.318453,3] init: starting service 'sensors'...
+[   43.319169,3] init: property_set("ro.boottime.sensors", "43318825250") failed: property already set
+[   61.499733,1] qpnp-smbcharger qpnp-smbcharger-17: Battery Temp State = Good
+[   61.501460,0] healthd: battery l=73 v=3858 t=25.0 h=2 st=3 c=321 fc=2876000 cc=0 chg=
+[   63.346506,3] init: Service 'sensors' (pid 527) exited with status 0
+[   63.346537,3] init: Sending signal 9 to service 'sensors' (pid 527) process group...
+[   63.346642,3] init: Successfully killed process cgroup uid 0 pid 527 in 0ms
+[   63.347565,3] init: service sensors does not have a SELinux domain defined
+[   63.347585,3] init: starting service 'sensors'...
+[   63.348300,3] init: property_set("ro.boottime.sensors", "63347959329") failed: property already set
+[   83.376481,3] init: Service 'sensors' (pid 533) exited with status 0
+[   83.376513,3] init: Sending signal 9 to service 'sensors' (pid 533) process group...
+[   83.376654,3] init: Successfully killed process cgroup uid 0 pid 533 in 0ms
+[   83.377612,3] init: service sensors does not have a SELinux domain defined
+[   83.377636,3] init: starting service 'sensors'...
+[   83.378356,3] init: property_set("ro.boottime.sensors", "83378004241") failed: property already set
+[  103.406184,3] init: Service 'sensors' (pid 539) exited with status 0
+[  103.406214,3] init: Sending signal 9 to service 'sensors' (pid 539) process group...
+[  103.406320,3] init: Successfully killed process cgroup uid 0 pid 539 in 0ms
+[  103.407251,3] init: service sensors does not have a SELinux domain defined
+[  103.407271,3] init: starting service 'sensors'...
+[  103.407976,3] init: property_set("ro.boottime.sensors", "103407640924") failed: property already set
+[  121.661297,1] healthd: battery l=73 v=3854 t=25.5 h=2 st=3 c=318 fc=2876000 cc=0 chg=
+[  123.434482,3] init: Service 'sensors' (pid 545) exited with status 0
+[  123.434514,3] init: Sending signal 9 to service 'sensors' (pid 545) process group...
+[  123.434619,3] init: Successfully killed process cgroup uid 0 pid 545 in 0ms
+[  123.435462,3] init: service sensors does not have a SELinux domain defined
+[  123.435484,3] init: starting service 'sensors'...
+[  123.436231,3] init: property_set("ro.boottime.sensors", "123435859430") failed: property already set
+[  143.462903,3] init: Service 'sensors' (pid 552) exited with status 0
+[  143.462936,3] init: Sending signal 9 to service 'sensors' (pid 552) process group...
+[  143.463040,3] init: Successfully killed process cgroup uid 0 pid 552 in 0ms
+[  143.463987,3] init: service sensors does not have a SELinux domain defined
+[  143.464007,3] init: starting service 'sensors'...
+[  143.464714,3] init: property_set("ro.boottime.sensors", "143464378873") failed: property already set
+[  163.492333,3] init: Service 'sensors' (pid 558) exited with status 0
+[  163.492368,3] init: Sending signal 9 to service 'sensors' (pid 558) process group...
+[  163.492479,3] init: Successfully killed process cgroup uid 0 pid 558 in 0ms
+[  163.493582,3] init: service sensors does not have a SELinux domain defined
+[  163.493663,1] init: starting service 'sensors'...
+[  163.494531,1] init: property_set("ro.boottime.sensors", "163494104826") failed: property already set
+[  181.821295,1] healthd: battery l=73 v=3850 t=25.5 h=2 st=3 c=319 fc=2876000 cc=0 chg=
+[  183.521970,1] init: Service 'sensors' (pid 564) exited with status 0
+[  183.522005,1] init: Sending signal 9 to service 'sensors' (pid 564) process group...
+[  183.522125,1] init: Successfully killed process cgroup uid 0 pid 564 in 0ms
+[  183.523060,1] init: service sensors does not have a SELinux domain defined
+[  183.523082,1] init: starting service 'sensors'...
+[  183.523886,1] init: property_set("ro.boottime.sensors", "183523540207") failed: property already set
+[  195.539377,1] healthd: battery l=72 v=3850 t=26.0 h=2 st=3 c=322 fc=2876000 cc=0 chg=
+[  195.541064,3] healthd: battery l=72 v=3850 t=26.0 h=2 st=3 c=322 fc=2876000 cc=0 chg=
+[  203.550263,1] init: Service 'sensors' (pid 570) exited with status 0
+[  203.550296,1] init: Sending signal 9 to service 'sensors' (pid 570) process group...
+[  203.550402,1] init: Successfully killed process cgroup uid 0 pid 570 in 0ms
+[  203.551302,1] init: service sensors does not have a SELinux domain defined
+[  203.551321,1] init: starting service 'sensors'...
+[  203.552025,1] init: property_set("ro.boottime.sensors", "203551693817") failed: property already set
+[  223.579861,1] init: Service 'sensors' (pid 577) exited with status 0
+[  223.579894,1] init: Sending signal 9 to service 'sensors' (pid 577) process group...
+[  223.580058,1] init: Successfully killed process cgroup uid 0 pid 577 in 0ms
+[  223.580926,1] init: service sensors does not have a SELinux domain defined
+[  223.580944,1] init: starting service 'sensors'...
+[  223.581661,1] init: property_set("ro.boottime.sensors", "223581336333") failed: property already set
+[  241.981275,1] healthd: battery l=72 v=3847 t=26.0 h=2 st=3 c=322 fc=2876000 cc=0 chg=
+[  243.609282,1] init: Service 'sensors' (pid 583) exited with status 0
+[  243.609317,1] init: Sending signal 9 to service 'sensors' (pid 583) process group...
+[  243.609429,1] init: Successfully killed process cgroup uid 0 pid 583 in 0ms
+[  243.610509,1] init: service sensors does not have a SELinux domain defined
+[  243.610537,1] init: starting service 'sensors'...
+[  243.611499,1] init: property_set("ro.boottime.sensors", "243611044630") failed: property already set
+[  263.637996,1] init: Service 'sensors' (pid 589) exited with status 0
+[  263.638031,1] init: Sending signal 9 to service 'sensors' (pid 589) process group...
+[  263.638144,1] init: Successfully killed process cgroup uid 0 pid 589 in 0ms
+[  263.639218,1] init: service sensors does not have a SELinux domain defined
+[  263.639244,1] init: starting service 'sensors'...
+[  263.640083,1] init: property_set("ro.boottime.sensors", "263639673240") failed: property already set
+[  283.666608,1] init: Service 'sensors' (pid 595) exited with status 0
+[  283.666701,1] init: Sending signal 9 to service 'sensors' (pid 595) process group...
+[  283.666811,1] init: Successfully killed process cgroup uid 0 pid 595 in 0ms
+[  283.667686,1] init: service sensors does not have a SELinux domain defined
+[  283.667705,1] init: starting service 'sensors'...
+[  283.668411,1] init: property_set("ro.boottime.sensors", "283668091642") failed: property already set
+[  302.141173,2] healthd: battery l=72 v=3845 t=26.5 h=2 st=3 c=320 fc=2876000 cc=0 chg=
+[  303.695521,1] init: Service 'sensors' (pid 601) exited with status 0
+[  303.695556,1] init: Sending signal 9 to service 'sensors' (pid 601) process group...
+[  303.695663,1] init: Successfully killed process cgroup uid 0 pid 601 in 0ms
+[  303.696525,1] init: service sensors does not have a SELinux domain defined
+[  303.696544,1] init: starting service 'sensors'...
+[  303.697331,1] init: property_set("ro.boottime.sensors", "303697000981") failed: property already set
+[  323.724579,1] init: Service 'sensors' (pid 607) exited with status 0
+[  323.724612,1] init: Sending signal 9 to service 'sensors' (pid 607) process group...
+[  323.724718,1] init: Successfully killed process cgroup uid 0 pid 607 in 0ms
+[  323.725684,1] init: service sensors does not have a SELinux domain defined
+[  323.725707,1] init: starting service 'sensors'...
+[  323.726418,1] init: property_set("ro.boottime.sensors", "323726094070") failed: property already set
+[  343.753999,1] init: Service 'sensors' (pid 613) exited with status 0
+[  343.754032,1] init: Sending signal 9 to service 'sensors' (pid 613) process group...
+[  343.754139,1] init: Successfully killed process cgroup uid 0 pid 613 in 0ms
+[  343.755040,1] init: service sensors does not have a SELinux domain defined
+[  343.755065,1] init: starting service 'sensors'...
+[  343.755981,1] init: property_set("ro.boottime.sensors", "343755505336") failed: property already set
+[  344.811676,0] Report pwrkey press event at: 1970-12-27 08:09:54 UTC
